@@ -1,8 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 
 function Banner() {
 
-  const [bannerOpen, setBannerOpen] = useState(true);
+  const [bannerOpen, setBannerOpen] = useState(false);
+  const [isClosed, setIsClosed] = useState(true);
+
+  useEffect(() => {
+    // Set a timeout to hide the component after 3 seconds
+    const timeout  = setTimeout(() => {
+      if(isClosed){
+        setBannerOpen(true);
+        setIsClosed(false);
+      };
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, [isClosed]);
+
+  function handleClose() {
+    console.log("se cerro");
+    setBannerOpen(false);
+    setIsClosed(true);
+  }
 
   return (
     <>
@@ -11,7 +30,7 @@ function Banner() {
           <div className="bg-slate-800 text-slate-50 text-sm p-3 md:rounded shadow-lg flex justify-between">
             <div className="text-slate-500 inline-flex">
             </div>
-            <button className="text-slate-500 hover:text-slate-400 pl-2 ml-3 border-l border-gray-700" onClick={() => setBannerOpen(false)}>
+            <button onClick={handleClose} className="text-slate-500 hover:text-slate-400 pl-2 ml-3 border-l border-gray-700">
               <span className="sr-only">Close</span>
               <svg className="w-4 h-4 shrink-0 fill-current" viewBox="0 0 16 16">
                 <path d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z" />
@@ -23,5 +42,6 @@ function Banner() {
     </>
   );
 }
+
 
 export default Banner;

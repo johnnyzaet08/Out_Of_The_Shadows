@@ -10,7 +10,7 @@ import Newsletter from '../components/Newsletter';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 
-function Home() {
+function page2() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
@@ -39,4 +39,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default page2;

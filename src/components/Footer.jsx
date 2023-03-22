@@ -5,7 +5,7 @@ import logo from '../images/logo.png';
 function Footer() {
   return (
     <footer>
-      <div className="py-12 md:py-8 bg-skyblue">
+      <div className="py-10 md:py-8 bg-gray-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
           {/* Bottom area */}
@@ -22,7 +22,7 @@ function Footer() {
             </div>
 
             <div>
-                <div className="text-gray-400 text-sm mr-4 py-4 flex justify-center md:block">&copy; All rights reserved.</div>
+                <div className="text-gray-500 text-sm mr-4 py-4 flex justify-center md:block">&copy; All rights reserved.</div>
             </div>
 
             {/* Social links */}

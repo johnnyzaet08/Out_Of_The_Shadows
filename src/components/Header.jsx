@@ -48,28 +48,30 @@ function Header() {
   }, [prevScrollPos]);
 
   return (
-    <header className="header bg-skyblue fixed top-0 left-0 w-full transition duration-300 z-30">
+    <header className="header bg-white-100 fixed top-0 left-0 w-full transition duration-300 z-30">
 
       <div className="max-w-8xl mx-2 sm:px-4 lg:mx-10" >
         <div className="flex items-center justify-between h-20 ">
 
-          <div className="flex justify-left mx-0 lg:mx-2">
+          <div className="flex justify-left mx-0 lg:-mx-2">
             <Link to="/" className="block" aria-label="Logo">
               <img src={logo} alt='Logo' className='w-15 h-12 fill-current text-purple-900' />
             </Link>
             <span className='text-lx font-bold justify-center text-primary px-4'>Out of The <br/> Shadows </span>
           </div>
 
+          <div className='hidden md:flex mx-8 w-0.5 h-full bg-primary'/>
+
           <nav className="hidden md:flex md:grow">
             <ul className="flex grow justify-center flex-wrap">
               <li>
-                <Link to="/" className="font-medium text-primary hover:text-gray-200 px-12 py-3 flex items-center transition duration-150 ease-in-out">Home</Link>
+                <Link to="/" className="bg-gray-200 mx-3 rounded-full font-medium text-primary hover:bg-gray-300 hover:text-gray-500 px-12 py-3 flex items-center transition duration-150 ease-in-out">Home</Link>
               </li>
               <li>
-                <Link to="/page2" className="font-medium text-primary hover:text-gray-200 px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 2</Link>
+                <Link to="/page2" className="bg-gray-200 mx-3 rounded-full font-medium text-primary hover:bg-gray-300 hover:text-gray-500 px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 2</Link>
               </li>
               <li>
-                <Link to="/page3" className="font-medium text-primary hover:text-gray-200 px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 3</Link>
+                <Link to="/page3" className="bg-gray-200 mx-3 rounded-full font-medium text-primary hover:bg-gray-300 hover:text-gray-500 px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 3</Link>
               </li>
             </ul>
           </nav>
@@ -85,12 +87,16 @@ function Header() {
             </button>
 
             <nav id="mobile-nav" ref={mobileNav} className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" style={mobileNavOpen ? { maxHeight: mobileNav.current.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: .8 } }>
+              
               <ul className="bg-blue-100 px-4 py-2">
                 <li>
-                  <Link to="/signin" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center">Sign in</Link>
+                  <Link to="/" className="flex font-medium w-full text-primary hover:text-gray-200 py-2 justify-center">Home</Link>
                 </li>
                 <li>
-                  <Link to="/signup" className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out">Sign up</Link>
+                  <Link to="/page2" className="flex font-medium w-full text-primary hover:text-gray-200 py-2 justify-center">Page 2</Link>
+                </li>
+                <li>
+                  <Link to="/page3" className="flex font-medium w-full text-primary hover:text-gray-200 py-2 justify-center">Page 3</Link>
                 </li>
               </ul>
             </nav>

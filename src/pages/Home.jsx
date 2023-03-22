@@ -1,38 +1,38 @@
 import React from 'react';
+import { Parallax } from "react-parallax";
 
 import Header from '../components/Header';
-import PageIllustration from '../components/PageIllustration';
-import HeroHome from '../components/HeroHome';
-import FeaturesBlocks from '../components/FeaturesBlocks';
-import FeaturesZigZag from '../components/FeaturesZigzag';
-import Testimonials from '../components/Testimonials';
-
 import Footer from '../components/Footer';
+import FeaturesBlocks from '../components/FeaturesBlocks';
+
+import image from '../images/background.png';
 
 function Home() {
   return (
+
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
       <Header />
 
       {/*  Page content */}
-      <main className="grow">
-        {/*  Page illustration */}
-        <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
-          <PageIllustration />
+      <main className="grow pt-12">
+
+        <div className="">
+          <Parallax strength={300} bgImage={image}>
+            <div className=" md:min-h-screen h-[65vh] transition-100">
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white-100 text-2xl md:text-5xl">Normal Parallax</div>
+            </div>
+          </Parallax>
         </div>
 
-        {/*  Page sections */}
         <FeaturesBlocks />
-        <FeaturesZigZag />
-        <Testimonials />
+
       </main>
-
-
 
       {/*  Site footer */}
       <Footer />
     </div>
+    
   );
 }
 

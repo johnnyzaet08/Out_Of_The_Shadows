@@ -1,16 +1,12 @@
-import "../css/parallax.css"
 import React from 'react';
-import { Parallax } from "react-parallax";
 
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import PageIllustration from '../components/PageIllustration';
 import FeaturesBlocks from '../components/FeaturesBlocks';
 import FeaturesZigZag from '../components/FeaturesZigzag';
+import Testimonials from '../components/Testimonials';
 
-
-
-import background1 from '../images/background1.jpg';
-import background from '../images/background.jpg';
+import Footer from '../components/Footer';
 
 function page2() {
   return (
@@ -19,27 +15,19 @@ function page2() {
       <Header />
 
       {/*  Page content */}
-      <main className="grow">
-        <FeaturesZigZag />
-
-        <div className="">
-
-          <Parallax strength={300} bgImage={background1}>
-            <div className="content">
-              <div className="text-content">Normal Parallax</div>
-            </div>
-          </Parallax>
-
-          <Parallax strength={-600} bgImage={background}>
-            <div className="content ">
-              <div className="text-content">Reverse Parallax</div>
-            </div>
-          </Parallax>
-
+      <main className="grow pt-12 md:pt-4">
+        {/*  Page illustration */}
+        <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
+          <PageIllustration />
         </div>
 
+        {/*  Page sections */}
         <FeaturesBlocks />
+        <FeaturesZigZag />
+        <Testimonials />
       </main>
+
+
 
       {/*  Site footer */}
       <Footer />

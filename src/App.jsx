@@ -13,6 +13,7 @@ import AOS from 'aos';
 import Home from './pages/Home';
 import Page2 from './pages/Page2';
 import Page3 from './pages/Page3';
+import Banner from './components/Banner';
 //import SignIn from './pages/SignIn';
 //import SignUp from './pages/SignUp';
 //import ResetPassword from './pages/ResetPassword';
@@ -42,10 +43,12 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/page2" element={<Page2 />} />
         <Route exact path="/page3" element={<Page3 />} />
+        
         {/*<Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} />*/}
       </Routes>
+      <Banner />
     </>
   );
 }

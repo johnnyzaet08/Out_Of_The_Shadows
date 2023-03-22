@@ -31,8 +31,6 @@ function page3() {
         <Newsletter />
       </main>
 
-      <Banner />
-
       {/*  Site footer */}
       <Footer />
     </div>

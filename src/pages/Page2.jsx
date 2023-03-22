@@ -1,14 +1,10 @@
 import React from 'react';
 
 import Header from '../components/Header';
-import PageIllustration from '../components/PageIllustration';
-import HeroHome from '../components/HeroHome';
+import Parallax from '../components/Parallax';
+import Footer from '../components/Footer';
 import FeaturesBlocks from '../components/FeaturesBlocks';
 import FeaturesZigZag from '../components/FeaturesZigzag';
-import Testimonials from '../components/Testimonials';
-import Newsletter from '../components/Newsletter';
-import Banner from '../components/Banner';
-import Footer from '../components/Footer';
 
 function page2() {
   return (
@@ -18,20 +14,10 @@ function page2() {
 
       {/*  Page content */}
       <main className="grow">
-        {/*  Page illustration */}
-        <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
-          <PageIllustration />
-        </div>
-
-        {/*  Page sections */}
-        <HeroHome />
-        <FeaturesBlocks />
         <FeaturesZigZag />
-        <Testimonials />
-        <Newsletter />
+        <Parallax/>
+        <FeaturesBlocks />
       </main>
-
-      <Banner />
 
       {/*  Site footer */}
       <Footer />

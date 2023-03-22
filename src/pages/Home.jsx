@@ -6,8 +6,7 @@ import HeroHome from '../components/HeroHome';
 import FeaturesBlocks from '../components/FeaturesBlocks';
 import FeaturesZigZag from '../components/FeaturesZigzag';
 import Testimonials from '../components/Testimonials';
-import Newsletter from '../components/Newsletter';
-import Banner from '../components/Banner';
+
 import Footer from '../components/Footer';
 
 function Home() {
@@ -28,10 +27,9 @@ function Home() {
         <FeaturesBlocks />
         <FeaturesZigZag />
         <Testimonials />
-        <Newsletter />
       </main>
 
-      <Banner />
+
 
       {/*  Site footer */}
       <Footer />

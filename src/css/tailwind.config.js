@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         primary: '#003b5c',
         target: '#e57200',
+        skyblue: '#e8f6fe',
         white: {
           100: '#FFFFFF',
           200: '#FCFCFC',

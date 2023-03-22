@@ -25,7 +25,7 @@ function Banner() {
   return (
     <>
       {bannerOpen && (
-        <div className="fixed bottom-20 right-1 w-full opacity-85 md:opacity-100 md:right-4 w-auto z-60">
+        <div className="fixed bottom-20 right-1 opacity-85 md:opacity-100 md:right-4 w-auto z-60">
           <div className="bg-target text-sm p-3 md:rounded shadow-lg flex justify-between">
             <div className="text-white-100 inline-flex justify-center">
               <a

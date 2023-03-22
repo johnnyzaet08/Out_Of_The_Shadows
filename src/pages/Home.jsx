@@ -23,7 +23,6 @@ function Home() {
         </div>
 
         {/*  Page sections */}
-        <HeroHome />
         <FeaturesBlocks />
         <FeaturesZigZag />
         <Testimonials />

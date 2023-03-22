@@ -1,10 +1,16 @@
+import "../css/parallax.css"
 import React from 'react';
+import { Parallax } from "react-parallax";
 
 import Header from '../components/Header';
-import Parallax from '../components/Parallax';
 import Footer from '../components/Footer';
 import FeaturesBlocks from '../components/FeaturesBlocks';
 import FeaturesZigZag from '../components/FeaturesZigzag';
+
+
+
+import background1 from '../images/background1.jpg';
+import background from '../images/background.jpg';
 
 function page2() {
   return (
@@ -15,7 +21,23 @@ function page2() {
       {/*  Page content */}
       <main className="grow">
         <FeaturesZigZag />
-        <Parallax/>
+
+        <div className="">
+
+          <Parallax strength={300} bgImage={background1}>
+            <div className="content">
+              <div className="text-content">Normal Parallax</div>
+            </div>
+          </Parallax>
+
+          <Parallax strength={-600} bgImage={background}>
+            <div className="content ">
+              <div className="text-content">Reverse Parallax</div>
+            </div>
+          </Parallax>
+
+        </div>
+
         <FeaturesBlocks />
       </main>
 

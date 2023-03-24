@@ -17,10 +17,19 @@ function Home() {
       {/*  Page content */}
       <main className="grow pt-12">
 
+        <FeaturesBlocks />
+
         <div className="">
-          <Parallax strength={300} bgImage={image}>
-            <div className=" md:min-h-screen h-[65vh] transition-100">
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white-100 text-2xl md:text-5xl">Normal Parallax</div>
+          <Parallax strength={400} bgImage={image}>
+            <div className=" md:min-h-screen h-[80vh] transition-100">
+              <div className="flex items-center justify-center h-full">
+                <div className='absolute text-center text-white-100 w-[75vh] md:w-[100vh] opacity-85'>
+                  <span className='text-center text-xl md:text-2xl xl:text-3xl text-white-100 font-bold'>
+                    Adult survivors of childhood abuse are more likely to experience mental health difficulties, including depression, anxiety, bipolar disorder, PTSD, eating disorders, and substance use disorders.
+                  </span>
+                  <br/>
+                </div>
+              </div>
             </div>
           </Parallax>
         </div>

@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#003b5c',
+        primary: '#389adb',
+        secondary: '#000826',
+        secondary_text: '#006dbe',
         target: '#e57200',
         skyblue: '#e8f6fe',
         white: {
@@ -47,7 +49,8 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        'architects-daughter': ['"Architects Daughter"', 'sans-serif']
+        'architects-daughter': ['"Architects Daughter"', 'sans-serif'],
+        italic: ['Roboto Italic', 'Helvetica', 'Arial', 'sans-serif']
       },
       fontSize: {
         xs: '0.75rem',

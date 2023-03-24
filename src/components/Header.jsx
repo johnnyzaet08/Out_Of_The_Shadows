@@ -60,18 +60,16 @@ function Header() {
             <span className='text-lx font-bold justify-center text-primary px-4'>Out of The <br/> Shadows </span>
           </div>
 
-          <div className='hidden md:flex mx-8 w-0.5 h-full bg-primary'/>
-
           <nav className="hidden md:flex md:grow">
             <ul className="flex grow justify-center flex-wrap">
               <li>
-                <Link to="/" className="bg-gray-200 mx-3 rounded-full font-medium text-primary hover:bg-gray-300 hover:text-gray-500 px-12 py-3 flex items-center transition duration-150 ease-in-out">Home</Link>
+                <Link to="/" className="mx-3 rounded-full font-medium text-primary hover:underline  hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out">Home</Link>
               </li>
               <li>
-                <Link to="/page2" className="bg-gray-200 mx-3 rounded-full font-medium text-primary hover:bg-gray-300 hover:text-gray-500 px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 2</Link>
+                <Link to="/page2" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 2</Link>
               </li>
               <li>
-                <Link to="/page3" className="bg-gray-200 mx-3 rounded-full font-medium text-primary hover:bg-gray-300 hover:text-gray-500 px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 3</Link>
+                <Link to="/page3" className="mx-3 rounded-[5px] font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 3</Link>
               </li>
             </ul>
           </nav>
@@ -79,7 +77,7 @@ function Header() {
           <div className="md:hidden">
             <button ref={trigger} className={`hamburger ${mobileNavOpen && 'active'}`} aria-controls="mobile-nav" aria-expanded={mobileNavOpen} onClick={() => setMobileNavOpen(!mobileNavOpen)}>
               <span className="sr-only">Menu</span>
-              <svg className="w-6 h-6 fill-current text-gray-300 hover:text-gray-200 transition duration-150 ease-in-out" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-6 h-6 fill-current text-gray-300 hover:text-primary transition duration-150 ease-in-out" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <rect y="4" width="24" height="2" rx="1" />
                 <rect y="11" width="24" height="2" rx="1" />
                 <rect y="18" width="24" height="2" rx="1" />
@@ -88,15 +86,15 @@ function Header() {
 
             <nav id="mobile-nav" ref={mobileNav} className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" style={mobileNavOpen ? { maxHeight: mobileNav.current.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: .8 } }>
               
-              <ul className="bg-blue-100 px-4 py-2">
+              <ul className="bg-white-100 opacity-95 px-4 py-2">
                 <li>
-                  <Link to="/" className="flex font-medium w-full text-primary hover:text-gray-200 py-2 justify-center">Home</Link>
+                  <Link to="/" className="flex font-medium w-full text-secondary_text hover:text-secondary py-2 justify-center">Home</Link>
                 </li>
                 <li>
-                  <Link to="/page2" className="flex font-medium w-full text-primary hover:text-gray-200 py-2 justify-center">Page 2</Link>
+                  <Link to="/page2" className="flex font-medium w-full text-secondary_text hover:text-secondary py-2 justify-center">Page 2</Link>
                 </li>
                 <li>
-                  <Link to="/page3" className="flex font-medium w-full text-primary hover:text-gray-200 py-2 justify-center">Page 3</Link>
+                  <Link to="/page3" className="flex font-medium w-full text-secondary_text hover:text-secondary py-2 justify-center">Page 3</Link>
                 </li>
               </ul>
             </nav>

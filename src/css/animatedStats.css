@@ -1,0 +1,26 @@
+.animated-stats-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.animated-stats-label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.animated-stats-number-container {
+    font-size: 60px;
+    font-weight: bold;
+    color: #389adb;
+}
+
+.animated-stats-number {
+    margin-right: 10px;
+}

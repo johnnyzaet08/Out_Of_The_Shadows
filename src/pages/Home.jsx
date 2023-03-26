@@ -4,6 +4,7 @@ import { Parallax } from "react-parallax";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import FeaturesBlocks from '../components/FeaturesBlocks';
+import FeaturesZigZag from '../components/FeaturesZigzag';
 
 import image from '../images/background.png';
 
@@ -15,7 +16,7 @@ function Home() {
       <Header />
 
       {/*  Page content */}
-      <main className="grow pt-12">
+      <main className="grow pt-12 md:pt-4">
 
         <FeaturesBlocks />
 
@@ -34,7 +35,7 @@ function Home() {
           </Parallax>
         </div>
 
-        <FeaturesBlocks />
+        <FeaturesZigZag />
 
       </main>
 

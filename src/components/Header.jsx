@@ -48,7 +48,7 @@ function Header() {
   }, [prevScrollPos]);
 
   return (
-    <header className="header bg-white-100 fixed top-0 left-0 w-full transition duration-300 z-30">
+    <header className="header bg-white-100 fixed top-0 left-0 w-full transition duration-1000 z-30">
 
       <div className="max-w-8xl mx-2 sm:px-4 lg:mx-10" >
         <div className="flex items-center justify-between h-20 ">

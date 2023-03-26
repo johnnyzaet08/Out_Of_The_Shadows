@@ -2,9 +2,8 @@ import React from 'react';
 
 import Header from '../components/Header';
 import PageIllustration from '../components/PageIllustration';
-import FeaturesBlocks from '../components/FeaturesBlocks';
-import FeaturesZigZag from '../components/FeaturesZigzag';
 import Testimonials from '../components/Testimonials';
+import ImageSlider from '../components/ImageSlider';
 
 import Footer from '../components/Footer';
 
@@ -22,9 +21,17 @@ function page2() {
         </div>
 
         {/*  Page sections */}
-        <FeaturesBlocks />
-        <FeaturesZigZag />
         <Testimonials />
+
+        <div>
+          <h1>Welcome to My Page</h1>
+
+          {/* Insert the ImageSlider component here */}
+          <ImageSlider />
+
+          <p>Some other content on the page...</p>
+        </div>
+        
       </main>
 
 

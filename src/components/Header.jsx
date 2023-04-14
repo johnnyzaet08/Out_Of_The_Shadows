@@ -53,29 +53,58 @@ function Header() {
       <div className="max-w-8xl mx-2 sm:px-4 lg:mx-10" >
         <div className="flex items-center justify-between h-20 ">
 
-          <div className="flex justify-left mx-0 lg:-mx-2">
-            <Link to="/" className="block" aria-label="Logo">
-              <img src={logo} alt='Logo' className='w-15 h-12 fill-current text-purple-900' />
-            </Link>
-            <span className='text-lx font-bold justify-center text-primary px-4'>Out of The <br/> Shadows </span>
-          </div>
+          
 
           <nav className="hidden md:flex md:grow">
             <ul className="flex grow justify-center flex-wrap">
-              <li>
-                <Link to="/" className="mx-3 rounded-full font-medium text-primary hover:underline  hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out">Home</Link>
+
+              <li className=''>
+                <ul className='flex items-center justify-between h-full'>
+                  <li>
+                    <Link to="/" className="mx-3 rounded-full font-medium text-primary hover:underline  hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/page2" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 2</Link>
+                  </li>
+                </ul>
               </li>
+              
               <li>
-                <Link to="/page2" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 2</Link>
+                <div className="px-2 flex flex-col items-center">
+                  <Link to="/" aria-label="Logo">
+                    <img src={logo} alt='Logo' className='w-15 h-12 fill-current' />
+                  </Link>
+                  <span className="inline-block relative">
+                    <span className="text-lg font-bold text-primary mt-2">Out Of The Shadows</span>
+                  </span>
+                </div>
               </li>
+
               <li>
-                <Link to="/page3" className="mx-3 rounded-[5px] font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 3</Link>
+                <ul className='flex items-center justify-between h-full'>
+                  <li>
+                    <Link to="/page3" className="h-full mx-3 rounded-[5px] font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 3</Link>
+                  </li>
+                  <li>
+                    <Link to="/page3" className="mx-3 rounded-[5px] font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out">Page 3</Link>
+                  </li>
+                </ul>
               </li>
+              
             </ul>
+
           </nav>
 
-          <div className="md:hidden">
-            <button ref={trigger} className={`hamburger ${mobileNavOpen && 'active'}`} aria-controls="mobile-nav" aria-expanded={mobileNavOpen} onClick={() => setMobileNavOpen(!mobileNavOpen)}>
+          <div className="md:hidden flex flex-cols w-full">
+
+            <div className="flex items-center justify-left mx-0 lg:-mx-2">
+              <Link to="/" className="block" aria-label="Logo">
+                <img src={logo} alt='Logo' className='w-15 h-12 fill-current text-purple-900' />
+              </Link>
+              <span className='text-lx font-bold justify-center text-primary px-4'>Out of The <br/> Shadows </span>
+            </div>
+
+            <button ref={trigger} className={`hamburger ${mobileNavOpen && 'active'} ml-auto`} aria-controls="mobile-nav" aria-expanded={mobileNavOpen} onClick={() => setMobileNavOpen(!mobileNavOpen)}>
               <span className="sr-only">Menu</span>
               <svg className="w-6 h-6 fill-current text-gray-300 hover:text-primary transition duration-150 ease-in-out" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <rect y="4" width="24" height="2" rx="1" />
@@ -103,9 +132,7 @@ function Header() {
         </div>
       </div>
 
-      <div className='w-fill h-0.5 bg-primary'>
-      
-      </div>
+      <div className='w-fill h-0.5 bg-primary'/>
 
     </header>
   );

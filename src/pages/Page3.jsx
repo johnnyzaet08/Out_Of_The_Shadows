@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Newsletter from '../components/Newsletter';
 import AnimatedStats from '../components/AnimatedStats';
 import Footer from '../components/Footer';
+import OldFilm from '../components/OldFilm';
 
 function page3() {
   return (
@@ -21,6 +22,8 @@ function page3() {
         <Newsletter />
 
       </main>
+
+      <OldFilm/>
 
       <Footer />
     </div>

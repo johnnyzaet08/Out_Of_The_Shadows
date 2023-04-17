@@ -47,6 +47,9 @@ function Header() {
     };
   }, [prevScrollPos]);
 
+  //<span className='text-lx font-bold justify-center text-primary px-4'>Out of The <br/> Shadows </span>
+
+
   return (
     <header className="header bg-white-100 fixed top-0 left-0 w-full transition duration-1000 z-30">
 
@@ -61,7 +64,7 @@ function Header() {
               <li className=''>
                 <ul className='flex items-center justify-between h-full'>
                   <li>
-                    <Link to="/" className="mx-3 rounded-full font-medium text-primary hover:underline  hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out"> Home </Link>
+                    <Link to="/" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out"> Home </Link>
                   </li>
                   <li>
                     <Link to="/page2" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out"> About us </Link>
@@ -83,10 +86,10 @@ function Header() {
               <li>
                 <ul className='flex items-center justify-between h-full'>
                   <li>
-                    <Link to="/page3" className="h-full mx-3 rounded-[5px] font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out"> Page 3 </Link>
+                    <Link to="/page3" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out"> Page 3 </Link>
                   </li>
                   <li>
-                    <Link to="/page3" className="mx-3 rounded-[5px] font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out"> Donate </Link>
+                    <Link to="/page3" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out"> Donate </Link>
                   </li>
                 </ul>
               </li>

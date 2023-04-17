@@ -47,7 +47,7 @@ function page3() {
       <main className="grow pt-16 md:pt-28">
        
         <div>
-          <div className="container mx-auto w-full">
+          <div className="container mx-auto">
             <MovieReel images={images} />
           </div>
         </div>

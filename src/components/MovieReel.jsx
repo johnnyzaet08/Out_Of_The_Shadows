@@ -29,8 +29,6 @@ const MovieReel = ({ images }) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
-          dots: false,
         },
       },
       {
@@ -44,7 +42,7 @@ const MovieReel = ({ images }) => {
   };
 
   return (
-    <div className='w-full'>
+    <div className=''>
       <AnimatedStats handleNextClick={handleNextClick} startValue={100} label="Total Visitors" />
       <Slider ref={sliderRef} {...settings}>
         {images.map((image) => (

@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import FeaturesBlocks from '../components/FeaturesBlocks';
 import FeaturesZigZag from '../components/FeaturesZigzag';
+import ColorChangingText from '../components/ColorChangingText';
 
 import image from '../images/background.png';
 
@@ -17,8 +18,6 @@ function Home() {
 
       {/*  Page content */}
       <main className="grow pt-12 md:pt-4">
-
-        <FeaturesBlocks />
 
         <div className="">
           <Parallax strength={400} bgImage={image}>
@@ -35,7 +34,13 @@ function Home() {
           </Parallax>
         </div>
 
+        
+
+        <ColorChangingText/>
+
+        <FeaturesBlocks />
         <FeaturesZigZag />
+
 
       </main>
 

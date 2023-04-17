@@ -2,20 +2,21 @@ import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import '../css/animatedStats.css';
 
-const AnimatedStats = ({ startValue, label }) => {
+const AnimatedStats = ({ startValue, label, handleNextClick }) => {
   const [visible, setVisible] = useState(false);
   const [count, setCount] = useState(0);
   const { number } = useSpring({
-    from: { number: 100 },
+    from: { number: startValue },
     to: { number: count },
-    delay: 500,
+    delay: 0,
     onRest: () => setVisible(true)
   });
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCount((prevCount) => prevCount + 1);
-    }, 1000);
+      handleNextClick();
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
 

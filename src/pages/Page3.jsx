@@ -2,9 +2,42 @@ import React from 'react';
 
 import Header from '../components/Header';
 import Newsletter from '../components/Newsletter';
-import AnimatedStats from '../components/AnimatedStats';
 import Footer from '../components/Footer';
-import OldFilm from '../components/OldFilm';
+import MovieReel from '../components/MovieReel';
+
+import ImageAbuse1 from '../images/ImageAbuse1.jpg';
+import ImageAbuse2 from '../images/ImageAbuse2.jpg';
+import ImageAbuse3 from '../images/ImageAbuse3.jpg';
+import ImageAbuse4 from '../images/ImageAbuse4.jpg';
+import ImageAbuse5 from '../images/ImageAbuse5.jpg';
+
+const images = [
+  {
+    id: 1,
+    title: 'Image 1',
+    img: ImageAbuse1,
+  },
+  {
+    id: 2,
+    title: 'Image 2',
+    img: ImageAbuse2,
+  },
+  {
+    id: 3,
+    title: 'Image 3',
+    img: ImageAbuse3,
+  },
+  {
+    id: 4,
+    title: 'Image 4',
+    img: ImageAbuse4,
+  },
+  {
+    id: 5,
+    title: 'Image 5',
+    img: ImageAbuse5,
+  },
+];
 
 function page3() {
   return (
@@ -14,16 +47,16 @@ function page3() {
       <main className="grow pt-16 md:pt-28">
        
         <div>
-          <h1 className="text-center text-xl md:text-2xl xl:text-3xl text-gray-900 font-bold ">Welcome to my website!</h1>
-          <p className='text-center text-xl md:text-2xl xl:text-3xl text-gray-900 font-bold '>Here's an animated statistic:</p>
-          <AnimatedStats startValue={100} label="Total Visitors" />
+          <div className="container mx-auto w-full">
+            <MovieReel images={images} />
+          </div>
         </div>
 
-        <Newsletter />
+        <div className='container pt-10 pb-10'>
+          <Newsletter />
+        </div>
 
       </main>
-
-      <OldFilm/>
 
       <Footer />
     </div>

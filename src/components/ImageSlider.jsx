@@ -45,12 +45,12 @@ function ImageSlider() {
 
   return (
     <div className="relative items-center flex-cols relative w-full">
-      <div className='flex justify-center mx-auto w-4/6 relative'>
+      <div className='flex justify-center mx-auto w-full xl:w-4/6 relative'>
         <img src={IMAGES[currentImageIndex]} alt="Slider Image" className="flex justify-center h-auto" />
 
         {/* Previous button */}
         <button
-          className="absolute top-1/2 transform -translate-y-1/2 left-2 bg-gray-500 bg-opacity-50 hover:bg-opacity-45 hover:bg-white-100 hover:text-gray-800 text-white-100 rounded-full w-8 h-8 flex items-center justify-center"
+          className="absolute top-1/2 transform -translate-y-1/2 mt-2 left-2 bg-gray-500 bg-opacity-50 hover:bg-opacity-45 hover:bg-white-100 hover:text-gray-800 text-white-100 rounded-full w-8 h-8 flex items-center justify-center"
           onClick={handlePrevClick}
         >
           <i className="fas fa-chevron-left"> ⇦ </i>
@@ -58,7 +58,7 @@ function ImageSlider() {
 
         {/* Next button */}
         <button
-          className="absolute top-1/2 transform -translate-y-1/2 right-2 bg-gray-500 bg-opacity-50 hover:bg-opacity-45 hover:bg-white-100 hover:text-gray-800 text-white-100 rounded-full w-8 h-8 flex items-center justify-center"
+          className="absolute top-1/2 transform -translate-y-1/2 mt-2 right-2 bg-gray-500 bg-opacity-50 hover:bg-opacity-45 hover:bg-white-100 hover:text-gray-800 text-white-100 rounded-full w-8 h-8 flex items-center justify-center"
           onClick={handleNextClick}
         >
           <i className="fas fa-chevron-right"> ⇨ </i>

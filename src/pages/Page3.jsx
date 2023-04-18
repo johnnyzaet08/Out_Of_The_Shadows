@@ -5,45 +5,45 @@ import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import MovieReel from '../components/MovieReel';
 
-import INOCENT1 from '../images/ImageAbuse1.jpg';
-import INOCENT2 from '../images/ImageAbuse2.jpg';
-import INOCENT3 from '../images/ImageAbuse3.jpg';
-import INOCENT4 from '../images/ImageAbuse4.jpg';
+import INOCENT1 from '../images/StatisticsImages/1.1 INNOCENT.jpg';
+import INOCENT2 from '../images/StatisticsImages/1.2 INNOCENT.jpg';
+import INOCENT3 from '../images/StatisticsImages/1.3 INNOCENT.jpg';
+import INOCENT4 from '../images/StatisticsImages/1.4 INNOCENT.jpg';
 
-import VICTIM1 from '../images/ImageAbuse1.jpg';
-import VICTIM2 from '../images/ImageAbuse2.jpg';
-import VICTIM3 from '../images/ImageAbuse3.jpg';
-import VICTIM4 from '../images/ImageAbuse4.jpg';
+import VICTIM1 from '../images/StatisticsImages/2.1 VICTIM.jpg';
+import VICTIM2 from '../images/StatisticsImages/2.2 VICTIM.jpg';
+import VICTIM3 from '../images/StatisticsImages/2.3 VICTIM.jpg';
+import VICTIM4 from '../images/StatisticsImages/2.4 VICTIM.jpg';
 
-import DEFENSELESS1 from '../images/ImageAbuse1.jpg';
-import DEFENSELESS2 from '../images/ImageAbuse2.jpg';
-import DEFENSELESS3 from '../images/ImageAbuse3.jpg';
-import DEFENSELESS4 from '../images/ImageAbuse4.jpg';
+import DEFENSELESS1 from '../images/StatisticsImages/3.1 DEFENSELESS.jpg';
+import DEFENSELESS2 from '../images/StatisticsImages/3.2 DEFENSELESS.jpg';
+import DEFENSELESS3 from '../images/StatisticsImages/3.3 DEFENSELESS.jpg';
+import DEFENSELESS4 from '../images/StatisticsImages/3.4 DEFENSELESS.jpg';
 
-import VULNERABLE1 from '../images/ImageAbuse1.jpg';
-import VULNERABLE2 from '../images/ImageAbuse2.jpg';
-import VULNERABLE3 from '../images/ImageAbuse3.jpg';
-import VULNERABLE4 from '../images/ImageAbuse4.jpg';
+import VULNERABLE1 from '../images/StatisticsImages/4.1 VULNERABLE.jpg';
+import VULNERABLE2 from '../images/StatisticsImages/4.2 VULNERABLE.jpg';
+import VULNERABLE3 from '../images/StatisticsImages/4.3 VULNERABLE.jpg';
+import VULNERABLE4 from '../images/StatisticsImages/4.4 VULNERABLE.jpg';
 
-import PURE1 from '../images/ImageAbuse1.jpg';
-import PURE2 from '../images/ImageAbuse2.jpg';
-import PURE3 from '../images/ImageAbuse3.jpg';
-import PURE4 from '../images/ImageAbuse4.jpg';
+import PURE1 from '../images/StatisticsImages/5.1 PURE.jpg';
+import PURE2 from '../images/StatisticsImages/5.2 PURE.jpg';
+import PURE3 from '../images/StatisticsImages/5.3 PURE.jpg';
+import PURE4 from '../images/StatisticsImages/5.4 PURE.jpg';
 
-import HONEST1 from '../images/ImageAbuse1.jpg';
-import HONEST2 from '../images/ImageAbuse2.jpg';
-import HONEST3 from '../images/ImageAbuse3.jpg';
-import HONEST4 from '../images/ImageAbuse4.jpg';
+import HONEST1 from '../images/StatisticsImages/6.1 HONEST.jpg';
+import HONEST2 from '../images/StatisticsImages/6.2 HONEST.jpg';
+import HONEST3 from '../images/StatisticsImages/6.3 HONEST.jpg';
+import HONEST4 from '../images/StatisticsImages/6.4 HONEST.jpg';
 
-import TRUSTFUL1 from '../images/ImageAbuse1.jpg';
-import TRUSTFUL2 from '../images/ImageAbuse2.jpg';
-import TRUSTFUL3 from '../images/ImageAbuse3.jpg';
-import TRUSTFUL4 from '../images/ImageAbuse4.jpg';
+import TRUSTFUL1 from '../images/StatisticsImages/7.1 TRUSTFUL.jpg';
+import TRUSTFUL2 from '../images/StatisticsImages/7.2 TRUSTFUL.jpg';
+import TRUSTFUL3 from '../images/StatisticsImages/7.3 TRUSTFUL.jpg';
+import TRUSTFUL4 from '../images/StatisticsImages/7.4 TRUSTFUL.jpg';
 
-import NAIVE1 from '../images/ImageAbuse1.jpg';
-import NAIVE2 from '../images/ImageAbuse2.jpg';
-import NAIVE3 from '../images/ImageAbuse3.jpg';
-import NAIVE4 from '../images/ImageAbuse4.jpg';
+import NAIVE1 from '../images/StatisticsImages/8.1 NAIVE.jpg';
+import NAIVE2 from '../images/StatisticsImages/8.2 NAIVE.jpg';
+import NAIVE3 from '../images/StatisticsImages/8.3 NAIVE.jpg';
+import NAIVE4 from '../images/StatisticsImages/8.4 NAIVE.jpg';
 
 const images = [
   {

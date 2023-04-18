@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import Slider from 'react-slick';
 import AnimatedStats from './AnimatedStats';
 import 'slick-carousel/slick/slick.css';
@@ -8,6 +8,8 @@ import '../css/MovieReel.css';
 const MovieReel = ({ images }) => {
 
   const sliderRef = useRef(null); // Create a reference to the Slider component
+
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleNextClick = () => {
     sliderRef.current.slickNext(); // Call the slickNext method to navigate to the next slide
@@ -19,9 +21,48 @@ const MovieReel = ({ images }) => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
-    swipeToSlide: true,
+    swipeToSlide: false,
     centerMode: false,
     centerPadding: '0px',
+    afterChange: (index) => {
+      document.querySelector(".INOCENT").classList.replace("text-primary", "text-gray-200");
+      document.querySelector(".VICTIM").classList.replace("text-primary", "text-gray-200");
+      document.querySelector(".DEFENSELESS").classList.replace("text-primary", "text-gray-200");
+      document.querySelector(".VULNERABLE").classList.replace("text-primary", "text-gray-200");
+      document.querySelector(".PURE").classList.replace("text-primary", "text-gray-200");
+      document.querySelector(".HONEST").classList.replace("text-primary", "text-gray-200");
+      document.querySelector(".TRUSTFUL").classList.replace("text-primary", "text-gray-200");
+      document.querySelector(".NAIVE").classList.replace("text-primary", "text-gray-200");
+      switch(images[index].title){
+        case 'INOCENT':
+          document.querySelector(".INOCENT").classList.replace("text-gray-200", "text-primary");
+          break;
+        case 'VICTIM':
+          document.querySelector(".VICTIM").classList.replace("text-gray-200", "text-primary");
+          break;
+        case 'DEFENSELESS':
+          document.querySelector(".DEFENSELESS").classList.replace("text-gray-200", "text-primary");
+          break;
+        case 'VULNERABLE':
+          document.querySelector(".VULNERABLE").classList.replace("text-gray-200", "text-primary");
+          break;
+        case 'PURE':
+          document.querySelector(".PURE").classList.replace("text-gray-200", "text-primary");
+          break;
+        case 'HONEST':
+          document.querySelector(".HONEST").classList.replace("text-gray-200", "text-primary");
+          break;
+        case 'TRUSTFUL':
+          document.querySelector(".TRUSTFUL").classList.replace("text-gray-200", "text-primary");
+          break;
+        case 'NAÏVE':
+          document.querySelector(".NAIVE").classList.replace("text-gray-200", "text-primary");
+          break;
+      };
+      
+      
+      setCurrentSlide(index);
+    },
     responsive: [
       {
         breakpoint: 1024,
@@ -48,28 +89,28 @@ const MovieReel = ({ images }) => {
           <div className='container-bts h-auto'>
             <ul className='flex items-center justify-between h-full'>
               <li>
-                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+                <a className='INOCENT text-xl text-bold text-gray-200 hover:text-underline'>INOCENT</a>
               </li>
               <li>
-                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+                <a className='VICTIM text-xl text-bold text-gray-200 hover:text-underline'>VICTIM</a>
               </li>
               <li>
-                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+                <a className='DEFENSELESS text-xl text-bold text-gray-200 hover:text-underline'>DEFENSELESS</a>
               </li>
               <li>
-                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+                <a className='VULNERABLE text-xl text-bold text-gray-200 hover:text-underline'>VULNERABLE</a>
               </li>
               <li>
-                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+                <a className='PURE text-xl text-bold text-gray-200 hover:text-underline'>PURE</a>
               </li>
               <li>
-                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+                <a className='HONEST text-xl text-bold text-gray-200 hover:text-underline'>HONEST</a>
               </li>
               <li>
-                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+                <a className='TRUSTFUL text-xl text-bold text-gray-200 hover:text-underline'>TRUSTFUL</a>
               </li>
               <li>
-                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+                <a className='NAIVE text-xl text-bold text-gray-200 hover:text-underline'>NAÏVE</a>
               </li>
             </ul>
           </div>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import '../css/animatedStats.css';
-import WorldBackGround from '../images/WorldBackGround.jpg';
 
 const AnimatedStats = ({ startValue, label, handleNextClick }) => {
   const [visible, setVisible] = useState(false);

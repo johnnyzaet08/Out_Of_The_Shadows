@@ -17,33 +17,64 @@ const MovieReel = ({ images }) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     swipeToSlide: true,
-    arrows: false,
-    centerMode: true,
+    centerMode: false,
     centerPadding: '0px',
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToShow: 4,
+          slidesToScroll: 4,
         },
       },
       {
         breakpoint: 540,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 4,
+          slidesToScroll: 4,
         },
       },
     ],
   };
 
   return (
-    <div className=''>
-      <AnimatedStats handleNextClick={handleNextClick} startValue={100} label="Total Visitors" />
+    <div className='container-box'>
+      <div className='container-bg'>
+        <div className='w-full h-auto py-2'>
+          <AnimatedStats handleNextClick={handleNextClick} startValue={100} label="Total Visitors" />
+          <div className='container-bts h-auto'>
+            <ul className='flex items-center justify-between h-full'>
+              <li>
+                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+              </li>
+              <li>
+                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+              </li>
+              <li>
+                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+              </li>
+              <li>
+                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+              </li>
+              <li>
+                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+              </li>
+              <li>
+                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+              </li>
+              <li>
+                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+              </li>
+              <li>
+                <a className='text-xl text-bold hover:text-underline'>Prueba</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <Slider ref={sliderRef} {...settings}>
         {images.map((image) => (
           <div key={image.id} className="mx-4">

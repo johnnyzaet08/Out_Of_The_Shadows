@@ -4,105 +4,105 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../css/MovieReel.css';
 
-import Image1 from '../images/HomePage/1.1 OUT.jpg';
-import Image2 from '../images/HomePage/1.2 OUT.jpg';
-import Image3 from '../images/HomePage/1.3 OUT.jpg';
-import Image4 from '../images/HomePage/1.4 OUT.jpg';
-import Image5 from '../images/HomePage/2.1 OF.jpg';
-import Image6 from '../images/HomePage/2.2 OF.jpg';
-import Image7 from '../images/HomePage/2.3 OF.jpg';
-import Image8 from '../images/HomePage/2.4 OF.jpg';
-import Image9 from '../images/HomePage/3.1 THE.jpg';
-import Image10 from '../images/HomePage/3.2 THE.jpg';
-import Image11 from '../images/HomePage/3.3 THE.jpg';
-import Image12 from '../images/HomePage/3.4 THE.jpg';
-import Image13 from '../images/HomePage/4.1 SHADOWS.jpg';
-import Image14 from '../images/HomePage/4.2 SHADOWS.jpg';
-import Image15 from '../images/HomePage/4.3 SHADOWS.jpg';
-import Image16 from '../images/HomePage/4.4 SHADOWS.jpg';
+import OUT1 from '../images/HomePage/1.1 OUT.jpg';
+import OUT2 from '../images/HomePage/1.2 OUT.jpg';
+import OUT3 from '../images/HomePage/1.3 OUT.jpg';
+import OUT4 from '../images/HomePage/1.4 OUT.jpg';
+import OF1 from '../images/HomePage/2.1 OF.jpg';
+import OF2 from '../images/HomePage/2.2 OF.jpg';
+import OF3 from '../images/HomePage/2.3 OF.jpg';
+import OF4 from '../images/HomePage/2.4 OF.jpg';
+import THE1 from '../images/HomePage/3.1 THE.jpg';
+import THE2 from '../images/HomePage/3.2 THE.jpg';
+import THE3 from '../images/HomePage/3.3 THE.jpg';
+import THE4 from '../images/HomePage/3.4 THE.jpg';
+import SHADOWS1 from '../images/HomePage/4.1 SHADOWS.jpg';
+import SHADOWS2 from '../images/HomePage/4.2 SHADOWS.jpg';
+import SHADOWS3 from '../images/HomePage/4.3 SHADOWS.jpg';
+import SHADOWS4 from '../images/HomePage/4.4 SHADOWS.jpg';
 
 const duration = 2000; // Duración de la transición en milisegundos
 
 const images = [
   {
     id: 1,
-    title: 'Image 1',
-    img: Image1,
+    title: 'OUT',
+    img: OUT1,
   },
   {
     id: 2,
-    title: 'Image 2',
-    img: Image2,
+    title: 'OUT',
+    img: OUT2,
   },
   {
     id: 3,
-    title: 'Image 3',
-    img: Image3,
+    title: 'OUT',
+    img: OUT3,
   },
   {
     id: 4,
-    title: 'Image 4',
-    img: Image4,
+    title: 'OUT',
+    img: OUT4,
   },
   {
     id: 5,
-    title: 'Image 5',
-    img: Image5,
+    title: 'OF',
+    img: OF1,
   },
   {
     id: 6,
-    title: 'Image 6',
-    img: Image6,
+    title: 'OF',
+    img: OF2,
   },
   {
     id: 7,
-    title: 'Image 7',
-    img: Image7,
+    title: 'OF',
+    img: OF3,
   },
   {
     id: 8,
-    title: 'Image 8',
-    img: Image8,
+    title: 'OF',
+    img: OF4,
   },
   {
     id: 9,
-    title: 'Image 9',
-    img: Image9,
+    title: 'THE',
+    img: THE1,
   },
   {
     id: 10,
-    title: 'Image 10',
-    img: Image10,
+    title: 'THE',
+    img: THE2,
   },
   {
     id: 11,
-    title: 'Image 11',
-    img: Image11,
+    title: 'THE',
+    img: THE3,
   },
   {
     id: 12,
-    title: 'Image 12',
-    img: Image12,
+    title: 'THE',
+    img: THE4,
   },
   {
     id: 13,
-    title: 'Image 13',
-    img: Image13,
+    title: 'SHADOWS',
+    img: SHADOWS1,
   },
   {
     id: 14,
-    title: 'Image 14',
-    img: Image14,
+    title: 'SHADOWS',
+    img: SHADOWS2,
   },
   {
     id: 15,
-    title: 'Image 15',
-    img: Image15,
+    title: 'SHADOWS',
+    img: SHADOWS3,
   },
   {
     id: 16,
-    title: 'Image 16',
-    img: Image16,
+    title: 'SHADOWS',
+    img: SHADOWS4,
   },  
 ];
 
@@ -117,7 +117,7 @@ function ColorChangingText() {
   };
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,

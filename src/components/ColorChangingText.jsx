@@ -144,32 +144,35 @@ function ColorChangingText() {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
+      document.querySelector(".refText1").classList.replace("text-7xl", "text-5xl");
+      document.querySelector(".refText2").classList.replace("text-7xl", "text-5xl");
+      document.querySelector(".refText3").classList.replace("text-7xl", "text-5xl");
+      document.querySelector(".refText4").classList.replace("text-7xl", "text-5xl");
+      document.querySelector(".refText1").classList.replace("text-red-500", "text-black");
+      document.querySelector(".refText2").classList.replace("text-red-500", "text-black");
+      document.querySelector(".refText3").classList.replace("text-red-500", "text-black");
+      document.querySelector(".refText4").classList.replace("text-red-500", "text-black");
+
       switch(textSelector){
         case 0:
-          document.querySelector(".refText1").classList.replace("text-gray-800", "text-primary");
-          document.querySelector(".refText5").classList.replace("text-gray-200", "text-gray-300");
+          document.querySelector(".refText1").classList.replace("text-black", "text-red-500");
+          document.querySelector(".refText1").classList.replace("text-5xl", "text-7xl");
           break;
         case 1:
-          document.querySelector(".refText2").classList.replace("text-gray-800", "text-primary");
-          document.querySelector(".refText5").classList.replace("text-gray-300", "text-gray-400");
+          document.querySelector(".refText2").classList.replace("text-black", "text-red-500");
+          document.querySelector(".refText2").classList.replace("text-5xl", "text-7xl");
           break;
         case 2:
-          document.querySelector(".refText3").classList.replace("text-gray-800", "text-red-500");
-          document.querySelector(".refText5").classList.replace("text-gray-400", "text-gray-500");
+          document.querySelector(".refText3").classList.replace("text-black", "text-red-500");
+          document.querySelector(".refText3").classList.replace("text-5xl", "text-7xl");
           break;
         case 3:
-          document.querySelector(".refText4").classList.replace("text-gray-800", "text-green-500");
-          document.querySelector(".refText5").classList.replace("text-gray-500", "text-gray-800");
+          document.querySelector(".refText4").classList.replace("text-black", "text-red-500");
+          document.querySelector(".refText4").classList.replace("text-5xl", "text-7xl");
           break;
-        default:
-          document.querySelector(".refText1").classList.replace("text-primary", "text-gray-800");
-          document.querySelector(".refText2").classList.replace("text-primary", "text-gray-800");
-          document.querySelector(".refText3").classList.replace("text-red-500", "text-gray-800");
-          document.querySelector(".refText4").classList.replace("text-green-500", "text-gray-800");
-          document.querySelector(".refText5").classList.replace("text-gray-800", "text-gray-200");
       }
       setTextSelector(nextTextSelector);
-      setNextTextSelector((nextTextSelector + 1) % 5);
+      setNextTextSelector((nextTextSelector + 1) % 4);
       handleNextClick();
     }, duration);
 
@@ -178,20 +181,17 @@ function ColorChangingText() {
 
   return (
     <div>
-      <div className="flex flex-cols justify-center max-w-3xl mx-auto text-center pb-12 md:pb-20">
-        <h1 className="refText1 h1 mb-4 mx-2 text-gray-800">Out</h1>
-        <h1 className="refText2 h1 mb-4 mx-2 text-gray-800">Of</h1>
-        <h1 className="refText3 h1 mb-4 mx-2 text-gray-800">The</h1>
-        <h1 className="refText4 h1 mb-4 mx-2 text-gray-800">Shadows</h1>
+      <div className="flex flex-cols justify-center max-w-3xl mx-auto py-14 mt-10 text-center pb-12 md:pb-20">
+        <h1 className="refText1 h1 mx-2 text-black text-5xl">Out</h1>
+        <h1 className="refText2 h1 mx-2 text-black text-5xl">Of</h1>
+        <h1 className="refText3 h1 mx-2 text-black text-5xl">The</h1>
+        <h1 className="refText4 h1 mx-2 text-black text-5xl">Shadows</h1>
       </div>
-      <div className='flex flex-cols justify-center max-w-3xl mx-auto text-center pb-12 md:pb-20'>
-        <h1 className="refText5 h1 mb-4 mx-2 text-gray-200">Out Of The Shadows</h1>
-      </div>
-      <div className=''>
+      <div className='block justify-center'>
         <Slider ref={sliderRef} {...settings}>
           {images.map((image) => (
-            <div key={image.id} className="mx-4">
-              <img src={image.img } alt={image.title} />
+            <div key={image.id} className="px-[1px]">
+              <img className="flex-grow rounded-lg" src={image.img } alt={image.title} />
             </div>
           ))}
         </Slider>

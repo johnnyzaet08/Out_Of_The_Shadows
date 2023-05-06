@@ -118,8 +118,8 @@ const MovieReel = ({ images }) => {
       </div>
       <Slider ref={sliderRef} {...settings}>
         {images.map((image) => (
-          <div key={image.id} className="mx-4">
-            <img src={image.img } alt={image.title} />
+          <div key={image.id} className="w-full px-[1px]">
+            <img className="flex-grow rounded-lg w-auto h-auto" src={image.img } alt={image.title} />
           </div>
         ))}
       </Slider>

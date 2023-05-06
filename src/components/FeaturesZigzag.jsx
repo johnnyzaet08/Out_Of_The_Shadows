@@ -6,9 +6,9 @@ import FeatImage03 from '../images/features-03-image-03.png';
 
 function FeaturesZigzag() {
   return (
-    <section>
+    <div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-gray-800">
+        <div className="py-12 md:py-8 border-gray-800">
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
@@ -132,7 +132,7 @@ function FeaturesZigzag() {
 
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

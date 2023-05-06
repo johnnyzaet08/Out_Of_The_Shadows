@@ -58,16 +58,19 @@ function Header() {
 
           
 
-          <nav className="hidden md:flex md:grow">
+          <nav className="hidden xl:flex xl:grow">
             <ul className="flex grow justify-center flex-wrap">
 
               <li className=''>
                 <ul className='flex items-center justify-between h-full'>
                   <li>
-                    <Link to="/" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out"> Home </Link>
+                    <Link to="/" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> HOME </Link>
                   </li>
                   <li>
-                    <Link to="/page2" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out"> About us </Link>
+                    <Link to="/page2" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> WORLD CONTRIBUTION </Link>
+                  </li>
+                  <li>
+                    <Link to="/page3" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> ABOUT US </Link>
                   </li>
                 </ul>
               </li>
@@ -86,10 +89,13 @@ function Header() {
               <li>
                 <ul className='flex items-center justify-between h-full'>
                   <li>
-                    <Link to="/page3" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out"> Page 3 </Link>
+                    <Link to="/page4" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> RESOURCES </Link>
                   </li>
                   <li>
-                    <Link to="/page3" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-12 py-3 flex items-center transition duration-150 ease-in-out"> Donate </Link>
+                    <Link to="/page5" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> DONATIONS </Link>
+                  </li>
+                  <li>
+                    <Link to="/page6" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> IN PROGRESS </Link>
                   </li>
                 </ul>
               </li>
@@ -98,7 +104,7 @@ function Header() {
 
           </nav>
 
-          <div className="md:hidden flex flex-cols w-full">
+          <div className="xl:hidden flex flex-cols w-full">
 
             <div className="flex items-center justify-left mx-0 lg:-mx-2">
               <Link to="/" className="block" aria-label="Logo">
@@ -120,16 +126,22 @@ function Header() {
               
               <ul className="bg-white-100 opacity-95 px-4 py-2">
                 <li>
-                  <Link to="/" className="flex font-medium w-full text-secondary_text hover:text-secondary py-2 justify-center"> Home </Link>
+                  <Link to="/" className="flex font-medium w-full text-secondary_text hover:text-secondary text-lg md:text-xl py-3 justify-center"> Home </Link>
                 </li>
                 <li>
-                  <Link to="/page2" className="flex font-medium w-full text-secondary_text hover:text-secondary py-2 justify-center"> About us </Link>
+                  <Link to="/page2" className="flex font-medium w-full text-secondary_text hover:text-secondary text-lg md:text-xl py-3 justify-center"> WORLD CONTRIBUTION </Link>
                 </li>
                 <li>
-                  <Link to="/page3" className="flex font-medium w-full text-secondary_text hover:text-secondary py-2 justify-center"> Page 3 </Link>
+                  <Link to="/page3" className="flex font-medium w-full text-secondary_text hover:text-secondary text-lg md:text-xl py-3 justify-center"> ABOUT US </Link>
                 </li>
                 <li>
-                  <Link to="/page3" className="flex font-medium w-full text-secondary_text hover:text-secondary py-2 justify-center"> Donate </Link>
+                  <Link to="/page4" className="flex font-medium w-full text-secondary_text hover:text-secondary text-lg md:text-xl py-3 justify-center"> RESOURCES </Link>
+                </li>
+                <li>
+                  <Link to="/page5" className="flex font-medium w-full text-secondary_text hover:text-secondary text-lg md:text-xl py-3 justify-center"> DONATIONS </Link>
+                </li>
+                <li>
+                  <Link to="/page6" className="flex font-medium w-full text-secondary_text hover:text-secondary text-lg md:text-xl py-3 justify-center"> IN PROGRESS </Link>
                 </li>
               </ul>
             </nav>

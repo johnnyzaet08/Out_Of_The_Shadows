@@ -1,15 +1,11 @@
 import React, {useRef, useState} from 'react';
 import Slider from 'react-slick';
 import AnimatedStats from './AnimatedStats';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import '../css/MovieReel.css';
 
 const MovieReel = ({ images }) => {
 
   const sliderRef = useRef(null); // Create a reference to the Slider component
-
-  const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleNextClick = () => {
     sliderRef.current.slickNext(); // Call the slickNext method to navigate to the next slide
@@ -17,13 +13,13 @@ const MovieReel = ({ images }) => {
 
   const settings = {
     dots: false,
-    infinite: true,
-    speed: 500,
+    speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
     swipeToSlide: false,
     centerMode: false,
-    centerPadding: '0px',
+    pauseOnHover: true,
+
     afterChange: (index) => {
       document.querySelector(".INOCENT").classList.replace("text-primary", "text-gray-200");
       document.querySelector(".VICTIM").classList.replace("text-primary", "text-gray-200");
@@ -59,9 +55,6 @@ const MovieReel = ({ images }) => {
           document.querySelector(".NAIVE").classList.replace("text-gray-200", "text-primary");
           break;
       };
-      
-      
-      setCurrentSlide(index);
     },
     responsive: [
       {
@@ -119,7 +112,7 @@ const MovieReel = ({ images }) => {
       <Slider ref={sliderRef} {...settings}>
         {images.map((image) => (
           <div key={image.id} className="w-full px-[1px]">
-            <img className="flex-grow rounded-lg w-auto h-auto" src={image.img } alt={image.title} />
+            <img className="rounded-lg w-auto" src={image.img } alt={image.title} />
           </div>
         ))}
       </Slider>

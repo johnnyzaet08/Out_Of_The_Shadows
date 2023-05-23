@@ -17,9 +17,6 @@ import Resources from './pages/Resources';
 import Donations from './pages/Donations';
 import InProgress from './pages/InProgress';
 import Banner from './components/Banner';
-//import SignIn from './pages/SignIn';
-//import SignUp from './pages/SignUp';
-//import ResetPassword from './pages/ResetPassword';
 
 function App() {
 
@@ -49,10 +46,6 @@ function App() {
         <Route exact path="/Resources" element={<Resources />} />
         <Route exact path="/Donations" element={<Donations />} />
         <Route exact path="/InProgress" element={<InProgress />} />
-        
-        {/*<Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/reset-password" element={<ResetPassword />} />*/}
       </Routes>
       <Banner />
     </>

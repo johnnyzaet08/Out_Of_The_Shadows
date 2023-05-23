@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from '../components/Header';
 import PageIllustration from '../components/PageIllustration';
-import Programs_Services from '../components/Programs_Services';
+import Programs_Services from '../components/ProgramsServices';
 import ProgramHeader from '../components/ProgramHeader';
 
 import Footer from '../components/Footer';

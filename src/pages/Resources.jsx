@@ -11,7 +11,6 @@ function page3() {
 
       <main className="grow pt-16 md:pt-28">
 
-        <FeaturesZigZag />
 
       </main>
 

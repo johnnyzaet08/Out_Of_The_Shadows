@@ -2,8 +2,8 @@ import React from 'react';
 
 import Header from '../components/Header';
 import PageIllustration from '../components/PageIllustration';
-import Testimonials from '../components/Testimonials';
-import ImageSlider from '../components/ImageSlider';
+import Programs_Services from '../components/Programs_Services';
+import ProgramHeader from '../components/ProgramHeader';
 
 import Footer from '../components/Footer';
 
@@ -14,24 +14,23 @@ function page2() {
       <Header />
 
       {/*  Page content */}
-      <main className="grow pt-12 md:pt-4">
+      <main className="grow mt-[10vh] md:pt-4">
         {/*  Page illustration */}
+
+        <div className=''>
+          <ProgramHeader />
+        </div>
+
         <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
           <PageIllustration />
         </div>
 
-        {/*  Page sections */}
-        <Testimonials />
+        <Programs_Services />
 
-        <div>
-          <h1>Welcome to My Page</h1>
-
-          {/* Insert the ImageSlider component here */}
-          <ImageSlider />
-
-          <p>Some other content on the page...</p>
+        <div className='mt-[5vh] mb-[15vh]'> 
         </div>
         
+
       </main>
 
 

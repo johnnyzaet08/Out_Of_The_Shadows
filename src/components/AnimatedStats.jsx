@@ -5,6 +5,7 @@ import '../css/animatedStats.css';
 const AnimatedStats = ({ startValue, label, handleNextClick }) => {
   const [visible, setVisible] = useState(false);
   const [count, setCount] = useState(0);
+  
   const { number } = useSpring({
     from: { number: startValue },
     to: { number: count },

@@ -108,16 +108,36 @@ const images = [
 
 function ColorChangingText() {
 
-  const [textSelector, setTextSelector] = useState(0);
-  const [nextTextSelector, setNextTextSelector] = useState(1);
+  const [textSelector, setTextSelector] = useState(1);
+  const [nextTextSelector, setNextTextSelector] = useState(2);
   const sliderRef = useRef(null); // Create a reference to the Slider component
 
-  const handleNextClick = () => {
+  const nextImage = () => {
+    switch(textSelector){
+      case 0:
+        document.querySelector(".refText4").classList.replace("text-active", "text");
+        document.querySelector(".refText1").classList.replace("text", "text-active");
+        break;
+      case 1:
+        document.querySelector(".refText1").classList.replace("text-active", "text");
+        document.querySelector(".refText2").classList.replace("text", "text-active");
+        break;
+      case 2:
+        document.querySelector(".refText2").classList.replace("text-active", "text");
+        document.querySelector(".refText3").classList.replace("text", "text-active");
+        break;
+      case 3:
+        document.querySelector(".refText3").classList.replace("text-active", "text");
+        document.querySelector(".refText4").classList.replace("text", "text-active");
+        break;
+    }
     sliderRef.current.slickNext(); // Call the slickNext method to navigate to the next slide
+
   };
 
   const settings = {
     dots: false,
+    slickNext: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -144,48 +164,21 @@ function ColorChangingText() {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      document.querySelector(".refText1").classList.replace("text-7xl", "text-5xl");
-      document.querySelector(".refText2").classList.replace("text-7xl", "text-5xl");
-      document.querySelector(".refText3").classList.replace("text-7xl", "text-5xl");
-      document.querySelector(".refText4").classList.replace("text-7xl", "text-5xl");
-      document.querySelector(".refText1").classList.replace("text-red-500", "text-black");
-      document.querySelector(".refText2").classList.replace("text-red-500", "text-black");
-      document.querySelector(".refText3").classList.replace("text-red-500", "text-black");
-      document.querySelector(".refText4").classList.replace("text-red-500", "text-black");
-
-      switch(textSelector){
-        case 0:
-          document.querySelector(".refText1").classList.replace("text-black", "text-red-500");
-          document.querySelector(".refText1").classList.replace("text-5xl", "text-7xl");
-          break;
-        case 1:
-          document.querySelector(".refText2").classList.replace("text-black", "text-red-500");
-          document.querySelector(".refText2").classList.replace("text-5xl", "text-7xl");
-          break;
-        case 2:
-          document.querySelector(".refText3").classList.replace("text-black", "text-red-500");
-          document.querySelector(".refText3").classList.replace("text-5xl", "text-7xl");
-          break;
-        case 3:
-          document.querySelector(".refText4").classList.replace("text-black", "text-red-500");
-          document.querySelector(".refText4").classList.replace("text-5xl", "text-7xl");
-          break;
-      }
       setTextSelector(nextTextSelector);
       setNextTextSelector((nextTextSelector + 1) % 4);
-      handleNextClick();
     }, duration);
-
+    
+    nextImage();
     return () => clearInterval(intervalId);
   }, [nextTextSelector]);
 
   return (
     <div>
       <div className="flex flex-cols justify-center max-w-3xl mx-auto py-14 mt-10 text-center pb-12 md:pb-20">
-        <h1 className="refText1 h1 mx-2 text-black text-5xl">Out</h1>
-        <h1 className="refText2 h1 mx-2 text-black text-5xl">Of</h1>
-        <h1 className="refText3 h1 mx-2 text-black text-5xl">The</h1>
-        <h1 className="refText4 h1 mx-2 text-black text-5xl">Shadows</h1>
+        <h1 className="refText1 h1 text">Out</h1>
+        <h1 className="refText2 h1 text">Of</h1>
+        <h1 className="refText3 h1 text">The</h1>
+        <h1 className="refText4 h1 text">Shadows</h1>
       </div>
       <div className='block justify-center'>
         <Slider ref={sliderRef} {...settings}>

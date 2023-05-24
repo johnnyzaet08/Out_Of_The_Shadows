@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../components/Header';
-import FeaturesZigZag from '../components/FeaturesZigzag';
+import Donation from '../components/Donation';
 import Footer from '../components/Footer';
 
 function page3() {
@@ -9,9 +9,9 @@ function page3() {
     <div className="flex flex-col min-h-screen overflow-hidden">
       <Header />
 
-      <main className="grow pt-16 md:pt-28">
+      <main className="pt-20">
 
-        <FeaturesZigZag />
+        <Donation />
 
       </main>
 

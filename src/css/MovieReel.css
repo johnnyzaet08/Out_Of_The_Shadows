@@ -25,19 +25,19 @@
   color: gray;
 }
 
-.text {
+.text-Reel {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: gainsboro;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text-active-Reel {
   margin-left: 1rem;
   margin-right: 1rem;
   color: black;
   font-size: 3rem;
-  font-weight: bold;
-}
-
-.text-active {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  color: red;
-  font-size: 6rem;
   font-weight: bold;
 }
 

@@ -51,32 +51,30 @@ function Header() {
 
 
   return (
-    <header className="header bg-white-100 fixed top-0 left-0 w-full transition duration-1000 z-30">
+    <header className="bg-white-100 header fixed top-0 left-0 w-full transition duration-1000 z-30">
 
       <div className="max-w-8xl mx-2 sm:px-4 lg:mx-10" >
         <div className="flex items-center justify-between h-20 ">
 
-          
-
-          <nav className="hidden xl:flex xl:grow">
-            <ul className="flex grow justify-center flex-wrap">
+          <nav className="hidden xl:flex xl:grow w-auto">
+            <ul className="flex grow justify-center flex-wrap w-auto">
 
               <li className=''>
-                <ul className='flex items-center justify-between h-full'>
+                <ul className='flex items-center justify-between h-full mx-auto'>
                   <li>
-                    <Link to="/" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> HOME </Link>
+                    <Link to="/" className="flex w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex transition duration-150 ease-in-out"> HOME </Link>
                   </li>
                   <li>
-                    <Link to="/WeCare" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> WE CARE </Link>
+                    <Link to="/WeCare" className="flex w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> WE CARE </Link>
                   </li>
                   <li>
-                    <Link to="/AboutUs" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> ABOUT US </Link>
+                    <Link to="/AboutUs" className="flex w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> ABOUT US </Link>
                   </li>
                 </ul>
               </li>
               
               <li>
-                <div className="px-2 flex flex-col items-center">
+                <div className="px-2 flex flex-col items-center mx-auto justify-center">
                   <Link to="/" aria-label="Logo">
                     <img src={logo} alt='Logo' className='w-15 h-12 fill-current' />
                   </Link>
@@ -89,13 +87,13 @@ function Header() {
               <li>
                 <ul className='flex items-center justify-between h-full'>
                   <li>
-                    <Link to="/Resources" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> RESOURCES </Link>
+                    <Link to="/Resources" className="flex w-[18vh] justify-center  mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> RESOURCES </Link>
                   </li>
                   <li>
-                    <Link to="/Donations" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> DONATIONS </Link>
+                    <Link to="/Donations" className="flex w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> DONATIONS </Link>
                   </li>
                   <li>
-                    <Link to="/InProgress" className="mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> IN PROGRESS </Link>
+                    <Link to="/InProgress" className="flex w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> IN PROGRESS </Link>
                   </li>
                 </ul>
               </li>

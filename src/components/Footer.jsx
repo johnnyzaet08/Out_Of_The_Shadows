@@ -5,7 +5,7 @@ import logo from '../images/logo.png';
 function Footer() {
   return (
     <footer>
-      <div className="py-10 md:py-8 bg-white-100">
+      <div className="py-10 md:py-8 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
           {/* Bottom area */}
@@ -22,7 +22,7 @@ function Footer() {
             </div>
 
             <div>
-                <div className="text-gray-900 text-sm mr-4 py-4 flex justify-center md:block">&copy; All rights reserved.</div>
+                <div className="text-gray-900 text-sm mr-4 py-4 flex justify-center md:block">&copy; Out of the Shadows (OOTS) is a 501c3 foundation </div>
             </div>
 
             {/* Social links */}

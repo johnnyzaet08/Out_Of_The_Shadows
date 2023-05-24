@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../components/Header';
-import FeaturesZigZag from '../components/FeaturesZigzag';
+import InProgress from '../components/InProgress';
 import Footer from '../components/Footer';
 
 function page3() {
@@ -11,7 +11,7 @@ function page3() {
 
       <main className="grow pt-16 md:pt-28">
 
-        <FeaturesZigZag />
+        <InProgress />
 
       </main>
 

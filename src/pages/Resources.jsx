@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import FeaturesZigZag from '../components/FeaturesZigzag';
+import ResourcesComponent from '../components/Resources';
 
 function page3() {
   return (
@@ -11,6 +11,7 @@ function page3() {
 
       <main className="grow pt-16 md:pt-28">
 
+        <ResourcesComponent />
 
       </main>
 

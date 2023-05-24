@@ -110,25 +110,31 @@ function ColorChangingText() {
 
   const [textSelector, setTextSelector] = useState(1);
   const [nextTextSelector, setNextTextSelector] = useState(2);
+  const [text, setText] = useState("YOU DON’T NEED TO HIDE ANYMORE");
   const sliderRef = useRef(null); // Create a reference to the Slider component
 
-  const nextImage = () => {
-    switch(textSelector){
+  const nextImage = (index) => {
+    switch(index){
       case 0:
-        document.querySelector(".refText4").classList.replace("text-active", "text");
-        document.querySelector(".refText1").classList.replace("text", "text-active");
+        document.querySelector(".refText1").classList.replace("text-Reel", "text-active-Reel");
         break;
       case 1:
-        document.querySelector(".refText1").classList.replace("text-active", "text");
-        document.querySelector(".refText2").classList.replace("text", "text-active");
+        document.querySelector(".refText1").classList.replace("text-active-Reel", "text-Reel");
         break;
       case 2:
-        document.querySelector(".refText2").classList.replace("text-active", "text");
-        document.querySelector(".refText3").classList.replace("text", "text-active");
-        break;
-      case 3:
-        document.querySelector(".refText3").classList.replace("text-active", "text");
-        document.querySelector(".refText4").classList.replace("text", "text-active");
+        switch(textSelector){
+          case 0:
+            setText("YOU DON’T NEED TO HIDE ANYMORE");
+            break;
+          case 1:
+            setText("YOU DON’T HAVE TO FEEL ASHAMED");
+            break
+          case 2:
+            setText("WAS NOT YOUR FAULT");
+            break
+        }
+        setTextSelector(nextTextSelector);
+        setNextTextSelector((nextTextSelector + 1) % 3);
         break;
     }
     sliderRef.current.slickNext(); // Call the slickNext method to navigate to the next slide
@@ -138,12 +144,15 @@ function ColorChangingText() {
   const settings = {
     dots: false,
     slickNext: false,
-    infinite: true,
     speed: 500,
     slidesToShow: 4,
+    swipe: false,
     slidesToScroll: 4,
-    centerMode: false,
-    centerPadding: '0px',
+    autoplay: true,
+    autoplaySpeed: 3000,
+    beforeChange: (index) => {
+      nextImage(index%3);
+    },
     responsive: [
       {
         breakpoint: 1024,
@@ -162,29 +171,16 @@ function ColorChangingText() {
     ],
   };
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTextSelector(nextTextSelector);
-      setNextTextSelector((nextTextSelector + 1) % 4);
-    }, duration);
-    
-    nextImage();
-    return () => clearInterval(intervalId);
-  }, [nextTextSelector]);
-
   return (
     <div>
-      <div className="flex flex-cols justify-center max-w-3xl mx-auto py-14 mt-10 text-center pb-12 md:pb-20">
-        <h1 className="refText1 h1 text">Out</h1>
-        <h1 className="refText2 h1 text">Of</h1>
-        <h1 className="refText3 h1 text">The</h1>
-        <h1 className="refText4 h1 text">Shadows</h1>
+      <div className="w-full h-[20vh] justify-center mx-auto py-14 mt-10 text-center pb-12 md:pb-20">
+        <h1 className="refText1 h1 text-Reel">{text}</h1>
       </div>
-      <div className='block justify-center'>
+      <div className='block h-full justify-center'>
         <Slider ref={sliderRef} {...settings}>
           {images.map((image) => (
             <div key={image.id} className="px-[1px]">
-              <img className="flex-grow rounded-lg" src={image.img } alt={image.title} />
+              <img className="rounded-xl" src={image.img } alt={image.title} />
             </div>
           ))}
         </Slider>

@@ -45,7 +45,7 @@ const ResourcesComponent = () => {
 
               {LOCAL_COMMUNITY.map((item) => (
                 
-                <div className="flex w-full items-center justify-center ">
+                <div key={item.id} className="flex w-full items-center justify-center ">
                   <a className="pr-[10px] text-center font-medium leading-relaxed text-body-color">
                     {item.name}
                   </a>

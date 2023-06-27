@@ -7,206 +7,167 @@ import ColorChangingText from '../components/ColorChangingText';
 import MovieReel from '../components/MovieReel';
 
 import image from '../images/background.png';
-import INOCENT1 from '../images/StatisticsImages/1.1 INNOCENT.jpg';
-import INOCENT2 from '../images/StatisticsImages/1.2 INNOCENT.jpg';
-import INOCENT3 from '../images/StatisticsImages/1.3 INNOCENT.jpg';
-import INOCENT4 from '../images/StatisticsImages/1.4 INNOCENT.jpg';
-
-import VICTIM1 from '../images/StatisticsImages/2.1 VICTIM.jpg';
-import VICTIM2 from '../images/StatisticsImages/2.2 VICTIM.jpg';
-import VICTIM3 from '../images/StatisticsImages/2.3 VICTIM.jpg';
-import VICTIM4 from '../images/StatisticsImages/2.4 VICTIM.jpg';
-
-import DEFENSELESS1 from '../images/StatisticsImages/3.1 DEFENSELESS.jpg';
-import DEFENSELESS2 from '../images/StatisticsImages/3.2 DEFENSELESS.jpg';
-import DEFENSELESS3 from '../images/StatisticsImages/3.3 DEFENSELESS.jpg';
-import DEFENSELESS4 from '../images/StatisticsImages/3.4 DEFENSELESS.jpg';
-
-import VULNERABLE1 from '../images/StatisticsImages/4.1 VULNERABLE.jpg';
-import VULNERABLE2 from '../images/StatisticsImages/4.2 VULNERABLE.jpg';
-import VULNERABLE3 from '../images/StatisticsImages/4.3 VULNERABLE.jpg';
-import VULNERABLE4 from '../images/StatisticsImages/4.4 VULNERABLE.jpg';
-
-import PURE1 from '../images/StatisticsImages/5.1 PURE.jpg';
-import PURE2 from '../images/StatisticsImages/5.2 PURE.jpg';
-import PURE3 from '../images/StatisticsImages/5.3 PURE.jpg';
-import PURE4 from '../images/StatisticsImages/5.4 PURE.jpg';
-
-import HONEST1 from '../images/StatisticsImages/6.1 HONEST.jpg';
-import HONEST2 from '../images/StatisticsImages/6.2 HONEST.jpg';
-import HONEST3 from '../images/StatisticsImages/6.3 HONEST.jpg';
-import HONEST4 from '../images/StatisticsImages/6.4 HONEST.jpg';
-
-import TRUSTFUL1 from '../images/StatisticsImages/7.1 TRUSTFUL.jpg';
-import TRUSTFUL2 from '../images/StatisticsImages/7.2 TRUSTFUL.jpg';
-import TRUSTFUL3 from '../images/StatisticsImages/7.3 TRUSTFUL.jpg';
-import TRUSTFUL4 from '../images/StatisticsImages/7.4 TRUSTFUL.jpg';
-
-import NAIVE1 from '../images/StatisticsImages/8.1 NAIVE.jpg';
-import NAIVE2 from '../images/StatisticsImages/8.2 NAIVE.jpg';
-import NAIVE3 from '../images/StatisticsImages/8.3 NAIVE.jpg';
-import NAIVE4 from '../images/StatisticsImages/8.4 NAIVE.jpg';
 
 const images = [
   {
     id: 1,
     title: 'INOCENT',
-    img: INOCENT1,
+    img: "https://drive.google.com/uc?export=download&id=1IPh5IfymGpC63iArz_5xcUZ1FhloDj_k",
   },
   {
     id: 2,
     title: 'INOCENT',
-    img: INOCENT2,
+    img: "https://drive.google.com/uc?export=download&id=17P47LEimRF11svnSb2Fmpb-dnuroUko2",
   },
   {
     id: 3,
     title: 'INOCENT',
-    img: INOCENT3,
+    img: "https://drive.google.com/uc?export=download&id=1BlkJAOm1UeTj6eqk0cjbLcK90pTX-mC9",
   },
   {
     id: 4,
     title: 'INOCENT',
-    img: INOCENT4,
+    img: "https://drive.google.com/uc?export=download&id=1q9VdKH7iDbHKVg_jZlK6poTVJjEynlxH",
   },
   {
     id: 5,
     title: 'VICTIM',
-    img: VICTIM1,
+    img: "https://drive.google.com/uc?export=download&id=1_w9clgtlGlEx3xdYq9GfLioSFzTSKAwo",
   },
   {
     id: 6,
     title: 'VICTIM',
-    img: VICTIM2,
+    img: "https://drive.google.com/uc?export=download&id=13ENlGKkJODkiKlJHi1CjUTmo63O8VCvU",
   },
   {
     id: 7,
     title: 'VICTIM',
-    img: VICTIM3,
+    img: "https://drive.google.com/uc?export=download&id=1eqsuEZjwGobW68DEUh_oZ4Zw5XInED3K",
   },
   {
     id: 8,
     title: 'VICTIM',
-    img: VICTIM4,
+    img: "https://drive.google.com/uc?export=download&id=18IBnHLlHr4aLDxthKbI-QIOUjxBSgDq6",
   },
   {
     id: 9,
     title: 'DEFENSELESS',
-    img: DEFENSELESS1,
+    img: "https://drive.google.com/uc?export=download&id=1CK5U3Vujjd0qsEc-ajWFFMVnm8_EIiem",
   },
   {
     id: 10,
     title: 'DEFENSELESS',
-    img: DEFENSELESS2,
+    img: "https://drive.google.com/uc?export=download&id=1t9AsEKZzMWMLlo0ZDtZuo8UT6TKsBhv-",
   },
   {
     id: 11,
     title: 'DEFENSELESS',
-    img: DEFENSELESS3,
+    img: "https://drive.google.com/uc?export=download&id=1Ph-0ly9_qIyT80YvDQ-C7jKE8fdMW0OV",
   },
   {
     id: 12,
     title: 'DEFENSELESS',
-    img: DEFENSELESS4,
+    img: "https://drive.google.com/uc?export=download&id=1nNaa8RbnBsAGVa0SqWb_aHWhWuPhZ42S",
   },
   {
     id: 13,
     title: 'VULNERABLE',
-    img: VULNERABLE1,
+    img: "https://drive.google.com/uc?export=download&id=1XQkN_WKmEeX3onH3uxUkd2ALRRlo7Bk4",
   },
   {
     id: 14,
     title: 'VULNERABLE',
-    img: VULNERABLE2,
+    img: "https://drive.google.com/uc?export=download&id=1t08xq_CNJ0ivMTA_b8kw6hKuJ-9pAjJe",
   },
   {
     id: 15,
     title: 'VULNERABLE',
-    img: VULNERABLE3,
+    img: "https://drive.google.com/uc?export=download&id=1N8hencRN6ZrFrEjAc74Q3MdMk50UFo5J",
   },
   {
     id: 16,
     title: 'VULNERABLE',
-    img: VULNERABLE4,
+    img: "https://drive.google.com/uc?export=download&id=1bT5j6lSbnbJps4kNPDPgoapQ75uTXkO3",
   },  
   {
     id: 17,
     title: 'PURE',
-    img: PURE1,
+    img: "https://drive.google.com/uc?export=download&id=1zS349dnghtl4WYs1k8sB9JgZo2pq6ujF",
   },
   {
     id: 18,
     title: 'PURE',
-    img: PURE2,
+    img: "https://drive.google.com/uc?export=download&id=1zaVxosWwhPsDyYI-HpqRVHV-wupHiUqo",
   },
   {
     id: 19,
     title: 'PURE',
-    img: PURE3,
+    img: "https://drive.google.com/uc?export=download&id=1w3gpAwaS0NReXDTES35GrSbBIaht8pI4",
   },
   {
     id: 20,
     title: 'PURE',
-    img: PURE4,
+    img: "https://drive.google.com/uc?export=download&id=1z7n4aTI38UIdKPQUOMqi9I3KUgLk0-t7",
   },
   {
     id: 21,
     title: 'HONEST',
-    img: HONEST1,
+    img: "https://drive.google.com/uc?export=download&id=1uluA92eFP503Rs-FXU42dUHln77GJmK5",
   },
   {
     id: 22,
     title: 'HONEST',
-    img: HONEST2,
+    img: 'https://drive.google.com/uc?export=download&id=1idYMGWjND-ZdygGVB4gbKxVtHo6vhfMx',
   },
   {
     id: 23,
     title: 'HONEST',
-    img: HONEST3,
+    img: "https://drive.google.com/uc?export=download&id=1OrSDAw-PbCfcVGogeRoEV_I_MyRrYYBc",
   },
   {
     id: 24,
     title: 'HONEST',
-    img: HONEST4,
+    img: "https://drive.google.com/uc?export=download&id=1nvcb8csnLFIUv-ZhCo0c7Id6VvRfIj04",
   },
   {
     id: 25,
     title: 'TRUSTFUL',
-    img: TRUSTFUL1,
+    img: "https://drive.google.com/uc?export=download&id=1OV6ko_FRfVFpUH2Dirwt_OwlI9ahbt4h",
   },
   {
     id: 26,
     title: 'TRUSTFUL',
-    img: TRUSTFUL2,
+    img: "https://drive.google.com/uc?export=download&id=1BWMkeeh_dNwlKxlvKGi0Qv-WrmY0XERQ",
   },
   {
     id: 27,
     title: 'TRUSTFUL',
-    img: TRUSTFUL3,
+    img: "https://drive.google.com/uc?export=download&id=1Y9bYLKwaCtb5cVrbw55MsQqepcvfNzfr",
   },
   {
     id: 28,
     title: 'TRUSTFUL',
-    img: TRUSTFUL4,
+    img: "https://drive.google.com/uc?export=download&id=1C5B5vOtYQ5gnq2BU4lC6z1A1LH6xxX7e",
   },
   {
     id: 29,
     title: 'NAÏVE',
-    img: NAIVE1,
+    img: "https://drive.google.com/uc?export=download&id=1Qo4JsiWY3JD2XaxdXKSjDNtxHiptXspr",
   },
   {
     id: 30,
     title: 'NAÏVE',
-    img: NAIVE2,
+    img: "https://drive.google.com/uc?export=download&id=1ib5pY2E4tU9CISW4j3aElZ8y6y8P_D7s",
   },
   {
     id: 31,
     title: 'NAÏVE',
-    img: NAIVE3,
+    img: "https://drive.google.com/uc?export=download&id=1kbOaX1nGCFT5TSBJf-nrZKA95QAvnWdX",
   },
   {
     id: 32,
     title: 'NAÏVE',
-    img: NAIVE4,
+    img: "https://drive.google.com/uc?export=download&id=1-m8-gFl2a3_nSFYhEd2SgQ5YZoO-QV9L",
   },  
 ];
 

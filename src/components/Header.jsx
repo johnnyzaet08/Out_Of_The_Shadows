@@ -62,13 +62,13 @@ function Header() {
               <li className=''>
                 <ul className='flex items-center justify-between h-full mx-auto'>
                   <li>
-                    <Link to="/" className="flex w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex transition duration-150 ease-in-out"> HOME </Link>
+                    <Link to="/" className="flex w-[14vh] 2xl:w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex transition duration-150 ease-in-out"> HOME </Link>
                   </li>
                   <li>
-                    <Link to="/WeCare" className="flex w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> WE CARE </Link>
+                    <Link to="/WeCare" className="flex w-[14vh] 2xl:w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> WE CARE </Link>
                   </li>
                   <li>
-                    <Link to="/AboutUs" className="flex w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> ABOUT US </Link>
+                    <Link to="/AboutUs" className="flex w-[14vh] 2xl:w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> ABOUT US </Link>
                   </li>
                 </ul>
               </li>
@@ -87,13 +87,13 @@ function Header() {
               <li>
                 <ul className='flex items-center justify-between h-full'>
                   <li>
-                    <Link to="/Resources" className="flex w-[18vh] justify-center  mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> RESOURCES </Link>
+                    <Link to="/Resources" className="flex w-[14vh] 2xl:w-[18vh] justify-center  mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> RESOURCES </Link>
                   </li>
                   <li>
-                    <Link to="/Donations" className="flex w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> DONATIONS </Link>
+                    <Link to="/Donations" className="flex w-[14vh] 2xl:w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> DONATIONS </Link>
                   </li>
                   <li>
-                    <Link to="/InProgress" className="flex w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> IN PROGRESS </Link>
+                    <Link to="/InProgress" className="flex w-[18vh] 2xl:w-[18vh] justify-center mx-3 rounded-full font-medium text-primary hover:underline hover:bg-blue-100 hover:text-secondary_text px-6 py-3 flex items-center transition duration-150 ease-in-out"> IN PROGRESS </Link>
                   </li>
                 </ul>
               </li>

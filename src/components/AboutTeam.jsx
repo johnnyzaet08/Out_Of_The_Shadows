@@ -1,12 +1,5 @@
 import React from 'react';
 
-
-import MirleyVargasImage from '../images/AboutUs/MirleyVargas.png';
-import BarryBerkImage from '../images/AboutUs/BarryBerk.jpg';
-import SusanBerkImage from '../images/AboutUs/SusanBerk.jpg';
-import MatthewLombardImage from '../images/AboutUs/MatthewLombard.jpg';
-
-
 function FeaturesZigzag() {
   return (
     <div>
@@ -25,7 +18,7 @@ function FeaturesZigzag() {
             <div className="md:grid md:grid-cols-12 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto rounded-full" src={MirleyVargasImage} width="400" alt="Mirley" />
+                <img className="max-w-full mx-auto md:max-w-none h-auto rounded-full" src="https://drive.google.com/uc?export=download&id=1Oy0hWb94qkR9jVml3N5bFZ2k8oMZYuVz" width="400" alt="Mirley" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
@@ -61,7 +54,7 @@ function FeaturesZigzag() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center mt-[10vh]">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto rounded-[20%]" src={BarryBerkImage} width="500" height="405" alt="Barry" />
+                <img className="max-w-full mx-auto md:max-w-none h-auto rounded-[20%]" src="https://drive.google.com/uc?export=download&id=1Dun-2Q0JjS9GL9bTAwYeqDQjvfgbVj5k" width="500" height="405" alt="Barry" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
@@ -97,7 +90,7 @@ function FeaturesZigzag() {
             <div className="md:grid md:grid-cols-12 items-center mt-[10vh]">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto rounded-[10%]" src={SusanBerkImage} width="350" alt="Susan" />
+                <img className="max-w-full mx-auto md:max-w-none h-auto rounded-[10%]" src="https://drive.google.com/uc?export=download&id=1SjxmVYj47QZ3cQsbGcpi_PzzbsHxCeqn" width="350" alt="Susan" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
@@ -129,7 +122,7 @@ function FeaturesZigzag() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center mt-[10vh]">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto rounded-full" src={MatthewLombardImage} width="450" height="405" alt="Matthew" />
+                <img className="max-w-full mx-auto md:max-w-none h-auto rounded-full" src="https://drive.google.com/uc?export=download&id=1O9ujo1GOJ4itpVwkEuIO1duAbPTI1jDu" width="450" height="405" alt="Matthew" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">

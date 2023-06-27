@@ -1,5 +1,24 @@
 import React from 'react';
 
+
+const LOCAL_COMMUNITY = [
+  {
+    id: 0,
+    name: "hola",
+    path: "url",
+  },
+  {
+    id: 1,
+    name: "hola1",
+    path: "url1",
+  },
+  {
+    id: 2,
+    name: "hola2",
+    path: "url2",
+  },
+]
+
 const ResourcesComponent = () => {
   return (
     <>
@@ -23,66 +42,20 @@ const ResourcesComponent = () => {
 
           { /* Items */ }
           <div className="flex mt-5 items-center justify-center grid grid-cols-1 gap-x-4 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-            
-            { /* 1st Item */ }
-            <div className="flex w-full items-center justify-center ">
-              <a className="pr-[10px] text-center font-medium leading-relaxed text-body-color">
-                jeje
-              </a>
-            </div>
 
-            { /* 2do Item */ }
-            <div className="flex w-full items-center justify-center ">
-              <div className="pr-[10px] text-center font-medium leading-relaxed text-body-color">
-                jeje
-              </div>
-            </div>
+              {LOCAL_COMMUNITY.map((item) => (
+                
+                <div className="flex w-full items-center justify-center ">
+                  <a className="pr-[10px] text-center font-medium leading-relaxed text-body-color">
+                    {item.name}
+                  </a>
+                </div>
+              ))}
 
-            { /* 3rd Item */ }
-            <div className="flex w-full items-center justify-center ">
-              <div className="pr-[10px] text-center font-medium leading-relaxed text-body-color">
-                jeje
-              </div>
-            </div>
-
-            { /* 4th Item */ }
-            <div className="flex w-full items-center justify-center ">
-              <div className="pr-[10px] text-center font-medium leading-relaxed text-body-color">
-                jeje
-              </div>
-            </div>
-
-            { /* 5th Item */ }
-            <div className="flex w-full items-center justify-center ">
-              <div className="pr-[10px] text-center font-medium leading-relaxed text-body-color">
-                jeje
-              </div>
-            </div>
-
-            { /* 6th Item */ }
-            <div className="flex w-full items-center justify-center ">
-              <div className="pr-[10px] text-center font-medium leading-relaxed text-body-color">
-                jeje
-              </div>
-            </div>
-
-            { /* 7th Item */ }
-            <div className="flex w-full items-center justify-center ">
-              <div className="pr-[10px] text-center font-medium leading-relaxed text-body-color">
-                jeje
-              </div>
-            </div>
-
-            { /* 8th Item */ }
-            <div className="flex w-full items-center justify-center ">
-              <div className="pr-[10px] text-center font-medium leading-relaxed text-body-color">
-                jeje
-              </div>
-            </div>
-            
           </div>
 
         </div>
+
       </section>
 
       <section

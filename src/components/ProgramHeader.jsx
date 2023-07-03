@@ -2,65 +2,55 @@ import React, {useRef, useState, useEffect} from 'react';
 import Slider from 'react-slick';
 import '../css/ImageGallery.css';
 
-import INOCENT1 from '../images/StatisticsImages/1.1 INNOCENT.jpg';
-import INOCENT2 from '../images/StatisticsImages/1.2 INNOCENT.jpg';
-import INOCENT3 from '../images/StatisticsImages/1.3 INNOCENT.jpg';
-import INOCENT4 from '../images/StatisticsImages/1.4 INNOCENT.jpg';
-
-import VICTIM1 from '../images/StatisticsImages/2.1 VICTIM.jpg';
-import VICTIM2 from '../images/StatisticsImages/2.2 VICTIM.jpg';
-import VICTIM3 from '../images/StatisticsImages/2.3 VICTIM.jpg';
-import VICTIM4 from '../images/StatisticsImages/2.4 VICTIM.jpg';
-
 
 const images = [
     {
       id: 1,
       title: 'BLINDNESS',
       section: 'SECONDARY',
-      img: INOCENT1,
+      img: "/images/StatisticsImages/1.1 INNOCENT.jpg",
     },
     {
       id: 2,
       title: 'BLINDNESS',
       section: 'SECONDARY',
-      img: INOCENT2,
+      img: "/images/StatisticsImages/1.2 INNOCENT.jpg",
     },
     {
       id: 3,
       title: 'BLINDNESS',
       section: 'SECONDARY',
-      img: INOCENT3,
+      img: "/images/StatisticsImages/1.3 INNOCENT.jpg",
     },
     {
       id: 4,
       title: 'BLINDNESS',
       section: 'SECONDARY',
-      img: INOCENT4,
+      img: "/images/StatisticsImages/1.4 INNOCENT.jpg",
     },
     {
       id: 5,
       title: 'DEAFNESS',
       section: 'PRIMARY',
-      img: VICTIM1,
+      img: "/images/StatisticsImages/2.1 VICTIM.jpg",
     },
     {
       id: 6,
       title: 'DEAFNESS',
       section: 'PRIMARY',
-      img: VICTIM2,
+      img: "/images/StatisticsImages/2.2 VICTIM.jpg",
     },
     {
       id: 7,
       title: 'DEAFNESS',
       section: 'PRIMARY',
-      img: VICTIM3,
+      img: "/images/StatisticsImages/2.3 VICTIM.jpg",
     },
     {
       id: 8,
       title: 'DEAFNESS',
       section: 'PRIMARY',
-      img: VICTIM4,
+      img: "/images/StatisticsImages/2.4 VICTIM.jpg",
     },
 ];
 
@@ -203,12 +193,12 @@ const ProgramHeader = () => {
             <div className='container-box-Gallery block mt-2'>
 
               <section className='section-Gallery'>
-                <img className='INOCENT1 section-img-Gallery' src={INOCENT1 } />
-                <img className='INOCENT2 section-img-Gallery' src={INOCENT2 } />
-                <img className='INOCENT3 section-img-Gallery' src={INOCENT3 } />
-                <img className='INOCENT4 section-img-Gallery' src={INOCENT4 } />
-                <img className='INOCENT5 section-img-Gallery' src={INOCENT1 } />
-                <img className='INOCENT6 section-img-Gallery' src={INOCENT2 } />
+                <img className='INOCENT1 section-img-Gallery' src="/images/StatisticsImages/1.1 INNOCENT.jpg" />
+                <img className='INOCENT2 section-img-Gallery' src="/images/StatisticsImages/1.2 INNOCENT.jpg" />
+                <img className='INOCENT3 section-img-Gallery' src="/images/StatisticsImages/1.3 INNOCENT.jpg" />
+                <img className='INOCENT4 section-img-Gallery' src="/images/StatisticsImages/1.4 INNOCENT.jpg" />
+                <img className='INOCENT5 section-img-Gallery' src="/images/StatisticsImages/1.1 INNOCENT.jpg" />
+                <img className='INOCENT6 section-img-Gallery' src="/images/StatisticsImages/1.2 INNOCENT.jpg" />
               </section>
 
               <div className='flex h-[15vh] items-center'>

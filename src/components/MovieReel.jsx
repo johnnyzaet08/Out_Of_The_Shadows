@@ -77,8 +77,11 @@ const MovieReel = ({ images }) => {
   return (
     <div className='container-box'>
       <div className='container-bg'>
+
         <div className='w-full h-auto py-2'>
+          
           <AnimatedStats handleNextClick={handleNextClick} startValue={100} label="Total Visitors" />
+
           <div className='container-bts h-auto'>
             <ul className='flex items-center justify-between h-full'>
               <li>
@@ -107,8 +110,11 @@ const MovieReel = ({ images }) => {
               </li>
             </ul>
           </div>
+
         </div>
+
       </div>
+
       <Slider ref={sliderRef} {...settings}>
         {images.map((image) => (
           <div key={image.id} className="w-full px-[1px]">
@@ -116,6 +122,7 @@ const MovieReel = ({ images }) => {
           </div>
         ))}
       </Slider>
+
     </div>
     
   );

@@ -3,6 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import '../css/animatedStats.css';
 
 const AnimatedStats = ({ startValue, label, handleNextClick }) => {
+  const [date, setDate] = useState(new Date());
   const [visible, setVisible] = useState(false);
   const [count, setCount] = useState(0);
   
@@ -12,6 +13,20 @@ const AnimatedStats = ({ startValue, label, handleNextClick }) => {
     delay: 0,
     onRest: () => setVisible(true)
   });
+
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setDate(new Date());
+    }, 30000); // Actualiza cada minuto (60000 milisegundos)
+
+    return () => {
+      clearInterval(timer); // Limpia el intervalo cuando el componente se desmonta
+    };
+  }, []);
+
+  const formattedDate = date.toLocaleDateString();
+  const formattedTime = date.toLocaleTimeString();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,7 +39,11 @@ const AnimatedStats = ({ startValue, label, handleNextClick }) => {
   return (
     <div className='container w-full h-auto'>
       <div className="animated-stats-container">
-        <div className="animated-stats-label">{label}</div>
+        <div>{formattedDate}</div>
+        <div>{formattedTime}</div>
+        <div className="animated-stats-label">
+          {label}
+        </div>
         <div className="animated-stats-number-container">
           {visible ? (
             <animated.span className="animated-stats-number">

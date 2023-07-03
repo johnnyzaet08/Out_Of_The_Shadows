@@ -10,82 +10,82 @@ const images = [
   {
     id: 1,
     title: 'OUT',
-    img: "https://drive.google.com/uc?export=download&id=1qcb00t74neBFjZcoT_yO7SKk99ZPhFe4",
+    img: "/images/HomePage/1.1 OUT.jpg",
   },
   {
     id: 2,
     title: 'OUT',
-    img: "https://drive.google.com/uc?export=download&id=1t-4_kNv-WWcexNdheESsdNo5e8EriLZM",
+    img: "/images/HomePage/1.2 OUT.jpg",
   },
   {
     id: 3,
     title: 'OUT',
-    img: "https://drive.google.com/uc?export=download&id=1GhSg8leOAsXOMG9uDBIXk46fb9mgmaPv",
+    img: "/images/HomePage/1.3 OUT.jpg",
   },
   {
     id: 4,
     title: 'OUT',
-    img: "https://drive.google.com/uc?export=download&id=11zPaYw7P_WcVlwCCqG97w_SF0sonDJH3",
+    img: "/images/HomePage/1.4 OUT.jpg",
   },
   {
     id: 5,
     title: 'OF',
-    img: "https://drive.google.com/uc?export=download&id=13ylU-L6KmbpQSd78gUo4WoQ6l2cqe_KC",
+    img: "/images/HomePage/2.1 OF.jpg",
   },
   {
     id: 6,
     title: 'OF',
-    img: "https://drive.google.com/uc?export=download&id=1A_Kfa1mQEGwKQrzTQN0zxItPpFywI75A",
+    img: "/images/HomePage/2.2 OF.jpg",
   },
   {
     id: 7,
     title: 'OF',
-    img: "https://drive.google.com/uc?export=download&id=1ogfZV7JKpjSGpBcCM0wDs2zSgiqrTN4J",
+    img: "/images/HomePage/2.3 OF.jpg",
   },
   {
     id: 8,
     title: 'OF',
-    img: "https://drive.google.com/uc?export=download&id=1YLb9CMmwtiQPy8MDgDBlr4zX9FYK30oy",
+    img: "/images/HomePage/2.4 OF.jpg",
   },
   {
     id: 9,
     title: 'THE',
-    img: "https://drive.google.com/uc?export=download&id=12CvXhIET2z1d9a5ToWWgAYVtHsDISdRu",
+    img: "/images/HomePage/3.1 THE.jpg",
   },
   {
     id: 10,
     title: 'THE',
-    img: "https://drive.google.com/uc?export=download&id=1lw1RanMrLmACCk6ZJcTAT8kSM-fDwDg6",
+    img: "/images/HomePage/3.2 THE.jpg",
   },
   {
     id: 11,
     title: 'THE',
-    img: "https://drive.google.com/uc?export=download&id=1sV0FQdkYudvQf4lR6rVlWkVZ2Nvy5gO8",
+    img: "/images/HomePage/3.3 THE.jpg",
   },
   {
     id: 12,
     title: 'THE',
-    img: "https://drive.google.com/uc?export=download&id=1UGoT4LJsMP-uf5CIDphfBgFgKGqc51yR",
+    img: "/images/HomePage/3.4 THE.jpg",
   },
   {
     id: 13,
     title: 'SHADOWS',
-    img: "https://drive.google.com/uc?export=download&id=1qq92V4fQ9vXFqDEisQmiKMlt3nS50fQG",
+    img: "/images/HomePage/4.1 SHADOWS.jpg",
   },
   {
     id: 14,
     title: 'SHADOWS',
-    img: "https://drive.google.com/uc?export=download&id=1GsyFJkPdKHvV8FJO27O9H0nHwS_RS64-",
+    img: "/images/HomePage/4.2 SHADOWS.jpg",
   },
   {
     id: 15,
     title: 'SHADOWS',
-    img: "https://drive.google.com/uc?export=download&id=1SFzywxF4cOV6Y_hhe6wqYjZb6pjdkhyb",
+    img: "/images/HomePage/4.3 SHADOWS.jpg",
   },
   {
     id: 16,
     title: 'SHADOWS',
-    img: "https://drive.google.com/uc?export=download&id=1sGr0hel-dI5g1PhBQ6muJqqqhOh0BUSo",
+    img: "/images/HomePage/4.4 SHADOWS.jpg",
   },  
 ];
 

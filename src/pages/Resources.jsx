@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ResourcesComponent from '../components/Resources';
+import backgroundGIF from '../components/backgroundGIF';
 
 function page3() {
   return (

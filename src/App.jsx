@@ -17,6 +17,7 @@ import Resources from './pages/Resources';
 import Donations from './pages/Donations';
 import InProgress from './pages/InProgress';
 import Banner from './components/Banner';
+import TimerBanner from './components/TimerBanner';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
         <Route exact path="/InProgress" element={<InProgress />} />
       </Routes>
       <Banner />
+      <TimerBanner />
     </>
   );
 }

@@ -1,8 +1,9 @@
 import React, { useState, useEffect  } from 'react';
+import sandClock from '../images/SandClock.gif';
 import Donation from '../images/donation.png';
 import Donation1 from '../images/donation1.png';
 
-function Banner() {
+function TimerBanner() {
 
   const [bannerOpen, setBannerOpen] = useState(false);
   const [isClosed, setIsClosed] = useState(true);
@@ -36,8 +37,8 @@ function Banner() {
   return (
     <>
       {bannerOpen && (
-        <div className="fixed bottom-20 right-1 opacity-85 md:opacity-100 md:right-4 w-auto z-20">
-          <div className="bg-target text-sm p-3 md:rounded shadow-lg flex justify-between">
+        <div className="fixed top-[15%] opacity-85 md:opacity-100 w-auto z-20">
+          <div className="bg-gray-300 text-sm p-3 md:rounded shadow-lg flex justify-between">
             <div className="text-white-100 inline-flex justify-center">
               <a
                 className="felx items-center"
@@ -53,7 +54,7 @@ function Banner() {
                     />
                   ) : (
                     <img
-                      src={Donation}
+                      src={sandClock}
                       alt="placeholder"
                       onMouseEnter={handleMouseEnter}
                     />
@@ -75,4 +76,4 @@ function Banner() {
 }
 
 
-export default Banner;
+export default TimerBanner;

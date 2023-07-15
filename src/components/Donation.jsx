@@ -1,10 +1,17 @@
 import React, {useState} from 'react';
 import ModalComponent from '../utils/ModalComponent';
 import image from '../images/background.jpg';
+import "../css/donation.css"
 
 function Donation() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const values = [
+    'Day',
+    'Hour',
+    'Minutes',
+    'Seconds',
+  ];
 
   const handleModalOpen = () => {
     setIsModalOpen(true);
@@ -19,7 +26,24 @@ function Donation() {
 
       <div className="flex flex-rows h-screen w-screen bg-cover bg-center" style={{ backgroundImage: `url(${image})` }}>
         
-        <div className="mt-auto mb-[15%] pl-[5%] h-[20%] w-[30%]">
+        <div id="countdown" className='countdownHolder'>
+          {values.map((value, index) => (
+            <span className={`count${value}`}>
+              <span className='position'>
+                <span className='digit static'>
+                  0
+                </span>
+              </span>
+              <span className='position'>
+                  <span className='digit static'>
+                    0
+                  </span> 
+                </span>
+            </span>
+          ))}
+        </div>
+
+        <div className="mt-auto mb-[15%] pl-[5%] h-[20%] w-[30%] bg-red-100">
           <h3 className='text-white-100 text-justify text-xl'>
             Out of the Shadows (OOTS) is organized as a nonprofit corporation operating under section 501(c)(3);
             therefore, OOTS is exempt from federal and state income taxes; however to the extent OOTS incurs

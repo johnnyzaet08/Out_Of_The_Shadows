@@ -3,7 +3,7 @@
 .page-content {
   display: grid;
   grid-gap: 1rem;
-  max-width: 95%;
+  max-width: 80%;
   margin: 0 auto;
   font-family: "Rubik", sans-serif;
 }

@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ColorChangingText from '../components/ColorChangingText';
 import MovieReel from '../components/MovieReel';
+import CardHover from '../components/CardHover';
 
 import image from '../images/background.png';
 
@@ -199,6 +200,10 @@ function Home() {
 
         <div className="mx-auto py-10 mr-2 ml-2 mt-5">
           <MovieReel images={images} />
+        </div>
+
+        <div className="mx-auto py-10 mr-2 ml-2 mt-5">
+          <CardHover />
         </div>
 
       </main>

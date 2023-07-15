@@ -11,8 +11,8 @@
   
   .team-cards-inner-container {
     display: flex;
-    row-gap: 1.3rem;
-    column-gap: 1.3rem;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
   }
   
   .text-blk {
@@ -36,7 +36,7 @@
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
-    padding-left: 40px;
+    padding-left: 45px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 0px;
@@ -50,9 +50,9 @@
     max-width: 1200px;
     min-height: 100vh;
     margin-top: 0px;
-    margin-right: 0px;
+    margin-right: 100px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 10px;
     justify-content: center;
   }
   
@@ -85,7 +85,7 @@
     flex-direction: row;
     align-items: center;
     padding-top: 0px;
-    padding-right: 25px;
+    padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
   }
@@ -98,7 +98,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     margin-top: 0px;
-    margin-right: 25px;
+    margin-right: 5px;
     margin-bottom: 0px;
     margin-left: 0px;
   }
@@ -120,6 +120,8 @@
   
   .card-container {
     max-width: 350px;
+    padding-left: 50px;
+    margin-left: auto;
   }
   
   .card-content-box {
@@ -132,9 +134,9 @@
     font-size: 20px;
     font-weight: 700;
     margin-top: 0px;
-    margin-right: 0px;
+    margin-right: 5px;
     margin-bottom: 5px;
-    margin-left: 0px;
+    margin-left: 1px;
   }
   
   .person-info {

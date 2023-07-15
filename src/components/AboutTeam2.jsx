@@ -35,7 +35,7 @@ const peopleData = [
   },
   {
     id: 4,
-    name: 'Matthew J. Lombard',
+    name: 'Matthew Lombard',
     jobTitle: 'ADVISORY COUNCIL - LEGAL',
     info: info4,
     imageUrl: '/images/AboutUs/MatthewLombard.jpg'

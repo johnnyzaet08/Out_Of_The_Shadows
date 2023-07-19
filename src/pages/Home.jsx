@@ -4,9 +4,10 @@ import { Parallax } from "react-parallax";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ColorChangingText from '../components/ColorChangingText';
-import MovieReel from '../components/MovieReel';
+import CardHover from '../components/CardHover';
 
 import image from '../images/background.png';
+import '../css/backgroundsFile.css';
 
 const images = [
   {
@@ -174,33 +175,25 @@ const images = [
 function Home() {
   return (
 
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex flex-col min-h-screen overflow-hidden homeBackgroundStyle">
       {/*  Site header */}
       <Header />
 
       {/*  Page content */}
       <main className="grow md:pt-6">
 
+        <div className="mx-auto py-10 mr-2 ml-2 mt-20">
+          <CardHover />
+        </div>
+
+        <h1 className='mt-20 text-bold text-[30px] text-center'>
+          Adult survivors of childhood abuse are more likely to experience mental health difficulties, including depression, anxiety, bipolar disorder, PTSD, eating disorders, and substance use disorders.
+        </h1>
+
         <div className="py-4">
           <ColorChangingText/>
         </div>
-
-        <div className="flex items-center justify-center min-h-screen ">
-          <Parallax className="w-2/3" strength={400} bgImage={image} bgImageStyle={{backgroundSize: 'cover', backgroundPosition: 'center'}}>
-            <div className="h-[90vh] w-full transition-100 flex items-center justify-center">
-              <div className="text-center text-white-100 w-[75vh] md:w-[100vh] opacity-85">
-                <span className="text-xl md:text-2xl xl:text-3xl font-bold">
-                  Adult survivors of childhood abuse are more likely to experience mental health difficulties, including depression, anxiety, bipolar disorder, PTSD, eating disorders, and substance use disorders.
-                </span>
-              </div>
-            </div>
-          </Parallax>
-        </div>
-
-        <div className="mx-auto py-10 mr-2 ml-2 mt-5">
-          <MovieReel images={images} />
-        </div>
-
+        
       </main>
 
       {/*  Site footer */}

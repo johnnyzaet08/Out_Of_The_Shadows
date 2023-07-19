@@ -2,7 +2,7 @@ import React, { useState, useEffect  } from 'react';
 import Donation from '../images/donation.png';
 import Donation1 from '../images/donation1.png';
 
-function Banner() {
+function DonationBanner() {
 
   const [bannerOpen, setBannerOpen] = useState(false);
   const [isClosed, setIsClosed] = useState(true);
@@ -75,4 +75,4 @@ function Banner() {
 }
 
 
-export default Banner;
+export default DonationBanner;

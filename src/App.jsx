@@ -11,12 +11,12 @@ import './css/style.css';
 import AOS from 'aos';
 
 import Home from './pages/Home';
-import WorldContribution from './pages/WorldContribution';
+import WeCare from './pages/WeCare';
 import AboutUs from './pages/AboutUs';
 import Resources from './pages/Resources';
 import Donations from './pages/Donations';
 import InProgress from './pages/InProgress';
-import Banner from './components/Banner';
+import DonationBanner from './components/DonationBanner';
 import TimerBanner from './components/TimerBanner';
 
 function App() {
@@ -42,13 +42,13 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/WeCare" element={<WorldContribution />} />
+        <Route exact path="/WeCare" element={<WeCare />} />
         <Route exact path="/AboutUs" element={<AboutUs />} />
         <Route exact path="/Resources" element={<Resources />} />
         <Route exact path="/Donations" element={<Donations />} />
         <Route exact path="/InProgress" element={<InProgress />} />
       </Routes>
-      <Banner />
+      <DonationBanner />
       <TimerBanner />
     </>
   );

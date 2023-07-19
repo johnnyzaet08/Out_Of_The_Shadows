@@ -1,12 +1,11 @@
 import React from 'react';
-import { Parallax } from "react-parallax";
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ChangeText from '../components/ChangeText';
 import ColorChangingText from '../components/ColorChangingText';
 import CardHover from '../components/CardHover';
 
-import image from '../images/background.png';
 import '../css/backgroundsFile.css';
 
 const images = [
@@ -180,9 +179,13 @@ function Home() {
       <Header />
 
       {/*  Page content */}
-      <main className="grow md:pt-6">
+      <main className="grow md:pt-10">
 
-        <div className="mx-auto py-10 mr-2 ml-2 mt-20">
+        <div className=''>
+          <ChangeText />
+        </div>
+
+        <div className="mx-auto py-5 mr-2 ml-2">
           <CardHover />
         </div>
 
@@ -190,7 +193,7 @@ function Home() {
           Adult survivors of childhood abuse are more likely to experience mental health difficulties, including depression, anxiety, bipolar disorder, PTSD, eating disorders, and substance use disorders.
         </h1>
 
-        <div className="py-4">
+        <div className="mt-10 mb-5">
           <ColorChangingText/>
         </div>
         

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import ModalComponent from '../utils/ModalComponent';
 import image from '../images/background.jpg';
 import "../css/donation.css"
@@ -6,12 +6,18 @@ import "../css/donation.css"
 function Donation() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const values = [
-    'Day',
-    'Hour',
-    'Minutes',
-    'Seconds',
-  ];
+  const [date, setDate] = useState(new Date());
+
+  useEffect(() => {
+    setInterval(() => 
+    {
+      setDate(new Date());
+    }, 1000);
+  }, []);
+
+  const hours = date.toLocaleString('en-US', { hour: 'numeric', hour12: false });
+  const minutes = date.toLocaleString('en-US', { minute: '2-digit' });
+  const seconds = date.toLocaleString('en-US', { second: '2-digit' });  
 
   const handleModalOpen = () => {
     setIsModalOpen(true);
@@ -22,28 +28,50 @@ function Donation() {
   };
 
   return (
-    <div>
+    <div className=''>
 
-      <div className="flex flex-rows h-screen w-screen bg-cover bg-center" style={{ backgroundImage: `url(${image})` }}>
-        
-        <div id="countdown" className='countdownHolder'>
-          {values.map((value, index) => (
-            <span className={`count${value}`}>
-              <span className='position'>
-                <span className='digit static'>
-                  0
-                </span>
-              </span>
-              <span className='position'>
-                  <span className='digit static'>
-                    0
-                  </span> 
-                </span>
+      <div className="holder h-screen w-screen bg-cover bg-center" style={{ backgroundImage: `url(${image})` }}>
+
+
+        <div className='clockContainer'>
+
+          <div className='labelHolder'>
+            <span className='text-white-100 p-2'>
+              Every minute that passes is a minute to help people who are being abused
             </span>
-          ))}
+          </div>
+
+          <div className='clockHolder'>
+            <span className='position'>
+              <span className='digit static'>
+                {("0" + hours).slice(-2)}
+              </span>
+            </span>
+            <span className='text-white-100 p-2 -translate-y-1'> : </span>
+            <span className='position'>
+              <span className='digit static'>
+                {("0" + minutes).slice(-2)}
+              </span>
+            </span>
+            <span className='text-white-100 p-2 -translate-y-1'> : </span>
+            <span className='position'>
+              <span className='digit static'>
+                {("0" + seconds).slice(-2)}
+              </span>
+            </span>
+          </div>
+          
+          
         </div>
 
-        <div className="mt-auto mb-[15%] pl-[5%] h-[20%] w-[30%] bg-red-100">
+        <div className="bg-white-100 rounded-lg p-8 mb-auto mx-auto mt-[10%] shadow-md max-w-md w-full text-center">
+        <h1 className="text-3xl mb-4">Donate to OOTS</h1>
+        <p className="text-gray-700 mb-6"> Your support can make a difference in the lives of children around the world.</p>
+        <p className="text-gray-700 mb-6"> Out of the Shadows’ Federal Taxpayer I.D. Number is 36‐4975843. </p>
+        <button className="rounded-[100vh] bg-target hover:bg-gray-200 text-white font-bold py-2 px-4 rounded" onClick={handleModalOpen}>Donate Now</button>
+        </div>
+
+        <div className="textHolder">
           <h3 className='text-white-100 text-justify text-xl'>
             Out of the Shadows (OOTS) is organized as a nonprofit corporation operating under section 501(c)(3);
             therefore, OOTS is exempt from federal and state income taxes; however to the extent OOTS incurs
@@ -54,15 +82,6 @@ function Donation() {
             Internal Revenue Code. 
           </h3>           
         </div>
-
-        <div className="bg-white-100 rounded-lg p-8 ml-auto mr-[5%] mb-auto mt-[5%] shadow-md max-w-md w-full text-center">
-          <h1 className="text-3xl mb-4">Donate to OOTS</h1>
-          <p className="text-gray-700 mb-6"> Your support can make a difference in the lives of children around the world.</p>
-          <p className="text-gray-700 mb-6"> Out of the Shadows’ Federal Taxpayer I.D. Number is 36‐4975843. </p>
-          <button className="rounded-[100vh] bg-target hover:bg-gray-200 text-white font-bold py-2 px-4 rounded" onClick={handleModalOpen}>Donate Now</button>
-        </div>
-        
-        
 
       </div>
 

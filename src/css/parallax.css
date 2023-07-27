@@ -1,6 +1,4 @@
-
-  
-  /* Cloud styles */
+/* Cloud styles */
   .FixedBody {
     position: fixed;
     height: 100vh;
@@ -10,70 +8,40 @@
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
+    z-index: -1;
   }
   
-  .Cloud {
+  .cloud {
     transform: translateX(0);
     transition: 0.1s transform;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: aquamarine;
+    background-color: aqua;
   }
   
-  .Cloud__Part {
-    background-color: white;
-    border-radius: calc(3 * var(--size));
+  .cloud_Part {
+    background-color: black;
+    border-radius: calc(3 * 1vmin);
     box-shadow: inset 1vmin 1vmin 5vmin #f2f2f2;
   }
   
-  .Cloud__Top {
-    height: calc(5 * var(--size));
-    width: calc(10 * var(--size));
-    transform: translate(calc(1 * var(--size)), calc(2.5 * var(--size)));
+  .cloud_Top {
+    height: calc(5 * 1vmin);
+    width: calc(10 * 1vmin);
+    transform: translate(calc(1 * 1vmin), calc(2.5 * 1vmin));
+    background-color: black;
   }
   
-  .Cloud__Main {
-    height: calc(5 * var(--size));
-    width: calc(15 * var(--size));
+  .cloud_Main {
+    height: calc(5 * 1vmin);
+    width: calc(15 * 1vmin);
+    background-color: red;
   }
   
-  .Cloud__Bottom {
-    height: calc(5 * var(--size));
-    width: calc(10 * var(--size));
-  }
-  
-  /* Function for random number generation */
-  @function randomNum($min, $max) {
-    $rand: random();
-    $randomNum: $min + floor($rand * (($max - $min) + 1));
-    @return $randomNum;
-  }
-  
-  /* Loop to generate clouds */
-  @for $i from 1 through 20 {
-    .Cloud:nth-child(#{$i}) .Cloud__Top {
-      $height: randomNum(1.6667, 3.3333);
-      $width: randomNum(0.6667, 1);
-      $translateX: randomNum(-$height/2, $height/2);
-      $translateY: randomNum(-$height/2, -$height * 0.6667);
-      transform: translate(calc(#{$translateX} * var(--size)), calc(#{$translateY} * var(--size)));
-      height: calc(#{$height} * var(--size));
-      width: calc(#{$width} * var(--size));
-    }
-    .Cloud:nth-child(#{$i}) .Cloud__Main {
-      $width: randomNum(1.3333, 2);
-      width: calc(#{$width} * var(--size));
-    }
-    .Cloud:nth-child(#{$i}) .Cloud__Bottom {
-      $height: randomNum(1.6667, 3.3333);
-      $width: randomNum(0.6667, 0.75);
-      $translateX: randomNum(-$height/2, $height/2);
-      $translateY: randomNum(-$height/2, -$height * 0.6667);
-      transform: translate(calc(#{$translateX} * var(--size)), calc(#{$translateY} * var(--size)));
-      height: calc(#{$height} * var(--size));
-      width: calc(#{$width} * var(--size));
-    }
-  }
-  
+  .cloud_Bottom {
+    height: calc(5 * 1vmin);
+    width: calc(10 * 1vmin);
+    background-color: blueviolet;
+  }  

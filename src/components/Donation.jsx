@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import ModalComponent from '../utils/ModalComponent';
-import image from '../images/background.jpg';
+import image from '../images/background_donations3.jpg';
 import "../css/donation.css"
 
 function Donation() {
@@ -37,7 +37,7 @@ function Donation() {
 
           <div className='labelHolder'>
             <span className='text-white-100 p-2'>
-              Every minute that passes is a minute to help people who are being abused
+              Every minute that passes is a chance to help people
             </span>
           </div>
 
@@ -69,18 +69,6 @@ function Donation() {
         <p className="text-gray-700 mb-6"> Your support can make a difference in the lives of children around the world.</p>
         <p className="text-gray-700 mb-6"> Out of the Shadows’ Federal Taxpayer I.D. Number is 36‐4975843. </p>
         <button className="rounded-[100vh] bg-target hover:bg-gray-200 text-white font-bold py-2 px-4 rounded" onClick={handleModalOpen}>Donate Now</button>
-        </div>
-
-        <div className="textHolder">
-          <h3 className='text-white-100 text-justify text-xl'>
-            Out of the Shadows (OOTS) is organized as a nonprofit corporation operating under section 501(c)(3);
-            therefore, OOTS is exempt from federal and state income taxes; however to the extent OOTS incurs
-            unrelated business income this form of income would be taxable to OOTS.
-            <br/>
-            <br/>
-            Contributions to Out of the Shadows are deductible by the donor in accordance with section 170 of the
-            Internal Revenue Code. 
-          </h3>           
         </div>
 
       </div>

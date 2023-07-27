@@ -1,3 +1,7 @@
 .homeBackgroundStyle {
     background: radial-gradient(circle at top, #ffffff , #d9faff)
 }
+
+.bannerTimerBackground {
+    background: radial-gradient(circle at top, #ffffff , #78bbe6)
+}

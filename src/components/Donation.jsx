@@ -20,7 +20,7 @@ function Donation() {
   const seconds = date.toLocaleString('en-US', { second: '2-digit' });  
 
   const handleModalOpen = () => {
-    setIsModalOpen(true);
+    //setIsModalOpen(true);
   };
 
   const handleModalClose = () => {
@@ -41,7 +41,7 @@ function Donation() {
                 </span>
     <div className=''>
 
-      <div className="holder h-screen w-screen bg-cover bg-center" style={{ backgroundImage: `url(${image})` }}>
+      <div className="holder h-screen w-screen bg-cover bg-center" style={{ backgroundImage: `url(${background})` }}>
 
 
         <div className='clockContainer'>
@@ -82,13 +82,13 @@ function Donation() {
                 {("0" + hours).slice(-2)}
               </span>
             </span>
-            <span className='text-white-100 p-2 -translate-y-1'> : </span>
+            <span className='text-black-100 p-2 -translate-y-1'> : </span>
             <span className='position'>
               <span className='digit static'>
                 {("0" + minutes).slice(-2)}
               </span>
             </span>
-            <span className='text-white-100 p-2 -translate-y-1'> : </span>
+            <span className='text-black-100 p-2 -translate-y-1'> : </span>
             <span className='position'>
               <span className='digit static'>
                 {("0" + seconds).slice(-2)}
@@ -113,6 +113,17 @@ function Donation() {
         <button className="rounded-[100vh] bg-target hover:bg-gray-200 text-white font-bold py-2 px-4 rounded" onClick={handleModalOpen}>Donate Now</button>
         </div>
 
+        <div className="textHolder">
+          <h3 className='text-black-100 text-justify text-xl'>
+            Out of the Shadows (OOTS) is organized as a nonprofit corporation operating under section 501(c)(3);
+            therefore, OOTS is exempt from federal and state income taxes; however to the extent OOTS incurs
+            unrelated business income this form of income would be taxable to OOTS.
+            <br/>
+            <br/>
+            Contributions to Out of the Shadows are deductible by the donor in accordance with section 170 of the
+            Internal Revenue Code. 
+          </h3>           
+        </div>
       </div>
 
       

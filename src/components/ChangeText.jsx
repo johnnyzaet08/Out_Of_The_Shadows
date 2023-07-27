@@ -1,7 +1,7 @@
 import React, { useEffect ,useState } from 'react';
 import '../css/changeText.css';
 
-const duration = 3000; // Duración de la transición en milisegundos
+const duration = 2000; // Duración de la transición en milisegundos
 
 function ChangeText() {
 

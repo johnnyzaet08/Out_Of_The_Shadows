@@ -339,10 +339,10 @@ const ResourcesComponent = () => {
 
           { /* Section Title */ }
           <div className='w-full mx-auto text-center'>
-            <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[35px]">
+            <h2 className="mb-4 text-3xl font-bold !leading-tight text-white-100 sm:text-4xl md:text-[35px]">
               LOS ANGELES COUNTY: LOCAL COMMUNITY RESOURCES
             </h2>
-            <h3 className="mt-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+            <h3 className="mt-5 text-xl font-bold text-black dark:text-white-100 sm:text-2xl lg:text-xl xl:text-2xl">
               SERVICES BY CATEGORY
             </h3>
           </div>
@@ -353,7 +353,7 @@ const ResourcesComponent = () => {
               {LOS_ANGELES_COUNTY.map((item) => (
                 
                 <div key={item.id} className="flex w-full items-center justify-center ">
-                  <button className="pr-[10px] text-center font-medium leading-relaxed text-bold hover:text-primary hover:underline" onClick={() => openModal(item.url)}>
+                  <button className="pr-[10px] text-center font-medium leading-relaxed text-bold text-white-100 hover:text-primary hover:underline" onClick={() => openModal(item.url)}>
                     {item.title}
                   </button>
                 </div>
@@ -374,10 +374,10 @@ const ResourcesComponent = () => {
 
           { /* Section Title */ }
           <div className='w-full mx-auto text-center'>
-            <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[35px]">
+            <h2 className="mb-4 text-3xl font-bold !leading-tight text-white-100 sm:text-4xl md:text-[35px]">
               ORANGE COUNTY: LOCAL COMMUNITY RESOURCES
             </h2>
-            <h3 className="mt-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+            <h3 className="mt-5 text-xl font-bold text-white-100 sm:text-2xl lg:text-xl xl:text-2xl">
               SERVICES BY CATEGORY
             </h3>
           </div>
@@ -388,7 +388,7 @@ const ResourcesComponent = () => {
               {ORANGE_COUNTY.map((item) => (
                 
                 <div key={item.id} className="flex w-full items-center justify-center ">
-                  <button className="pr-[10px] text-center font-medium leading-relaxed text-bold hover:text-primary hover:underline" onClick={() => openModal(item.url)}>
+                  <button className="pr-[10px] text-center font-medium leading-relaxed text-bold text-white-100 hover:text-primary hover:underline" onClick={() => openModal(item.url)}>
                     {item.title}
                   </button>
                 </div>
@@ -417,9 +417,18 @@ const ResourcesComponent = () => {
               {LOCAL_HOTLINES.map((item) => (
                 
                 <div key={item.id} className="flex w-full items-center justify-center ">
-                  <a className="pr-[10px] text-center font-medium leading-relaxed text-bold hover:text-primary hover:underline">
-                    {item.title}
-                  </a>
+                  {
+                    item.url != "None" ? (
+                      <a href={item.url} target="_blank" className="pr-[10px] text-center font-medium leading-relaxed text-bold hover:text-primary underline">
+                        {item.title}
+                      </a>
+                    ) : (
+                      <a className="pr-[10px] text-center font-medium leading-relaxed text-bold">
+                        {item.title} <br/> {item.number}
+                      </a>
+                    )
+                  }
+
                 </div>
               ))}
 
@@ -447,9 +456,17 @@ const ResourcesComponent = () => {
               {REGIONAL_HOTLINES.map((item) => (
                 
                 <div key={item.id} className="flex w-full items-center justify-center ">
-                  <a className="pr-[10px] text-center font-medium leading-relaxed text-bold hover:text-primary hover:underline">
-                    {item.title}
-                  </a>
+                  {
+                    item.url != "None" ? (
+                      <a href={item.url} target="_blank" className="pr-[10px] text-center font-medium leading-relaxed text-bold hover:text-primary underline">
+                        {item.title}
+                      </a>
+                    ) : (
+                      <a className="pr-[10px] text-center font-medium leading-relaxed text-bold">
+                        {item.title} <br/> {item.number}
+                      </a>
+                    )
+                  }
                 </div>
               ))}
 
@@ -477,9 +494,17 @@ const ResourcesComponent = () => {
               {NATIONAL_HOTLINES.map((item) => (
                 
                 <div key={item.id} className="flex w-full items-center justify-center ">
-                  <a className="pr-[10px] text-center font-medium leading-relaxed text-bold hover:text-primary hover:underline">
-                    {item.title}
-                  </a>
+                  {
+                    item.url != "None" ? (
+                      <a href={item.url} target="_blank" className="pr-[10px] text-center font-medium leading-relaxed text-bold hover:text-primary underline">
+                        {item.title}
+                      </a>
+                    ) : (
+                      <a className="pr-[10px] text-center font-medium leading-relaxed text-bold">
+                        {item.title} <br/> {item.number}
+                      </a>
+                    )
+                  }
                 </div>
               ))}
 

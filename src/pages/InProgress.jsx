@@ -11,7 +11,7 @@ function page3() {
     <div className="flex flex-col min-h-screen overflow-hidden homeBackgroundStyle">
       <Header />
 
-      <main className="grow pt-16 md:pt-28">
+      <main className="grow pt-16 md:pt-28 min-h-screen">
 
         <InProgress />
 

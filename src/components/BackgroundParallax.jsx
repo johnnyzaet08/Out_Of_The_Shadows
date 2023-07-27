@@ -7,7 +7,6 @@ const ParallaxClouds = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log("scroll");
       setScrollPosition(window.scrollY);
     };
     window.addEventListener('scroll', handleScroll);

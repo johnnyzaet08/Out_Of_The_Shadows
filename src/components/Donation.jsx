@@ -37,8 +37,8 @@ function Donation() {
         <div className='clockContainer'>
 
           <div className='labelHolder'>
-            <span className='text-black p-2'>
-              Every second that passes is an oportunity to help somebody
+            <span className='text-white-100 p-2'>
+              Every minute that passes is a chance to help people
             </span>
           </div>
 
@@ -83,7 +83,6 @@ function Donation() {
             Internal Revenue Code. 
           </h3>           
         </div>
-
       </div>
 
       

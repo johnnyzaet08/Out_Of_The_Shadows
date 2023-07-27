@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import ModalComponent from '../utils/ModalComponent';
 import image from '../images/background.jpg';
+import background from '../images/DonationBackground.jpeg';
 import "../css/donation.css"
 
 function Donation() {
@@ -20,7 +21,7 @@ function Donation() {
   const seconds = date.toLocaleString('en-US', { second: '2-digit' });  
 
   const handleModalOpen = () => {
-    setIsModalOpen(true);
+    //setIsModalOpen(true);
   };
 
   const handleModalClose = () => {
@@ -30,14 +31,14 @@ function Donation() {
   return (
     <div className=''>
 
-      <div className="holder h-screen w-screen bg-cover bg-center" style={{ backgroundImage: `url(${image})` }}>
+      <div className="holder h-screen w-screen bg-cover bg-center" style={{ backgroundImage: `url(${background})` }}>
 
 
         <div className='clockContainer'>
 
           <div className='labelHolder'>
-            <span className='text-white-100 p-2'>
-              Every minute that passes is a minute to help people who are being abused
+            <span className='text-black p-2'>
+              Every second that passes is an oportunity to help somebody
             </span>
           </div>
 
@@ -47,13 +48,13 @@ function Donation() {
                 {("0" + hours).slice(-2)}
               </span>
             </span>
-            <span className='text-white-100 p-2 -translate-y-1'> : </span>
+            <span className='text-black-100 p-2 -translate-y-1'> : </span>
             <span className='position'>
               <span className='digit static'>
                 {("0" + minutes).slice(-2)}
               </span>
             </span>
-            <span className='text-white-100 p-2 -translate-y-1'> : </span>
+            <span className='text-black-100 p-2 -translate-y-1'> : </span>
             <span className='position'>
               <span className='digit static'>
                 {("0" + seconds).slice(-2)}
@@ -72,7 +73,7 @@ function Donation() {
         </div>
 
         <div className="textHolder">
-          <h3 className='text-white-100 text-justify text-xl'>
+          <h3 className='text-black-100 text-justify text-xl'>
             Out of the Shadows (OOTS) is organized as a nonprofit corporation operating under section 501(c)(3);
             therefore, OOTS is exempt from federal and state income taxes; however to the extent OOTS incurs
             unrelated business income this form of income would be taxable to OOTS.

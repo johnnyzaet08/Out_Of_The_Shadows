@@ -1,7 +1,9 @@
 import React, { useState, useEffect  } from 'react';
-import sandClock from '../images/SandClock1.gif';
-import Donation from '../images/donation.png';
-import Donation1 from '../images/donation1.png';
+import sandClock from '../images/SandClock.gif';
+import oneMinute from '../images/OneMinute.png';
+import oneLife from '../images/OneLife.png';
+
+import "../css/backgroundsFile.css";
 
 function TimerBanner() {
 
@@ -41,7 +43,7 @@ function TimerBanner() {
     <>
       {bannerOpen && (
         <div className={`fixed  opacity-85 md:opacity-100 w-auto z-20 ${stageCounter ? 'top-[75%]' : 'top-[15%]'}`}>
-          <div className="bg-skyblue text-sm p-3 md:rounded shadow-lg flex justify-between">
+          <div className="bannerTimerBackground text-sm p-3 md:rounded shadow-lg flex justify-between">
             <div className="flex items-center justify-center h-20 w-20 fill-current text-white-500 hover:text-red-500">
               {stageCounter && (
                 <a
@@ -59,13 +61,13 @@ function TimerBanner() {
                 <>
                 {isHover ? (
                   <img
-                    src={Donation1}
+                    src={oneLife}
                     alt="placeholder"
                     onMouseLeave={handleMouseLeave}
                   />
                 ) : (
                   <img
-                    src={Donation}
+                    src={oneMinute}
                     alt="placeholder"
                     onMouseEnter={handleMouseEnter}
                   />

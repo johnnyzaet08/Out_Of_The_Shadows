@@ -26,6 +26,8 @@
 }
 
 .section-text-Gallery {
+  background-size: cover;
+  background-position: center;
   margin-left: 1rem;
   margin-right: 1rem;
   color: black;
@@ -70,6 +72,8 @@
 }
 
 .image-box-Gallery {
+  background-size: cover;
+  background-position: center;
   justify-content: center;
   align-items: center;
   width: 100%;

@@ -124,10 +124,9 @@ function ColorChangingText() {
   const settings = {
     dots: false,
     slickNext: false,
-    speed: 500,
     slidesToShow: 4,
-    swipe: false,
     slidesToScroll: 4,
+    pauseOnHover: false,
     autoplay: true,
     autoplaySpeed: duration,
     beforeChange: () => {
@@ -138,14 +137,12 @@ function ColorChangingText() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
         },
       },
       {
         breakpoint: 540,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
@@ -154,6 +151,15 @@ function ColorChangingText() {
   return (
     <div>
       
+      <div className="flex items-center justify-center w-full h-auto mx-auto mb-auto mt-5 pb-12 md:pb-15">
+        <div className="flex flex-cols items-center justify-center mt-auto w-[60%] h-full mx-auto">
+          <h1 className="refWord1 word">Out</h1>
+          <h1 className="refWord2 word">Of</h1>
+          <h1 className="refWord3 word">The</h1>
+          <h1 className="refWord4 word">Shadows</h1>
+        </div>
+      </div>
+
       <div className='block h-full justify-center'>
         <Slider ref={sliderRef} {...settings}>
           {images.map((image) => (
@@ -164,14 +170,7 @@ function ColorChangingText() {
         </Slider>
       </div>
 
-      <div className="flex items-center justify-center w-full h-auto mx-auto mb-auto mt-5 pb-12 md:pb-15">
-        <div className="flex flex-cols items-center justify-center mt-auto w-[60%] h-full mx-auto">
-          <h1 className="refWord1 word">Out</h1>
-          <h1 className="refWord2 word">Of</h1>
-          <h1 className="refWord3 word">The</h1>
-          <h1 className="refWord4 word">Shadows</h1>
-        </div>
-      </div>
+      
 
     </div>
   );

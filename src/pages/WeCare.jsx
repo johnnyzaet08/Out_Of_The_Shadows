@@ -4,12 +4,14 @@ import Header from '../components/Header';
 import PageIllustration from '../components/PageIllustration';
 import Programs_Services from '../components/ProgramsServices';
 import ProgramHeader from '../components/ProgramHeader';
+import StopChildAbuse from '../components/StopChildAbuse';
 
 import Footer from '../components/Footer';
+import '../css/backgroundsFile.css';
 
 function page2() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="homeBackgroundStyle flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
       <Header />
 
@@ -18,7 +20,7 @@ function page2() {
         {/*  Page illustration */}
 
         <div className=''>
-          <ProgramHeader />
+          <StopChildAbuse />
         </div>
 
         <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">

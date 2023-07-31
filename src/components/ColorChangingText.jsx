@@ -164,7 +164,7 @@ function ColorChangingText() {
         <Slider ref={sliderRef} {...settings}>
           {images.map((image) => (
             <div key={image.id} className="px-[1px]">
-              <img className="rounded-xl" src={image.img } alt={image.title} />
+              <img className="rounded-xl border-[2px] border-black" src={image.img } alt={image.title} />
             </div>
           ))}
         </Slider>

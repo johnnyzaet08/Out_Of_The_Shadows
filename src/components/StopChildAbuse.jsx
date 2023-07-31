@@ -55,7 +55,7 @@ const StopChildAbuse = () => {
 
   return (
 
-    <div className='container-box-Gallery block'>
+    <div className=' block'>
 
       <div className='flex h-[15vh] items-center'>
         <div className="flex flex-cols justify-center max-w-3xl mx-auto text-center items-center">

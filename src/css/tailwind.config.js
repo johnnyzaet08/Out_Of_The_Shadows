@@ -6,6 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: '#389adb',
+        secondary: '#000826',
+        secondary_text: '#006dbe',
+        target: '#e57200',
+        skyblue: '#e8f6fe',
         white: {
           100: '#FFFFFF',
           200: '#FCFCFC',
@@ -36,6 +41,10 @@ module.exports = {
           800: '#38379C',
           900: '#262668',
         },
+        blue: {
+          300: '#78bbe6',
+          100: '#d9faff',
+        }
       },
       spacing: {
         '9/16': '56.25%',
@@ -44,7 +53,8 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        'architects-daughter': ['"Architects Daughter"', 'sans-serif']
+        'architects-daughter': ['"Architects Daughter"', 'sans-serif'],
+        italic: ['Roboto Italic', 'Helvetica', 'Arial', 'sans-serif']
       },
       fontSize: {
         xs: '0.75rem',

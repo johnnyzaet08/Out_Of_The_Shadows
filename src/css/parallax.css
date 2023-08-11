@@ -1,0 +1,47 @@
+/* Cloud styles */
+  .FixedBody {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: -1;
+  }
+  
+  .cloud {
+    transform: translateX(0);
+    transition: 0.1s transform;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+  }
+  
+  .cloud_Part {
+    background-color: black;
+    border-radius: calc(3 * 1vmin);
+    box-shadow: inset 1vmin 1vmin 5vmin #f2f2f2;
+  }
+  
+  .cloud_Top {
+    height: calc(5 * 1vmin);
+    width: calc(10 * 1vmin);
+    transform: translate(calc(1 * 1vmin), calc(2.5 * 1vmin));
+    background-color: black;
+  }
+  
+  .cloud_Main {
+    height: calc(5 * 1vmin);
+    width: calc(15 * 1vmin);
+    background-color: red;
+  }
+  
+  .cloud_Bottom {
+    height: calc(5 * 1vmin);
+    width: calc(10 * 1vmin);
+    background-color: blueviolet;
+  }  

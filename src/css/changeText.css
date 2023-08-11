@@ -1,0 +1,25 @@
+.changeText-text {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: gainsboro;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (min-width: 800px) {
+  .changeText-text{
+    font-size: 30px;
+  }
+  .changeText-text-active{
+    font-size: 45px;
+  }
+}
+
+  
+.changeText-text-active {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+}

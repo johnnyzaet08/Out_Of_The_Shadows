@@ -1,0 +1,24 @@
+.animated-stats-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.animated-stats-label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.animated-stats-number-container {
+    font-size: 60px;
+    font-weight: bold;
+    color: #389adb;
+}
+
+.animated-stats-number {
+    margin-right: 10px;
+}

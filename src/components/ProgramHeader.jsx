@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect} from 'react';
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import '../css/ImageGallery.css';
 
@@ -152,9 +152,10 @@ const images = [
 
 const ProgramHeader = () => {
 
-  const sliderRef1 = useRef(null); // Create a reference to the Slider component
+  const sliderRef2 = useRef(null); // Create a reference to the Slider component
 
-  const settings = {
+  const settings2 = {
+    arrows: false,
     dots: false,
     speed: 500,
     slidesToShow: 4,
@@ -162,37 +163,57 @@ const ProgramHeader = () => {
     centerMode: false,
     centerPadding: '0px',
     pauseOnHover: true,
-    touchMove: false,
-    adaptiveHeight: true,
+    touchMove: true,
     autoplay: true,
+
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
 
     afterChange: (index) => {
       
-      document.querySelector(".BLINDNESS").classList.replace("text-primary", "text-gray-200");
-      document.querySelector(".DEAFNESS").classList.replace("text-primary", "text-gray-200");
-      document.querySelector(".INVISIBILITY-DENIAL").classList.replace("text-primary", "text-gray-200");
-      document.querySelector(".SECRETS").classList.replace("text-primary", "text-gray-200");
-      document.querySelector(".SILENCE").classList.replace("text-primary", "text-gray-200");
-      document.querySelector(".INDIFFERENCE-APATHY").classList.replace("text-primary", "text-gray-200");
+      document.querySelector(".BLINDNESS").classList.replace("section-text-active-Header", "section-text-Header");
+      document.querySelector(".DEAFNESS").classList.replace("section-text-active-Header", "section-text-Header");
+      document.querySelector(".INVISIBILITY-DENIAL").classList.replace("section-text-active-Header", "section-text-Header");
+      document.querySelector(".SECRETS").classList.replace("section-text-active-Header", "section-text-Header");
+      document.querySelector(".SILENCE").classList.replace("section-text-active-Header", "section-text-Header");
+      document.querySelector(".INDIFFERENCE-APATHY").classList.replace("section-text-active-Header", "section-text-Header");
 
       switch(images[index].title){
         case 'BLINDNESS':
-          document.querySelector(".BLINDNESS").classList.replace("text-gray-200", "text-primary");
+          document.querySelector(".BLINDNESS").classList.replace("section-text-Header", "section-text-active-Header");
           break;
         case 'DEAFNESS':
-          document.querySelector(".DEAFNESS").classList.replace("text-gray-200", "text-primary");
+          document.querySelector(".DEAFNESS").classList.replace("section-text-Header", "section-text-active-Header");
           break;
         case 'INVISIBILITY-DENIAL':
-          document.querySelector(".INVISIBILITY-DENIAL").classList.replace("text-gray-200", "text-primary");
+          document.querySelector(".INVISIBILITY-DENIAL").classList.replace("section-text-Header", "section-text-active-Header");
           break;
         case 'SECRETS':
-          document.querySelector(".SECRETS").classList.replace("text-gray-200", "text-primary");
+          document.querySelector(".SECRETS").classList.replace("section-text-Header", "section-text-active-Header");
           break;
         case 'SILENCE':
-          document.querySelector(".SILENCE").classList.replace("text-gray-200", "text-primary");
+          document.querySelector(".SILENCE").classList.replace("section-text-Header", "section-text-active-Header");
           break;
         case 'INDIFFERENCE-APATHY':
-          document.querySelector(".INDIFFERENCE-APATHY").classList.replace("text-gray-200", "text-primary");
+          document.querySelector(".INDIFFERENCE-APATHY").classList.replace("section-text-Header", "section-text-active-Header");
           break;
       };
     },
@@ -212,29 +233,29 @@ const ProgramHeader = () => {
               <div className='container-bts-Gallery h-auto'>
                 <ul className='flex items-center justify-between h-full'>
                   <li>
-                      <a className='BLINDNESS text-xl text-bold text-gray-200 hover:text-underline'>BLINDNESS</a>
+                      <a className='BLINDNESS section-text-Header'>BLINDNESS</a>
                   </li>
                   <li>
-                      <a className='DEAFNESS text-xl text-bold text-gray-200 hover:text-underline'>DEAFNESS</a>
+                      <a className='DEAFNESS section-text-Header'>DEAFNESS</a>
                   </li>
                   <li>
-                      <a className='INVISIBILITY-DENIAL text-xl text-bold text-gray-200 hover:text-underline'>INVISIBILITY-DENIAL</a>
+                      <a className='INVISIBILITY-DENIAL section-text-Header'>INVISIBILITY-DENIAL</a>
                   </li>
                   <li>
-                      <a className='INDIFFERENCE-APATHY text-xl text-bold text-gray-200 hover:text-underline'>INDIFFERENCE-APATHY</a>
+                      <a className='INDIFFERENCE-APATHY section-text-Header'>INDIFFERENCE-APATHY</a>
                   </li>
                   <li>
-                      <a className='SECRETS text-xl text-bold text-gray-200 hover:text-underline'>SECRETS</a>
+                      <a className='SECRETS section-text-Header'>SECRETS</a>
                   </li>
                   <li>
-                      <a className='SILENCE text-xl text-bold text-gray-200 hover:text-underline'>SILENCE</a>
+                      <a className='SILENCE section-text-Header'>SILENCE</a>
                   </li>
                 </ul>
               </div>
           </div>
 
           <div className='items-center h-full'>
-            <Slider ref={sliderRef1} {...settings}>
+            <Slider ref={sliderRef2} {...settings2}>
                 {images.map((image) => (
                 <div key={image.id} className="image-box-Gallery">
                     <img className="rounded-lg" src={image.img } alt={image.title} />

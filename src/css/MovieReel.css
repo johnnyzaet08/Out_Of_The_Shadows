@@ -45,9 +45,12 @@
 }
 
 /* Styles for screens larger than 640px */
-@media (min-width: 540px) {
+@media (max-width: 650px) {
   .slick-slide img {
-    height: 300px; /* Increase height for larger screens */
+    height: 300px;
+  }
+  .word{
+    display: none;
   }
 }
 

@@ -93,7 +93,7 @@ function ColorChangingText() {
 
   const [wordSelector, setWordSelector] = useState(1);
   const [nextWordSelector, setNextWordSelector] = useState(2);
-  const sliderRef = useRef(null); // Create a reference to the Slider component
+  const sliderRef1 = useRef(null); // Create a reference to the Slider component
 
   const nextWord = () => {
 
@@ -117,11 +117,11 @@ function ColorChangingText() {
     }
     setWordSelector(nextWordSelector);
     setNextWordSelector((nextWordSelector + 1) % 4);
-    sliderRef.current.slickNext(); // Call the slickNext method to navigate to the next slide
+    sliderRef1.current.slickNext(); // Call the slickNext method to navigate to the next slide
   };
 
 
-  const settings = {
+  const settings1 = {
     dots: false,
     slickNext: false,
     slidesToShow: 4,
@@ -134,9 +134,15 @@ function ColorChangingText() {
     },
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1400,
         settings: {
           slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
         },
       },
       {
@@ -161,7 +167,7 @@ function ColorChangingText() {
       </div>
 
       <div className='block h-full justify-center'>
-        <Slider ref={sliderRef} {...settings}>
+        <Slider ref={sliderRef1} {...settings1}>
           {images.map((image) => (
             <div key={image.id} className="px-[1px]">
               <img className="rounded-xl border-[2px] border-black" src={image.img } alt={image.title} />

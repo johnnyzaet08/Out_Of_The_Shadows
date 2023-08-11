@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 import Slider from 'react-slick';
 import AnimatedStats from './AnimatedStats';
-import '../css/MovieReel.css';
+import '../css/-++.css';
 
 const MovieReel = ({ images }) => {
 
@@ -117,7 +117,7 @@ const MovieReel = ({ images }) => {
 
       <Slider ref={sliderRef} {...settings}>
         {images.map((image) => (
-          <div key={image.id} className="w-full px-[1px]">
+          <div key={image.id} className="w-full md:h-[200px] px-[1px]">
             <img className="rounded-lg w-auto" src={image.img } alt={image.title} />
           </div>
         ))}

@@ -13,30 +13,30 @@ const StopChildAbuse = () => {
 
     switch(counterPrimary) {
       case 1:
-        document.querySelector(".refText1").classList.replace("section-text-Gallery", "section-text-active-Gallery");
+        document.querySelector(".refText1").classList.replace("section-text-ChildAbuse", "section-text-active-ChildAbuse");
         break;
       case 2:
-        document.querySelector(".refText1").classList.replace("section-text-active-Gallery", "section-text-Gallery");
-        document.querySelector(".refText2").classList.replace("section-text-Gallery", "section-text-active-Gallery");
+        document.querySelector(".refText1").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
+        document.querySelector(".refText2").classList.replace("section-text-ChildAbuse", "section-text-active-ChildAbuse");
         break;
       case 3:
-        document.querySelector(".refText2").classList.replace("section-text-active-Gallery", "section-text-Gallery");
-        document.querySelector(".refText3").classList.replace("section-text-Gallery", "section-text-active-Gallery");
+        document.querySelector(".refText2").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
+        document.querySelector(".refText3").classList.replace("section-text-ChildAbuse", "section-text-active-ChildAbuse");
         break;
       case 4:
-        document.querySelector(".refText3").classList.replace("section-text-active-Gallery", "section-text-Gallery");
-        document.querySelector(".refText4").classList.replace("section-text-Gallery", "section-text-active-Gallery");
+        document.querySelector(".refText3").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
+        document.querySelector(".refText4").classList.replace("section-text-ChildAbuse", "section-text-active-ChildAbuse");
         break;
       case 5:
-        document.querySelector(".refText4").classList.replace("section-text-active-Gallery", "section-text-Gallery");
-        document.querySelector(".refText5").classList.replace("section-text-Gallery", "section-text-active-Gallery");
+        document.querySelector(".refText4").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
+        document.querySelector(".refText5").classList.replace("section-text-ChildAbuse", "section-text-active-ChildAbuse");
         break;
       case 6:
-        document.querySelector(".refText5").classList.replace("section-text-active-Gallery", "section-text-Gallery");
-        document.querySelector(".refText6").classList.replace("section-text-Gallery", "section-text-active-Gallery");
+        document.querySelector(".refText5").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
+        document.querySelector(".refText6").classList.replace("section-text-ChildAbuse", "section-text-active-ChildAbuse");
         break;
       default:
-        document.querySelector(".refText6").classList.replace("section-text-active-Gallery", "section-text-Gallery");
+        document.querySelector(".refText6").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
         break;
     }
     setCounterPrimary(nextCounterPrimary);
@@ -59,12 +59,12 @@ const StopChildAbuse = () => {
 
       <div className='flex h-[15vh] items-center'>
         <div className="flex flex-cols justify-center max-w-3xl mx-auto text-center items-center">
-          <h1 className="refText1 section-text-Gallery"> YOU </h1>
-          <h1 className="refText2 section-text-Gallery"> CAN </h1>
-          <h1 className="refText3 section-text-Gallery"> HELP </h1>
-          <h1 className="refText4 section-text-Gallery"> STOP </h1>
-          <h1 className="refText5 section-text-Gallery"> CHILD </h1>
-          <h1 className="refText6 section-text-Gallery"> ABUSE </h1>
+          <h1 className="refText1 section-text-ChildAbuse"> YOU </h1>
+          <h1 className="refText2 section-text-ChildAbuse"> CAN </h1>
+          <h1 className="refText3 section-text-ChildAbuse"> HELP </h1>
+          <h1 className="refText4 section-text-ChildAbuse"> STOP </h1>
+          <h1 className="refText5 section-text-ChildAbuse"> CHILD </h1>
+          <h1 className="refText6 section-text-ChildAbuse"> ABUSE </h1>
         </div>
       </div>
 

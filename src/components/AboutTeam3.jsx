@@ -67,8 +67,6 @@ function AboutTeam2() {
   return (
     <div className='AboutTeamContainer'>
 
-      <div />
-
       <div className='AboutTeamSectionContainer'>
         <p className="AboutTeamTextFont AboutTeamSectionHead">
             {isSelected ? selectedPerson.name : 'Our Team'}
@@ -77,19 +75,21 @@ function AboutTeam2() {
           {isSelected ? (
             <div className='AboutTeamSectionBodyText'>
               {selectedPerson.info.map ((textInfo, index) => (
-                <p key={index} className="AboutTeamTextFont AboutTeamSectionBodyText">
+                <p key={index} className="AboutTeamTextFontBody">
                   {textInfo}
                 </p>
               ))}
             </div>
           ) : (
-            <p className="AboutTeamTextFont AboutTeamSectionBodyText">
-              'Misión de OOTS'
-            </p>
+            <div className='AboutTeamSectionBodyText'>
+              <p className="AboutTeamTextFont AboutTeamSectionBodyText">
+                'Misión de OOTS'
+              </p>
+            </div>
           )}
         </div>
         <div>
-          <button className="AboutTeamTextFont hover:text-primary" onClick={handleButtonClick}> Our Mision </button>
+          <button className="AboutTeamTextFont hover:text-primary px-2" onClick={handleButtonClick}> Our Mision </button>
         </div>
       </div>
 
@@ -114,8 +114,6 @@ function AboutTeam2() {
           </div>
         ))}
       </div>
-
-      <div />
 
     </div>
   );

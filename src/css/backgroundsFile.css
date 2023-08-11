@@ -5,3 +5,19 @@
 .bannerTimerBackground {
     background: radial-gradient(circle at top, #ffffff , #78bbe6)
 }
+
+.dayToNight{
+    background: linear-gradient(185deg, rgba(0,32,74,1) 25%, rgba(253,95,0,1) 40%, rgba(217,250,255,1) 69%);
+}
+
+@media (max-width: 500px) {
+    .dayToNight {
+        background: linear-gradient(185deg, rgba(0,32,74,1) 25%, rgba(253,95,0,1) 35%, rgba(217,250,255,1) 50%);
+    }
+}
+
+@media  (min-width: 501px ) and (max-width: 850px) {
+    .dayToNight {
+        background: linear-gradient(185deg, rgba(0,32,74,1) 30%, rgba(253,95,0,1) 35%, rgba(217,250,255,1) 60%);
+    }
+}

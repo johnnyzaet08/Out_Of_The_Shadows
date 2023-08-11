@@ -34,13 +34,11 @@ function Donation() {
 
 
         <div className='clockContainer'>
-
           <div className='labelHolder'>
             <span className='text-white-100 p-2'>
               Every minute that passes is a chance to help someone
             </span>
           </div>
-
           <div className='clockHolder'>
             <span className='position'>
               <span className='digit static'>
@@ -61,19 +59,16 @@ function Donation() {
             </span>
           </div>
           
-          
         </div>
 
-        <div className="bg-white-100 rounded-lg p-8 mb-auto mx-auto mt-[10%] shadow-md max-w-md w-full text-center">
-        <h1 className="text-3xl mb-4">Donate to OOTS</h1>
-        <p className="text-gray-700 mb-6"> Your support can make a difference in the lives of children around the world.</p>
-        <p className="text-gray-700 mb-6"> Out of the Shadows’ Federal Taxpayer I.D. Number is 36‐4975843. </p>
-        <button className="rounded-[100vh] bg-target hover:bg-gray-200 text-white font-bold py-2 px-4 rounded" onClick={handleModalOpen}>Donate Now</button>
+        <div className="donationContainer">
+          <h1 className="text-3xl mb-4">Donate to OOTS</h1>
+          <p className="text-gray-700 mb-6"> Your support can make a difference in the lives of children around the world.</p>
+          <button className="rounded-[100vh] bg-target hover:bg-gray-200 text-white font-bold py-2 px-4 rounded" onClick={handleModalOpen}>Donate Now</button>
         </div>
+
 
       </div>
-
-      
 
       <ModalComponent isOpen={isModalOpen} onClose={handleModalClose}>
         <div className='w-[50vh] h-[50vh] bg-white-100'>

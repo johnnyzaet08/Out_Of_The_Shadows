@@ -70,3 +70,36 @@
 	background-image: -webkit-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
 	background-image: -ms-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
 }
+
+
+.donationContainer {
+  background-color: #f7fafc; 
+  border-radius: 0.5rem; 
+  padding: 2rem;
+  margin-bottom: auto;
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 10%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Shadow */
+  max-width: 28rem;
+  width: 100%;
+  text-align: center;
+}
+
+
+@media (max-width: 900px) {
+
+  .labelHolder {
+    width: 80%;
+  }
+  
+  .donationContainer{
+    width: 90%;
+  }
+
+  .holder {
+    grid-template-columns: 100%; /* Single column layout for mobile */
+    grid-template-rows: auto; /* Allow rows to adjust based on content */
+    grid-column-gap: 0px; /* No gap between columns */
+  }
+}

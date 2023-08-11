@@ -4,9 +4,10 @@ import logo from '../images/logo.png';
 
 function Footer() {
   return (
-  <div className="w-full bg-[#fff] relative z-10 bg-[#d5eeff] pt-20 pr-10 lg:pt-[80px]">
+  <div>
+    <div className="w-full bg-white-100 relative z-10 pt-20 pr-10 lg:pt-[80px]">
     <div className="container mx-auto">
-      <div className="-mx-4 flex flex-wrap">
+      <div className="mx-1 flex flex-wrap">
         
         <div className="w-full px-4 sm:w-2/3 lg:w-2/12">
           <div className="mb-10 w-full">
@@ -18,7 +19,7 @@ function Footer() {
               />
             </a>
             <p className="text-dark flex items-center text-sm font-medium">
-              <span className="text-primary mr-3">
+              <span className="text-primary mr-3 mb-2">
                 <svg
                   width="19"
                   height="21"
@@ -39,7 +40,7 @@ function Footer() {
               <span>+</span>
             </p>
             <p className="text-dark flex items-center text-sm font-medium">
-              <span className="text-primary mr-3">
+              <span className="text-primary mr-3 mb-2">
                 <svg
                   width="19"
                   height="21"
@@ -121,7 +122,7 @@ function Footer() {
                 className="text-dark hover:bg-primary hover:border-primary mr-3 flex h-4 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
               >
                 <svg
-                  width="8"
+                  width="16"
                   height="16"
                   viewBox="0 0 8 16"
                   className="fill-current"
@@ -184,7 +185,7 @@ function Footer() {
 
 
 
-    <div>
+   < div>
       <span className="absolute left-0 bottom-0 z-[-1]">
         <svg
           width="217"
@@ -212,43 +213,21 @@ function Footer() {
           </defs>
         </svg>
       </span>
-      <span className="absolute top-10 right-10 z-[-1]">
-        <svg
-          width="75"
-          height="75"
-          viewBox="0 0 75 75"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
-            fill="url(#paint0_linear_1179_4)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_1179_4"
-              x1="-1.63917e-06"
-              y1="37.5"
-              x2="75"
-              y2="37.5"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#13C296" stopOpacity="0.31" />
-              <stop offset="1" stopColor="#C4C4C4" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </span>
     </div>
 
-    <div className='flex w-full items-center bg-[#1B75B0] h-[100px]'>
-      <div className='flex justify-center items-center text-center'>
-        <p className="text-white-100 text-body-color text-base text-center">&copy; 2023 Out of the Shadows (OOTS)</p>
+  </div >
+
+  <div className='flex w-full items-center bg-[#1B75B0] h-[100px]'>
+      <div className='w-1/2 flex justify-center items-center text-center'>
+        <p className="w-full text-white-100 text-body-color text-base text-center">&copy; 2023 Out of the Shadows (OOTS)</p>
+      </div>
+      <div className='w-1/2 flex justify-center items-center text-center'>
+        <p className="w-full text-white-100 text-body-color text-base text-center">Out of the Shadows’ Federal Taxpayer I.D. Number is 36‐4975843</p>
       </div>
     </div>
 
-
-  </div >
+  </div>
+  
 
   );
 }

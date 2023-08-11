@@ -3,7 +3,6 @@ import React from 'react';
 import Header from '../components/Header';
 import PageIllustration from '../components/PageIllustration';
 import Programs_Services from '../components/ProgramsServices';
-import ProgramHeader from '../components/ProgramHeader';
 import StopChildAbuse from '../components/StopChildAbuse';
 
 import Footer from '../components/Footer';
@@ -27,9 +26,9 @@ function page2() {
           <PageIllustration />
         </div>
 
-        <Programs_Services />
 
         <div className='mt-[5vh] mb-[15vh]'> 
+          <Programs_Services />
         </div>
         
 

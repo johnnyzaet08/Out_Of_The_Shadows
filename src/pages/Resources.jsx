@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ParallaxClouds from '../components/BackgroundParallax';
 
-import '../css/backgroundDaytoNight.css';
+import '../css/backgroundsFile.css';
 
 function page3() {
   return (

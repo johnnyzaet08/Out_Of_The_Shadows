@@ -25,9 +25,7 @@
   filter: contrast(120%);
 }
 
-.section-text-Gallery {
-  background-size: cover;
-  background-position: center;
+.section-text-ChildAbuse {
   margin-left: 1rem;
   margin-right: 1rem;
   color: black;
@@ -35,12 +33,24 @@
   font-weight: bold;
 }
 
-.section-text-active-Gallery {
+.section-text-Header {
+  color: gray;
+  font-size: 1rem;
+  opacity: 60%;
+}
+
+.section-text-active-ChildAbuse {
   margin-left: 1rem;
   margin-right: 1rem;
   color: #389adb;
   font-size: 6rem;
   font-weight: bold;
+}
+
+.section-text-active-Header {
+  color: #389adb;
+  font-size: 1rem;
+  opacity: 100%;
 }
 
     
@@ -79,4 +89,16 @@
   width: 100%;
   height: 100%;
   padding: 1px;
+}
+
+@media  (max-width: 800px) {
+  .section-text-Header{
+    display: none;
+    font-size: 2rem;
+  }
+
+  .section-text-ChildAbuse{
+    display: none;
+    font-size: 2rem;
+  }
 }

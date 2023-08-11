@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import image from '../images/BackgroundParallax.png';
 import ResourcesComponent from '../components/Resources';
+import { Background } from 'react-parallax';
 
 const ParallaxClouds = () => {
   
@@ -8,7 +9,9 @@ const ParallaxClouds = () => {
 
   return (
     <div className="" style={{ 
-      backgroundImage: `url(${image})` }}>
+      backgroundImage: `url(${image})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover'}}>
       <ResourcesComponent />
     </div>
   );

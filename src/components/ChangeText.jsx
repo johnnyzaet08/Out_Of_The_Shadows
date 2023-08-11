@@ -49,8 +49,8 @@ function ChangeText() {
 
   return (
     <div className="flex w-full h-auto mt-20 items-center justify-center md:mt-10">
-      <div className="flex flex-cols items-center justify-center mt-auto w-[60%] h-[15vh] mx-auto">
-        <h1 className="changeText-ref h1 changeText-text">{text}</h1>
+      <div className="flex flex-cols items-center justify-center mt-auto w-[60%] h-[10rem] mx-auto">
+        <h1 className="changeText-ref h1 changeText-text text-center">{text}</h1>
       </div>
     </div>
 

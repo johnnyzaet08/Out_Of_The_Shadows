@@ -17,7 +17,6 @@ function DonationBanner() {
   };
 
   useEffect(() => {
-    // Set a timeout to hide the component after 3 seconds
     const timeout  = setTimeout(() => {
       if(isClosed){
         setBannerOpen(true);
@@ -36,7 +35,7 @@ function DonationBanner() {
   return (
     <>
       {bannerOpen && (
-        <div className="fixed bottom-20 right-1 opacity-85 md:opacity-100 md:right-4 w-auto z-20">
+        <div className="fixed w-[35%] xs:[25%] md:w-[20%] lg:w-[15%] xl:w-[10%] bottom-20 right-1 opacity-85 md:opacity-100 md:right-4 w-auto z-20">
           <div className="bg-target text-sm p-3 md:rounded shadow-lg flex justify-between">
             <div className="text-white-100 inline-flex justify-center">
               <a
@@ -44,7 +43,7 @@ function DonationBanner() {
                 href="/Donations"
                 rel="noreferrer"
               >
-                <div className="flex items-center justify-center h-24 w-24 fill-current text-white-500 hover:text-red-500">
+                <div className="flex w-full h-auto items-center justify-center fill-current text-white-500 hover:text-red-500">
                   {isHover ? (
                     <img
                       src={Donation1}

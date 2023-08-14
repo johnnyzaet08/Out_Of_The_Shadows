@@ -89,7 +89,7 @@ function AboutTeam2() {
           )}
         </div>
         <div>
-          <button className="AboutTeamTextFont hover:text-primary px-2" onClick={handleButtonClick}> Our Mision </button>
+          <button className="AboutTeamTextFont underline hover:text-primary px-2" onClick={handleButtonClick}> Our Mision </button>
         </div>
       </div>
 

@@ -12,12 +12,13 @@ function Donation() {
     setInterval(() => 
     {
       setDate(new Date());
-    }, 1000);
+    }, 1);
   }, []);
 
   const hours = date.toLocaleString('en-US', { hour: 'numeric', hour12: false });
   const minutes = date.toLocaleString('en-US', { minute: '2-digit' });
-  const seconds = date.toLocaleString('en-US', { second: '2-digit' });  
+  const seconds = date.toLocaleString('en-US', { second: '2-digit' });
+  const miliseconds = date.getMilliseconds();
 
   const handleModalOpen = () => {
     setIsModalOpen(true);
@@ -55,6 +56,12 @@ function Donation() {
             <span className='position'>
               <span className='digit static'>
                 {("0" + seconds).slice(-2)}
+              </span>
+            </span>
+            <span className='text-white-100 p-2 -translate-y-1'> : </span>
+            <span className='position'>
+              <span className='digit static'>
+                {("0" + miliseconds).slice(-2)}
               </span>
             </span>
           </div>

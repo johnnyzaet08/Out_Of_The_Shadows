@@ -97,21 +97,22 @@ function ColorChangingText() {
 
   const nextWord = () => {
 
+    document.querySelector(".refWord1").classList.replace("word-active", "word");
+    document.querySelector(".refWord2").classList.replace("word-active", "word");
+    document.querySelector(".refWord3").classList.replace("word-active", "word");
+    document.querySelector(".refWord4").classList.replace("word-active", "word");
+
     switch(wordSelector){
       case 0:
-        document.querySelector(".refWord4").classList.replace("word-active", "word");
         document.querySelector(".refWord1").classList.replace("word", "word-active");
         break;
       case 1:
-        document.querySelector(".refWord1").classList.replace("word-active", "word");
         document.querySelector(".refWord2").classList.replace("word", "word-active");
         break;
       case 2:
-        document.querySelector(".refWord2").classList.replace("word-active", "word");
         document.querySelector(".refWord3").classList.replace("word", "word-active");
         break;
       case 3:
-        document.querySelector(".refWord3").classList.replace("word-active", "word");
         document.querySelector(".refWord4").classList.replace("word", "word-active");
         break;
     }
@@ -159,7 +160,7 @@ function ColorChangingText() {
       
       <div className="flex items-center justify-center w-full h-auto mx-auto mb-auto mt-5 pb-12 md:pb-15">
         <div className="flex flex-cols items-center justify-center mt-auto w-[60%] h-full mx-auto">
-          <h1 className="refWord1 word">Out</h1>
+          <h1 className="refWord1 word-active">Out</h1>
           <h1 className="refWord2 word">Of</h1>
           <h1 className="refWord3 word">The</h1>
           <h1 className="refWord4 word">Shadows</h1>

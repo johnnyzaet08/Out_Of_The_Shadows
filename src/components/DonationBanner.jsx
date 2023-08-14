@@ -22,7 +22,7 @@ function DonationBanner() {
         setBannerOpen(true);
         setIsClosed(false);
       };
-    }, 3600);
+    }, 20000);
 
     return () => clearTimeout(timeout);
   }, [isClosed]);
@@ -35,7 +35,7 @@ function DonationBanner() {
   return (
     <>
       {bannerOpen && (
-        <div className="fixed w-[35%] xs:[25%] md:w-[20%] lg:w-[15%] xl:w-[10%] bottom-20 right-1 opacity-85 md:opacity-100 md:right-4 w-auto z-20">
+        <div className="fixed w-[150px] md:w-[160px] lg:w-[170px] xl:w-[180px] 2xl:w-[200px] bottom-20 right-1 opacity-85 md:opacity-100 md:right-4 w-auto z-20">
           <div className="bg-target text-sm p-3 md:rounded shadow-lg flex justify-between">
             <div className="text-white-100 inline-flex justify-center">
               <a

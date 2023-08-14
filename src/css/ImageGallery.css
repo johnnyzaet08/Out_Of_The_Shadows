@@ -42,13 +42,13 @@
 .section-text-active-ChildAbuse {
   margin-left: 1rem;
   margin-right: 1rem;
-  color: #389adb;
+  color: red;
   font-size: 6rem;
   font-weight: bold;
 }
 
 .section-text-active-Header {
-  color: #389adb;
+  color: red;
   font-size: 1rem;
   opacity: 100%;
 }

@@ -339,10 +339,10 @@ const ResourcesComponent = () => {
 
           { /* Section Title */ }
           <div className='w-full mx-auto text-center'>
-            <h2 className="mb-4 text-3xl font-bold !leading-tight text-white-100 sm:text-4xl md:text-[35px]">
+            <h2 className="mb-4 text-3xl font-bold text-white-100 sm:text-4xl md:text-[35px]">
               LOS ANGELES COUNTY: LOCAL COMMUNITY RESOURCES
             </h2>
-            <h3 className="mt-5 text-xl font-bold text-black dark:text-white-100 sm:text-2xl lg:text-xl xl:text-2xl">
+            <h3 className="mt-5 text-xl font-bold text-white-100 sm:text-2xl lg:text-xl xl:text-2xl">
               SERVICES BY CATEGORY
             </h3>
           </div>

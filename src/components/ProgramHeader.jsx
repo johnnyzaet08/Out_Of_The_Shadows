@@ -233,7 +233,7 @@ const ProgramHeader = () => {
               <div className='container-bts-Gallery h-auto'>
                 <ul className='flex items-center justify-between h-full'>
                   <li>
-                      <a className='BLINDNESS section-text-Header'>BLINDNESS</a>
+                      <a className='BLINDNESS section-text-active-Header'>BLINDNESS</a>
                   </li>
                   <li>
                       <a className='DEAFNESS section-text-Header'>DEAFNESS</a>

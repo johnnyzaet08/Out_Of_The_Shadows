@@ -42,7 +42,7 @@ function Programs_Services() {
                 </g>
               </svg>
               <h4 className="h4 mb-2">Education</h4>
-              <p className="text-lg text-gray-400 text-justify">
+              <p className="mt-2 text-lg text-gray-400 text-justify">
                 ➊ Serve as a clearing house for clients in need of counseling.
               </p>
               <p className="mt-2 text-lg text-gray-400 text-justify">
@@ -64,13 +64,13 @@ function Programs_Services() {
                 </g>
               </svg>
               <h4 className="h4 mb-2">Education</h4>
-              <p className="text-lg text-gray-400 text-justify">
+              <p className="text-lg text-gray-400 text-justify ">
                 ➊ Our goal is to empower people with knowledge and information in this subject.
               </p>
-              <p className="mt-2 text-lg text-gray-400 text-justify">
+              <p className="w-full mt-2 text-lg text-gray-400 text-justify">
                 ➋ Substance abuse therapy.
               </p>
-              <p className="mt-2 text-lg text-gray-400 text-justify">
+              <p className="w-full mt-2 text-lg text-gray-400 text-justify">
                 ➌ Suicide prevention.
               </p>            
             </div>

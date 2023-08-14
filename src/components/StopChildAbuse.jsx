@@ -11,28 +11,30 @@ const StopChildAbuse = () => {
 
   const nextText = () => {
 
+    document.querySelector(".refText1").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
+    document.querySelector(".refText2").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
+    document.querySelector(".refText3").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
+    document.querySelector(".refText4").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
+    document.querySelector(".refText5").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
+
+
     switch(counterPrimary) {
       case 1:
         document.querySelector(".refText1").classList.replace("section-text-ChildAbuse", "section-text-active-ChildAbuse");
         break;
       case 2:
-        document.querySelector(".refText1").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
         document.querySelector(".refText2").classList.replace("section-text-ChildAbuse", "section-text-active-ChildAbuse");
         break;
       case 3:
-        document.querySelector(".refText2").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
         document.querySelector(".refText3").classList.replace("section-text-ChildAbuse", "section-text-active-ChildAbuse");
         break;
       case 4:
-        document.querySelector(".refText3").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
         document.querySelector(".refText4").classList.replace("section-text-ChildAbuse", "section-text-active-ChildAbuse");
         break;
       case 5:
-        document.querySelector(".refText4").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
         document.querySelector(".refText5").classList.replace("section-text-ChildAbuse", "section-text-active-ChildAbuse");
         break;
       case 6:
-        document.querySelector(".refText5").classList.replace("section-text-active-ChildAbuse", "section-text-ChildAbuse");
         document.querySelector(".refText6").classList.replace("section-text-ChildAbuse", "section-text-active-ChildAbuse");
         break;
       default:
@@ -59,7 +61,7 @@ const StopChildAbuse = () => {
 
       <div className='flex h-[15vh] items-center'>
         <div className="flex flex-cols justify-center max-w-3xl mx-auto text-center items-center">
-          <h1 className="refText1 section-text-ChildAbuse"> YOU </h1>
+          <h1 className="refText1 section-text-active-ChildAbuse"> YOU </h1>
           <h1 className="refText2 section-text-ChildAbuse"> CAN </h1>
           <h1 className="refText3 section-text-ChildAbuse"> HELP </h1>
           <h1 className="refText4 section-text-ChildAbuse"> STOP </h1>

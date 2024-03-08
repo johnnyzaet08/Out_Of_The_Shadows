@@ -33,39 +33,35 @@ function Donation() {
 
       <div className="holder h-screen w-screen bg-cover bg-center" style={{ backgroundImage: `url(${image})` }}>
 
+        <div className="show-counter">
 
-        <div className='clockContainer'>
-          <div className='labelHolder'>
-            <span className='text-white-100 p-2'>
-              Every minute that passes is a chance to help someone
-            </span>
-          </div>
-          <div className='clockHolder'>
-            <span className='position'>
-              <span className='digit static'>
-                {("0" + hours).slice(-2)}
-              </span>
-            </span>
-            <span className='text-white-100 p-2 -translate-y-1'> : </span>
-            <span className='position'>
-              <span className='digit static'>
-                {("0" + minutes).slice(-2)}
-              </span>
-            </span>
-            <span className='text-white-100 p-2 -translate-y-1'> : </span>
-            <span className='position'>
-              <span className='digit static'>
-                {("0" + seconds).slice(-2)}
-              </span>
-            </span>
-            <span className='text-white-100 p-2 -translate-y-1'> : </span>
-            <span className='position'>
-              <span className='digit static'>
-                {("0" + miliseconds).slice(-2)}
-              </span>
-            </span>
-          </div>
-          
+          <a className='countdown-link'>
+            <p> Every second that passes is a chance to help someone</p>
+          </a>
+
+          <a
+            className="countdown-link"
+          >
+            <div className='countdown'>
+              <p>{("0" + hours).slice(-2)}</p>
+              <span>Hours</span>
+            </div>
+            <p>:</p>
+            <div className='countdown'>
+              <p>{("0" + minutes).slice(-2)}</p>
+              <span>Minutes</span>
+            </div>
+            <p>:</p>
+            <div className='countdown'>
+              <p>{("0" + seconds).slice(-2)}</p>
+              <span>Seconds</span>
+            </div>
+            <p>:</p>
+            <div className='countdown'>
+              <p>{("0" + miliseconds).slice(-2)}</p>
+              <span>Miliseconds</span>
+            </div>
+          </a>
         </div>
 
         <div className="donationContainer">

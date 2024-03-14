@@ -87,6 +87,7 @@ function Footer() {
             <ul>
               <li>
                 <a
+                  href='/'
                   className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                 >
                   Home
@@ -94,6 +95,7 @@ function Footer() {
               </li>
               <li>
                 <a
+                  href='/WeCare'
                   className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                 >
                   We Care
@@ -101,6 +103,7 @@ function Footer() {
               </li>
               <li>
                 <a
+                  href='/AboutUs'
                   className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                 >
                   About Us
@@ -108,6 +111,7 @@ function Footer() {
               </li>
               <li>
                 <a
+                  href='/Resources'
                   className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                 >
                   Resources
@@ -115,6 +119,7 @@ function Footer() {
               </li>
               <li>
                 <a
+                  href='/Donations'
                   className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                 >
                   Donations

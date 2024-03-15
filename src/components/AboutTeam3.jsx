@@ -105,6 +105,7 @@ function AboutTeam2() {
                 </div>
               </div>
             </div>
+
           )}
         </div>
         <div>

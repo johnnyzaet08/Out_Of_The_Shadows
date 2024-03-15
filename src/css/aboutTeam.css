@@ -28,8 +28,8 @@
 .AboutTeamSectionContainer {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 15% 80% 5%;
-  grid-row-gap: 1rem;
+  grid-template-rows: 10% 85% 5%;
+  grid-row-gap: 10px;
   justify-items: center;
   align-items: center;
 }
@@ -137,8 +137,6 @@
 
 .AboutTeamSection {
   height: max-content;
-  margin: 10px;
-  padding: auto;
 }
 
 .AboutTeamSectionBody {
@@ -157,7 +155,7 @@
   font-family: 'Helvetica Neue', sans-serif;
   text-align: center;
   font: bold;
-  font-size: 1.8em;
+  font-size: 2em;
   color: #000; 
   margin-bottom: 10px;
 }
@@ -165,7 +163,7 @@
 .AboutTeamSectionBodyText {
   font-family: 'Helvetica Neue', sans-serif;
   text-align: justify;
-  font-size: 1em; 
+  font-size: 1.2em; 
   color: #666;
   line-height: 1.5; 
 }

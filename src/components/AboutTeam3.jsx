@@ -81,10 +81,29 @@ function AboutTeam2() {
               ))}
             </div>
           ) : (
-            <div className='AboutTeamSectionBodyText'>
-              <p className="AboutTeamTextFont AboutTeamSectionBodyText">
-                'Misión de OOTS'
-              </p>
+            <div className='AboutTeamSection'>
+              <div className='AboutTeamSectionBody'>
+                <div className='AboutTeamSectionBodyBlock'>
+                  <h3 className='AboutTeamSectionTitle'>Purpose</h3>
+                  <p className='AboutTeamSectionBodyText'>
+                    OUT OF THE SHADOWS (OOTS) is a proposed non-profit that will provide support and understanding for the adult victims of child sex abuse who are still dealing with the pain and trauma. Participants will be provided a safe, confidential and judgment free environment.
+                  </p>
+                </div>
+                
+                <div className='AboutTeamSectionBodyBlock'>
+                  <h3 className='AboutTeamSectionTitle'>Mission Statement</h3>
+                  <p className='AboutTeamSectionBodyText'>
+                    To help people to come OUT OF THEIR SHADOWS, give them HOPE and find a purpose in life.
+                  </p>
+                </div>
+                
+                <div className='AboutTeamSectionBodyBlock'>
+                  <h3 className='AboutTeamSectionTitle'>Message</h3>
+                  <p className='AboutTeamSectionBodyText'>
+                    HOPE: Helping Other People Everyday.
+                  </p>
+                </div>
+              </div>
             </div>
           )}
         </div>

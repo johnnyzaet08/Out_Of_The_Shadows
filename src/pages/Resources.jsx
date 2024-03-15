@@ -11,7 +11,7 @@ function page3() {
     <div className="dayToNight flex flex-col min-h-screen overflow-hidden">
       <Header />
 
-      <main className="grow pt-16 md:pt-28">
+      <main className="grow">
 
         <ParallaxClouds />
       

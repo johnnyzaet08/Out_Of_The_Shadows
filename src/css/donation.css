@@ -1,11 +1,11 @@
 .holder {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50%;
-  grid-column-gap: 20px;
-  grid-row-gap: 0px;
-  justify-items: stretch;
-  align-items: stretch;
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+  grid-template-columns: 1fr; /* Una sola columna */
+  grid-template-rows: auto 1fr auto; /* Tres filas: arriba, centro y abajo */
+  justify-items: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  grid-gap: 20px; /* Espacio entre las filas */
 }
 
 .clockContainer {
@@ -81,7 +81,8 @@
 }
 
 .show-counter {
-  padding: 0.5rem;
+  grid-column: 1 / 2; /* Coloca el contador en la segunda fila (centro) */
+  padding: 1rem;
 }
 
 .show-counter .countdown-link {

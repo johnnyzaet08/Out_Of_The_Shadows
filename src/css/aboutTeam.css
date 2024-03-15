@@ -134,3 +134,45 @@
     margin-top: 2em;
   }
 }
+
+.AboutTeamSection {
+  height: max-content;
+  margin: 10px;
+  padding: auto;
+}
+
+.AboutTeamSectionBody {
+  display: flex;
+  flex-direction: column; 
+  gap: 30px;
+}
+
+.AboutTeamSectionBodyBlock {
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.AboutTeamSectionTitle {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font: bold;
+  font-size: 1.8em;
+  color: #000; 
+  margin-bottom: 10px;
+}
+
+.AboutTeamSectionBodyText {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: justify;
+  font-size: 1em; 
+  color: #666;
+  line-height: 1.5; 
+}
+
+/* Puedes añadir media queries para hacer la página responsiva */
+@media (max-width: 768px) {
+  .AboutTeamSectionBody {
+    flex-direction: column;
+  }
+}

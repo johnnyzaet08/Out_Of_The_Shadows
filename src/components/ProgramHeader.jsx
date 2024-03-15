@@ -222,14 +222,9 @@ const ProgramHeader = () => {
 
   return (
     <div>
-      <div className='flex w-full h-auto justify-center items-center'>
+      <div className='flex mx-auto justify-center items-center w-3/4'>
         <div className='container-box-Gallery'>
             <div className='w-full h-auto pb-2'>
-              <div className='hidden text-center w-full h-auto mb-2'>
-                <span className='text-2xl text-bold'>
-                  You Can STOP
-                </span>
-              </div>
               <div className='container-bts-Gallery h-auto'>
                 <ul className='flex items-center justify-between h-full'>
                   <li>
@@ -254,13 +249,16 @@ const ProgramHeader = () => {
               </div>
           </div>
 
-          <div className='items-center h-full'>
+
+          <div className='block mx-auto justify-center'>
             <Slider ref={sliderRef2} {...settings2}>
-                {images.map((image) => (
-                <div key={image.id} className="image-box-Gallery">
-                    <img className="rounded-lg" src={image.img } alt={image.title} />
+              {images.map((image) => (
+                <div key={image.id} className="px-[1px]">
+                  <div className="relative pb-[120%]">
+                    <img className="rounded-xl border-[2px] border absolute top-0 left-0 w-full h-full object-cover" src={image.img} alt={image.title} />
+                  </div>
                 </div>
-                ))}
+              ))}
             </Slider>
           </div>
           

@@ -30,8 +30,14 @@ function Home() {
 
         <div className='flex h-auto w-full items-center justify-center'>
           <div className=' h-auto w-[70%] text-center'>
-            <h1 className='mt-10 mb-20 text-bold text-[30px] text-center lg:text-[40px]' style={{ fontFamily: 'Calendas Plus' }}>
-              Adult survivors of childhood abuse are more likely to experience mental health difficulties, including depression, anxiety, bipolar disorder, PTSD, eating disorders, and substance use disorders.
+            <h1 className='mt-10 text-bold text-[2.5rem] text-black text-center`' style={{ fontFamily: 'Calendas Plus' }}>
+              PURPOSE
+            </h1>
+            <h1 className='mt-10 mb-20 text-bold text-[2.1rem] opacity-[70%] text-justify' style={{ fontFamily: 'Calendas Plus' }}>
+              OUT OF THE SHADOWS (OOTS) is a proposed non-profit that will provide support and
+              understanding for the adult victims of child sex abuse who are still dealing with the pain
+              and trauma. Participants will be provided a safe, confidential and judgment free
+              environment.
             </h1>
           </div>
         </div>

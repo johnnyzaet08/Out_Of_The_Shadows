@@ -26,15 +26,22 @@
 }
 
 .word {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   color: black;
   margin-left: 10px;
-  
+}
+
+.word-aux {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+  opacity: 70%;;
 }
 
 .word-active {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bold;
   color: red;
   margin-left: 20px;

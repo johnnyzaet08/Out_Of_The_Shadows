@@ -28,8 +28,8 @@
 .AboutTeamSectionContainer {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 15% 80% 5%;
-  grid-row-gap: 1rem;
+  grid-template-rows: 10% 85% 5%;
+  grid-row-gap: 10px;
   justify-items: center;
   align-items: center;
 }
@@ -132,5 +132,45 @@
   }
   .AboutTeamCardContainer {
     margin-top: 2em;
+  }
+}
+
+.AboutTeamSection {
+  height: max-content;
+}
+
+.AboutTeamSectionBody {
+  display: flex;
+  flex-direction: column; 
+  gap: 30px;
+}
+
+.AboutTeamSectionBodyBlock {
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.AboutTeamSectionTitle {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font: bold;
+  font-size: 2em;
+  color: #000; 
+  margin-bottom: 10px;
+}
+
+.AboutTeamSectionBodyText {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: justify;
+  font-size: 1.2em; 
+  color: #666;
+  line-height: 1.5; 
+}
+
+/* Puedes añadir media queries para hacer la página responsiva */
+@media (max-width: 768px) {
+  .AboutTeamSectionBody {
+    flex-direction: column;
   }
 }

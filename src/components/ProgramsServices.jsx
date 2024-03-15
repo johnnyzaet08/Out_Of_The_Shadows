@@ -1,4 +1,6 @@
 import React from 'react';
+import comingSoon from '../images/ComingSoon.png';
+import sandClock from '../images/SandClock.gif';
 
 function Programs_Services() {
   return (
@@ -84,7 +86,11 @@ function Programs_Services() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Implementation Tools</h2>
+            <div className="flex justify-center items-center">
+              <img src={comingSoon} alt="Icono Antes" className="mr-10" width="150" height="150" />
+              <h2 className="h2 mb-4 inline-block">Implementation Tools</h2>
+              <img src={sandClock} alt="Icono Después" className="ml-10" width="80" height="80" />
+            </div>
           </div>
 
           {/* Items */}

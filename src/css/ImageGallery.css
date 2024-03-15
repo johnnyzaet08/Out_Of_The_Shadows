@@ -91,6 +91,7 @@
   padding: 1px;
 }
 
+
 @media  (max-width: 800px) {
   .section-text-Header{
     display: none;

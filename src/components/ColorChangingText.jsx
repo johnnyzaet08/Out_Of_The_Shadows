@@ -158,20 +158,34 @@ function ColorChangingText() {
   return (
     <div>
       
-      <div className="flex items-center justify-center w-full h-auto mx-auto mb-auto mt-5 pb-12 md:pb-15">
-        <div className="flex flex-cols items-center justify-center mt-auto w-[60%] h-full mx-auto">
-          <h1 className="refWord1 word-active">Out</h1>
-          <h1 className="refWord2 word">Of</h1>
-          <h1 className="refWord3 word">The</h1>
-          <h1 className="refWord4 word">Shadows</h1>
-        </div>
+      <div className="flex flex-cols items-center justify-center w-11/12 h-auto mx-auto mb-auto mt-5 pb-12 md:pb-15">
+        <ul className='w-full items-center'>
+          <li>
+            <div className="flex items-center justify-center">
+              <div className='flex flex-items'> 
+                <h1 className="word-aux"> To help people to come </h1>
+                <h1 className="refWord1 word-active">OUT</h1>
+                <h1 className="refWord2 word">OF</h1>
+                <h1 className="refWord3 word">THE</h1>
+                <h1 className="refWord4 word">SHADOWS,</h1>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className='flex items-center justify-center'>
+                <h1 className="word-aux">give them HOPE and find a PURPOSE in life </h1>
+            </div>
+          </li>
+        </ul>
+        
+        
       </div>
 
-      <div className='block h-full justify-center'>
+      <div className='block mx-auto justify-center w-3/4'>
         <Slider ref={sliderRef1} {...settings1}>
           {images.map((image) => (
-            <div key={image.id} className="px-[1px]">
-              <img className="rounded-xl border-[2px] border-black" src={image.img } alt={image.title} />
+            <div key={image.id} className="px-[1px] object-cover">
+              <img className="rounded-xl border-[2px] border object-cover" src={image.img } alt={image.title} />
             </div>
           ))}
         </Slider>

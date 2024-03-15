@@ -30,7 +30,7 @@ function TimerBanner() {
   
 
   const [bannerOpen, setBannerOpen] = useState(false);
-  const [stageCounter, setStageCounter] = useState(false);
+  const [stageCounter, setStageCounter] = useState(true);
   const [isClosed, setIsClosed] = useState(true);
   const [isHover, setIsHover] = useState(false);
 
@@ -56,7 +56,7 @@ function TimerBanner() {
         setBannerOpen(true);
         setIsClosed(false);
       };
-    }, 3600);
+    }, 5600);
 
     return () => clearTimeout(timeoutTimerBanner);
   }, [isClosed]);

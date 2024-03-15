@@ -111,14 +111,19 @@ function Header() {
               <span className='text-lx font-bold justify-center text-primary px-4'>Out of The <br/> Shadows </span>
             </div>
 
-            <button ref={trigger} className={`hamburger ${mobileNavOpen && 'active'} ml-auto`} aria-controls="mobile-nav" aria-expanded={mobileNavOpen} onClick={() => setMobileNavOpen(!mobileNavOpen)}>
-              <span className="sr-only">Menu</span>
-              <svg className="w-6 h-6 fill-current text-gray-300 hover:text-primary transition duration-150 ease-in-out" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <rect y="4" width="24" height="2" rx="1" />
-                <rect y="11" width="24" height="2" rx="1" />
-                <rect y="18" width="24" height="2" rx="1" />
-              </svg>
-            </button>
+            <div className="ml-auto flex items-center">
+              <div className={`menu ${mobileNavOpen ? 'active' : ''}`} id="mobile-nav" aria-expanded={mobileNavOpen}>
+                {/* Contenido del menú */}
+              </div>
+              <button ref={trigger} className={`hamburger ml-auto ${mobileNavOpen ? 'active' : ''}`} aria-controls="mobile-nav" aria-expanded={mobileNavOpen} onClick={() => setMobileNavOpen(!mobileNavOpen)}>
+                <span className='text-primary'> Menu </span>
+                <svg className="w-6 h-6 mx-2 fill-current text-gray-300 hover:text-primary transition duration-150 ease-in-out" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="4" width="24" height="2" rx="1" />
+                  <rect y="11" width="24" height="2" rx="1" />
+                  <rect y="18" width="24" height="2" rx="1" />
+                </svg>
+              </button>
+            </div>
 
             <nav id="mobile-nav" ref={mobileNav} className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" style={mobileNavOpen ? { maxHeight: mobileNav.current.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: .8 } }>
               

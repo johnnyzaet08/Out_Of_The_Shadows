@@ -49,7 +49,6 @@ function App() {
         <Route exact path="/InProgress" element={<InProgress />} />
       </Routes>
       <DonationBanner />
-      <TimerBanner />
     </>
   );
 }

@@ -1,56 +1,58 @@
 import React, {useState} from 'react';
 import ModalPDF from './ModalPDF';
+import bomF from '../images/Bom0.png';
+import bomI from '../images/Bom1.png';
 
 const LOS_ANGELES_COUNTY = [
   {
     id: 0,
     title: "Children",
-    url: "/pdfs/Los_Angeles_Resources.pdf",
+    url: "/pdfs/Los_Angeles_Resources _CHILDREN.pdf",
   },
   {
     id: 1,
     title: "Domestic Violence",
-    url: "../pdfs/Los_Angeles_Resources.pdf",
+    url: "../pdfs/Los_Angeles_Resources_DOMESTICVIOLENCE.pdf",
   },
   {
     id: 2,
     title: "Education",
-    url: "/pdfs/Los_Angeles_Resources.pdf",  
+    url: "/pdfs/Los_Angeles_Resources_EDUCATION.pdf",  
   },
   {
     id: 3,
     title: "Employment",
-    url: "/pdfs/Los_Angeles_Resources.pdf",  
+    url: "/pdfs/Los_Angeles_Resources_EMPLOYMENT.pdf",  
   },
   {
     id: 4,
     title: "Food",
-    url: "/pdfs/Los_Angeles_Resources.pdf",  
+    url: "/pdfs/Los_Angeles_Resources_FOOD.pdf",  
   },
   {
     id: 5,
     title: "Health",
-    url: "/pdfs/Los_Angeles_Resources.pdf",  
+    url: "/pdfs/Los_Angeles_Resources_HEALTH.pdf",  
   },
   {
     id: 6,
     title: "Homeless",
-    url: "/pdfs/Los_Angeles_Resources.pdf",  
+    url: "/pdfs/Los_Angeles_Resources_HOMELESS.pdf",  
   },
   {
     id: 7,
     title: "Housing",
-    url: "/pdfs/Los_Angeles_Resources.pdf",  
+    url: "/pdfs/Los_Angeles_Resources_HOUSING.pdf",  
   },
   {
     id: 8,
     title: "Legal",
-    url: "/pdfs/Los_Angeles_Resources.pdf",  
+    url: "/pdfs/Los_Angeles_Resources_LEGAL.pdf",  
   },
   {
     id: 9,
     title: "Menetal Health",
-    url: "/pdfs/Los_Angeles_Resources.pdf",  
+    url: "/pdfs/Los_Angeles_Resources_MENTALHEALTH.pdf",  
   },
 ]
 
@@ -58,57 +60,57 @@ const ORANGE_COUNTY = [
   {
     id: 0,
     title: "Housing",
-    url: "/pdfs/Orange_Resources.pdf",
+    url: "/pdfs/Orange_Resources_HOUSING.pdf",
   },
   {
     id: 1,
     title: "Family Violence",
-    url: "/pdfs/Orange_Resources.pdf",
+    url: "/pdfs/Orange_Resources_FAMILYVIOLENCESERVICES.pdf",
   },
   {
     id: 2,
     title: "Financial Assistance",
-    url: "/pdfs/Orange_Resources.pdf",
+    url: "/pdfs/Orange_Resources_FINANCIALASSISTANCE.pdf",
   },
   {
     id: 3,
     title: "Food Assistance",
-    url: "/pdfs/Orange_Resources.pdf",
+    url: "/pdfs/Orange_Resources_FOODASSISTANCE.pdf",
   },
   {
     id: 4,
     title: "Health Care",
-    url: "/pdfs/Orange_Resources.pdf",
+    url: "/pdfs/Orange_Resources_HEALTHCARE.pdf",
   },
   {
     id: 5,
     title: "Mental Health",
-    url: "/pdfs/Orange_Resources.pdf",
+    url: "/pdfs/Orange_Resources_MENTALHEALTH.pdf",
   },
   {
     id: 6,
     title: "Substance Abuse",
-    url: "/pdfs/Orange_Resources.pdf",
+    url: "/pdfs/Orange_Resources_SUBSTANCEABUSE.pdf",
   },
   {
     id: 7,
     title: "Employment Services",
-    url: "/pdfs/Orange_Resources.pdf",
+    url: "/pdfs/Orange_Resources_EMPLOYMENTSERVICES.pdf",
   },
   {
     id: 8,
     title: "Parenting & Childcare",
-    url: "/pdfs/Orange_Resources.pdf",
+    url: "/pdfs/Orange_Resources_PARENTING&CHILDCARE.pdf",
   },
   {
     id: 9,
     title: "Elderly Services",
-    url: "/pdfs/Orange_Resources.pdf",
+    url: "/pdfs/Orange_Resources_ELDERLYSERVICES.pdf",
   },
   {
     id: 10,
     title: "Legal",
-    url: "/pdfs/Orange_Resources.pdf",
+    url: "/pdfs/Orange_Resources_LEGAL.pdf",
   },
 ]
 
@@ -333,16 +335,20 @@ const ResourcesComponent = () => {
   return (
     <>
       <section
-        className="py-16 md:py-20 lg:py-6"
+        className=""
       >
-        <div className="container w-[60%] items-center mx-auto">
+        <div className="container w-[70%] items-center mx-auto">
 
-          { /* Section Title */ }
-          <div className='w-full mx-auto text-center'>
-            <h2 className="mb-4 text-3xl font-bold text-white-100 sm:text-4xl md:text-[35px]">
-              LOS ANGELES COUNTY: LOCAL COMMUNITY RESOURCES
-            </h2>
-            <h3 className="mt-5 text-xl font-bold text-white-100 sm:text-2xl lg:text-xl xl:text-2xl">
+        { /* Section Title */ }
+          <div className="w-full mx-auto text-center mt-20">
+            <div className="flex justify-center items-center">
+              <img src={bomI} alt="Icono Antes" className="mr-2" width="50" height="50" />
+              <h2 className="mb-4 text-3xl font-bold text-black sm:text-4xl md:text-[35px] inline-block">
+                LOS ANGELES COUNTY: LOCAL COMMUNITY RESOURCES
+              </h2>
+              <img src={bomF} alt="Icono Después" className="ml-2" width="50" height="50" />
+            </div>
+            <h3 className="mt-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl">
               SERVICES BY CATEGORY
             </h3>
           </div>
@@ -353,7 +359,7 @@ const ResourcesComponent = () => {
               {LOS_ANGELES_COUNTY.map((item) => (
                 
                 <div key={item.id} className="flex w-full items-center justify-center ">
-                  <button className="pr-[10px] text-center font-medium leading-relaxed text-bold text-white-100 hover:text-primary hover:underline" onClick={() => openModal(item.url)}>
+                  <button className="pr-[10px] text-center font-medium leading-relaxed text-bold text-black hover:text-primary underline" onClick={() => openModal(item.url)}>
                     {item.title}
                   </button>
                 </div>
@@ -370,14 +376,18 @@ const ResourcesComponent = () => {
       <section
         className="py-16 md:py-20 lg:py-16"
       >
-        <div className="container w-[60%] items-center mx-auto">
+        <div className="container w-[70%] items-center mx-auto">
 
           { /* Section Title */ }
-          <div className='w-full mx-auto text-center'>
-            <h2 className="mb-4 text-3xl font-bold !leading-tight text-white-100 sm:text-4xl md:text-[35px]">
-              ORANGE COUNTY: LOCAL COMMUNITY RESOURCES
-            </h2>
-            <h3 className="mt-5 text-xl font-bold text-white-100 sm:text-2xl lg:text-xl xl:text-2xl">
+          <div className="w-full mx-auto text-center">
+            <div className="flex justify-center items-center">
+              <img src={bomI} alt="Icono Antes" className="mr-2" width="50" height="50" />
+              <h2 className="mb-4 text-3xl font-bold !leading-tight text-black sm:text-4xl md:text-[35px] inline-block">
+                ORANGE COUNTY: LOCAL COMMUNITY RESOURCES
+              </h2>
+              <img src={bomF} alt="Icono Después" className="ml-2" width="50" height="50" />
+            </div>
+            <h3 className="mt-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl">
               SERVICES BY CATEGORY
             </h3>
           </div>
@@ -388,7 +398,7 @@ const ResourcesComponent = () => {
               {ORANGE_COUNTY.map((item) => (
                 
                 <div key={item.id} className="flex w-full items-center justify-center ">
-                  <button className="pr-[10px] text-center font-medium leading-relaxed text-bold text-white-100 hover:text-primary hover:underline" onClick={() => openModal(item.url)}>
+                  <button className="pr-[10px] text-center font-medium leading-relaxed text-bold text-black hover:text-primary underline" onClick={() => openModal(item.url)}>
                     {item.title}
                   </button>
                 </div>
@@ -402,13 +412,17 @@ const ResourcesComponent = () => {
       <section
         className="py-16 md:py-20 lg:py-16"
       >
-        <div className="container w-[60%] items-center mx-auto">
+        <div className="container w-[70%] items-center mx-auto">
 
           { /* Section Title */ }
-          <div className='w-full'>
-            <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[35px]">
-              LOCAL HOTLINES
-            </h2>
+          <div className="w-full">
+            <div className="flex justify-center items-center mb-10">
+              <img src={bomI} alt="Icono Antes" className="mr-2" width="50" height="50" />
+              <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[35px] inline-block">
+                LOCAL HOTLINES
+              </h2>
+              <img src={bomF} alt="Icono Después" className="ml-2" width="50" height="50" />
+            </div>
           </div>
 
           { /* Items */ }
@@ -441,13 +455,17 @@ const ResourcesComponent = () => {
       <section
         className="py-16 md:py-20 lg:py-16"
       >
-        <div className="container w-[60%] items-center mx-auto">
+        <div className="container w-[70%] items-center mx-auto">
 
           { /* Section Title */ }
-          <div className='w-full'>
-            <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[35px]">
-              REGIONAL HOTLINES
-            </h2>
+          <div className="w-full">
+            <div className="flex justify-center items-center mb-10">
+              <img src={bomI} alt="Icono Antes" className="mr-2" width="50" height="50" />
+              <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[35px] inline-block">
+                REGIONAL HOTLINES
+              </h2>
+              <img src={bomF} alt="Icono Después" className="ml-2" width="50" height="50" />
+            </div>
           </div>
 
           { /* Items */ }
@@ -479,13 +497,17 @@ const ResourcesComponent = () => {
       <section
         className="py-16 md:py-20 lg:py-16"
       >
-        <div className="container w-[60%] items-center mx-auto">
+        <div className="container w-[70%] items-center mx-auto mb-10">
 
           { /* Section Title */ }
-          <div className='w-full'>
-            <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[35px]">
-              NATIONAL HOTLINES
-            </h2>
+          <div className="w-full">
+            <div className="flex justify-center items-center mb-10">
+              <img src={bomI} alt="Icono Antes" className="mr-2" width="50" height="50" />
+              <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[35px] inline-block">
+                NATIONAL HOTLINES
+              </h2>
+              <img src={bomF} alt="Icono Después" className="ml-2" width="50" height="50" />
+            </div>
           </div>
 
           { /* Items */ }

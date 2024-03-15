@@ -13,43 +13,43 @@ import vulnerableImg from "../images/cardhover/VULNERABLE.jpg";
 
 const cards = [
   { 
-    title: 'INOCENT', 
-    copy: 'Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains', 
+    title: 'INNOCENT', 
+    copy: 'Child’s simplicity, pure heart, and lack of knowledge', 
     imageURL: inocentImg,
   }, 
   { 
     title: 'VICTIM', 
-    copy: 'Plan your next beach trip with these fabulous destinations', 
+    copy: 'Child’s harmed, injured, or killed as a result of a crime, or a violent act', 
     imageURL: victimImg, 
   }, 
   { 
     title: 'DEFENSELESS', 
-    copy: 'It\'s the desert you\'ve always dreamed of', 
+    copy: 'Child’s vulnerability and needs to be taken care of', 
     imageURL: defenselessImg,
   }, 
   { 
     title: 'VULNERABLE', 
-    copy: 'Seriously, straight up, just blast off into outer space today', 
+    copy: 'Child’s risk of experiencing physical or emotional harm', 
     imageURL: vulnerableImg,
   },
   { 
     title: 'PURE', 
-    copy: 'Seriously, straight up, just blast off into outer space today', 
+    copy: 'Child’s clean, clear, unmixed, and chaste heart', 
     imageURL: pureImg,
   },
   { 
     title: 'HONEST', 
-    copy: 'Seriously, straight up, just blast off into outer space today', 
+    copy: 'Child’s truthfulness in what she/he says and do', 
     imageURL: honestImg,
   },
   { 
     title: 'TRUSTFUL', 
-    copy: 'Seriously, straight up, just blast off into outer space today', 
+    copy: 'Child’s beliefs in the reliability, truth, ability, or strength onpeople', 
     imageURL: trustfulImg,
   },
   { 
-    title: 'NAIVE', 
-    copy: 'Seriously, straight up, just blast off into outer space today', 
+    title: 'NAÏVE', 
+    copy: 'Child’s natural and unaffected; innocence', 
     imageURL: naiveImg,
   },
 ]

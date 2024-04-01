@@ -104,19 +104,23 @@
 }
 
 .show-counter .countdown {
-  line-height: 1.75rem;
-  padding: 0 0.75rem 0 0.75em;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.show-counter .countdown .aux {
+  line-height: 2rem;
+  width: auto;
+  padding: auto;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-
-.show-counter .countdown > p {
+.show-counter .countdown .aux > p {
   margin: 0;
 }
 
-.show-counter .countdown > span {
+.show-counter .countdown .aux > span {
   text-transform: uppercase;
   font-size: 1rem;
   line-height: 1rem;

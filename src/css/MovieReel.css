@@ -25,45 +25,64 @@
   color: gray;
 }
 
-.word {
-  font-size: 40px;
+/* Base styles for text */
+.word, .word-aux, .word-active {
+  font-size: 40px; /* Default size for large screens */
   font-weight: bold;
   color: black;
   margin-left: 10px;
 }
 
 .word-aux {
-  font-size: 40px;
-  font-weight: bold;
-  color: black;
-  margin-left: 10px;
-  opacity: 70%;;
+  opacity: 70%;
 }
 
 .word-active {
-  font-size: 60px;
-  font-weight: bold;
+  font-size: 60px; /* Larger size for emphasis */
   color: red;
   margin-left: 20px;
 }
 
-.slick-slide {
-  transition: all 0.3s ease;
+/* Adjust styles for very small screens, such as small smartphones */
+@media (max-width: 400px) {
+  .slick-slide img {
+    height: 100px; /* Smaller images for very small screens */
+  }
+  .word, .word-aux, .word-active {
+    font-size: 4vw; /* Scale with the viewport, but not too small */
+  }
+  .word-active {
+    font-size: 5vw;
+  }
 }
 
-/* Styles for screens larger than 640px */
-@media (max-width: 650px) {
+/* Small to medium screens, like smartphones in portrait and landscape */
+@media (min-width: 401px) and (max-width: 768px) {
   .slick-slide img {
-    height: 300px;
+    height: 200px; /* Adjusted for medium-sized screens */
   }
-  .word{
-    display: none;
+  .word, .word-aux, .word-active {
+    font-size: calc(3vw + 10px); /* Blend of vw for scalability and px for minimum size */
+  }
+  .word-active {
+    font-size: calc(3.5vw + 10px);
   }
 }
 
-/* Styles for screens larger than 768px */
-@media (min-width: 768px) {
+/* Medium to large screens, like tablets and small desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
   .slick-slide img {
-    height: 300px; /* Increase height for larger screens */
+    height: 250px; /* Larger images for tablets and small desktops */
   }
+  .word, .word-aux, .word-active {
+    font-size: calc(2.5vw + 12px); /* Slightly larger minimum size */
+  }
+  .word-active {
+    font-size: calc(3vw + 12px);
+  }
+}
+
+/* Very large screens, such as large desktops */
+@media (min-width: 1025px) {
+  /* Keep the base styles without changes */
 }

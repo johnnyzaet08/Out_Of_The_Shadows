@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import ModalComponent from '../utils/ModalComponent';
+import ModalPDF from './ModalPDF';
 import image from '../images/background_donations3.jpg';
 import "../css/donation.css"
 
@@ -7,6 +8,7 @@ function Donation() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [date, setDate] = useState(new Date());
+  const [pdfUrl, setPdfUrl] = useState('/pdfs/Los_Angeles_Resources _CHILDREN.pdf');
 
   useEffect(() => {
     setInterval(() => 
@@ -43,24 +45,39 @@ function Donation() {
             className="countdown-link"
           >
             <div className='countdown'>
-              <p>{("0" + hours).slice(-2)}</p>
-              <span>Hours</span>
+              <div className='aux'>
+                <p>{("0" + hours).slice(-2)}</p>
+                <span>Hours</span>
+              </div>
             </div>
+
             <p>:</p>
+
             <div className='countdown'>
-              <p>{("0" + minutes).slice(-2)}</p>
-              <span>Minutes</span>
+              <div className='aux'>
+                <p>{("0" + minutes).slice(-2)}</p>
+                <span>Minutes</span>
+              </div>
             </div>
+
             <p>:</p>
+
             <div className='countdown'>
-              <p>{("0" + seconds).slice(-2)}</p>
-              <span>Seconds</span>
+              <div className='aux'>
+                <p>{("0" + seconds).slice(-2)}</p>
+                <span>Seconds</span>
+              </div>
             </div>
+
             <p>:</p>
+
             <div className='countdown'>
-              <p>{("0" + miliseconds).slice(-2)}</p>
-              <span>Miliseconds</span>
+              <div className='aux'>
+                <p>{("0" + miliseconds).slice(-2)}</p>
+                <span>Miliseconds</span>
+              </div>
             </div>
+
           </a>
         </div>
 
@@ -73,6 +90,9 @@ function Donation() {
 
       </div>
 
+      <ModalPDF isOpen={isModalOpen} onClose={handleModalClose} pdfUrl={pdfUrl} />
+
+      {/*
       <ModalComponent isOpen={isModalOpen} onClose={handleModalClose}>
         <div className='w-[50vh] h-[50vh] bg-white-100'>
           <div className="container mx-auto px-4">
@@ -102,7 +122,7 @@ function Donation() {
                   className="w-full py-2 px-3 mt-1 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                 />
               </div>
-              {/* Add more form fields here */}
+              {/* Add more form fields here /}
               <button
                 type="submit"
                 className="bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition-colors"
@@ -113,6 +133,7 @@ function Donation() {
           </div>
         </div>
       </ModalComponent>
+      */}
     </div>
   );
 }

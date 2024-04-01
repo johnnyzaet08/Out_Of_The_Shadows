@@ -162,18 +162,17 @@ function ColorChangingText() {
         <ul className='w-full items-center'>
           <li>
             <div className="flex items-center justify-center">
-              <div className='flex flex-items'> 
-                <h1 className="word-aux"> To help people to come </h1>
+              <div className='flex flex-items'>
                 <h1 className="refWord1 word-active">OUT</h1>
                 <h1 className="refWord2 word">OF</h1>
                 <h1 className="refWord3 word">THE</h1>
-                <h1 className="refWord4 word">SHADOWS,</h1>
+                <h1 className="refWord4 word">SHADOWS</h1>
               </div>
             </div>
           </li>
           <li>
             <div className='flex items-center justify-center'>
-                <h1 className="word-aux">give them HOPE and find a PURPOSE in life </h1>
+                <h1 className="word-aux">Give them HOPE and find a PURPOSE in life </h1>
             </div>
           </li>
         </ul>

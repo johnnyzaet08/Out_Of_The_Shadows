@@ -317,6 +317,74 @@ const NATIONAL_HOTLINES = [
   }
 ]
 
+const lines = [
+  {
+    "id": 0,
+  },
+  {
+    "id": 1,
+  },
+  {
+    "id": 2,
+  },
+  {
+    "id": 3,
+  },
+  {
+    "id": 4,
+  },
+  {
+    "id": 5,
+  },
+  {
+    "id": 6,
+  },
+  {
+    "id": 7,
+  },
+  {
+    "id": 8,
+  },
+  {
+    "id": 9,
+  },
+  {
+    "id": 10,
+  },
+  {
+    "id": 11,
+  },
+  {
+    "id": 12,
+  },
+  {
+    "id": 13,
+  },
+  {
+    "id": 14,
+  },
+  {
+    "id": 15,
+  },
+  {
+    "id": 16,
+  },
+  {
+    "id": 17,
+  },
+  {
+    "id": 18,
+  },
+  {
+    "id": 19,
+  },
+  {
+    "id": 20,
+  },
+  {
+    "id": 21,
+  },
+]
 
 const ResourcesComponent = () => {
 
@@ -334,6 +402,25 @@ const ResourcesComponent = () => {
 
   return (
     <>
+
+      <div className="absolute top-0 pointer-events-none opacity-[10%] w-full min-h-screen" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="0.46">
+          <defs>
+            <linearGradient gradientTransform="rotate(270)" x1="50%" y1="0%" x2="50%" y2="100%" id="sssquiggly-grad">
+              <stop stopColor="hsla(226, 65%, 51%, 1.00)" stopOpacity="1" offset="0%"></stop>
+              <stop stopColor="hsla(0, 0%, 77%, 1.00)" stopOpacity="1" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <g strokeWidth="1.5" stroke="url(#sssquiggly-grad)" fill="none" strokeLinecap="round" transform="matrix(1,0,0,1,-5,-1449.515235900879)">
+            {lines.map((line, index) => (
+              <div key={line.id} style={{ transform: `translateY(${index * 10}px)` }}>
+                <path d="M10,10C24.583333333333332,11.041666666666666,48.75,28.75,80,15C111.25,1.25,126.66666666666666,-59.958333333333336,160,-56C193.33333333333334,-52.041666666666664,206.66666666666666,28.166666666666664,240,34C273.3333333333333,39.833333333333336,286.6666666666667,-28.208333333333332,320,-28C353.3333333333333,-27.791666666666668,366.6666666666667,33.958333333333336,400,35C433.3333333333333,36.041666666666664,446.6666666666667,-32.375,480,-23C513.3333333333334,-13.625,526.6666666666666,85.41666666666667,560,80C593.3333333333334,74.58333333333333,606.6666666666666,-38.16666666666667,640,-49C673.3333333333334,-59.83333333333333,686.6666666666666,24.458333333333332,720,28C753.3333333333334,31.541666666666668,783.3333333333334,-19.5,800,-32"/>
+              </div>
+              ))}
+          </g>
+        </svg>
+      </div>  
+
       <section
         className=""
       >
@@ -370,6 +457,8 @@ const ResourcesComponent = () => {
           <ModalPDF isOpen={modalOpen} onClose={closeModal} pdfUrl={pdfUrl} />
 
         </div>
+        
+
 
       </section>
 
@@ -407,6 +496,7 @@ const ResourcesComponent = () => {
           </div>
 
         </div>
+
       </section>
 
       <section
@@ -534,6 +624,9 @@ const ResourcesComponent = () => {
 
         </div>
       </section>
+
+
+      
 
     </>
   );

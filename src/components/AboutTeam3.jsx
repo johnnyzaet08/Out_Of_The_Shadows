@@ -14,7 +14,7 @@ const peopleData = [
     ],
     imageUrl: '/images/AboutUs/MirleyVargas.png'
   },
-  {
+  /*{
     id: 2,
     name: 'Barry Berk',
     jobTitle: 'TREASURER - BOARD OF DIRECTORS',
@@ -48,7 +48,13 @@ const peopleData = [
       'Managed Felony trial calendar. Lead counsel on felony cases ranging from assault and weapons offenses, to distribution of drugs while armed. Served as co-counsel on murder and first-degree sexual abuse cases. Maintained responsibility for all aspects of litigation, including directing an investigative team, managing discovery, authoring motions, and conducting trial. Negotiated plea agreements with Assistant United States Attorney. Trained and supervised investigators and law students.',
     ],
     imageUrl: '/images/AboutUs/MatthewLombard.jpg'
-  }
+  },*/
+  {
+    id: 99,
+    name: 'Out of The Shadows',
+    jobTitle: 'Mission / Purpose / Message',
+    imageUrl: '/images/AboutUs/OOTS.png',
+  },
 ];
 
 function AboutTeam2() {
@@ -56,8 +62,12 @@ function AboutTeam2() {
   const [isSelected, setIsSelected] = useState(false)
 
   const handleCardClick = (person) => {
-    setSelectedPerson(person);
-    setIsSelected(true);
+    if(person.id != 99){
+      setSelectedPerson(person);
+      setIsSelected(true);
+    } else{
+      handleButtonClick();
+    }
   };
 
   const handleButtonClick = () => {
@@ -68,9 +78,15 @@ function AboutTeam2() {
     <div className='AboutTeamContainer'>
 
       <div className='AboutTeamSectionContainer'>
+        {isSelected ? 
         <p className="AboutTeamTextFont AboutTeamSectionHead">
-            {isSelected ? selectedPerson.name : 'Our Team'}
+          {selectedPerson.name}
         </p>
+        :
+        <div>
+        </div>
+        }
+        
         <div className='AboutTeamSectionBody'>
           {isSelected ? (
             <div className='AboutTeamSectionBodyText'>
@@ -108,9 +124,11 @@ function AboutTeam2() {
 
           )}
         </div>
+        {/* 
         <div>
-          <button className="AboutTeamTextFont underline hover:text-primary px-2" onClick={handleButtonClick}> Our Mision </button>
+          <button className="AboutTeamTextFont underline hover:text-primary px-2 pt-10" onClick={handleButtonClick}> Our Mision </button>
         </div>
+        */}
       </div>
 
       <div className='AboutTeamCardContainer'>

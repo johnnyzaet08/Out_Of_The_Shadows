@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 import Newsletter from './Newsletter.jsx';
 
 function Footer() {
   return (
   <div>
-    <div className="w-full bg-white-100 relative z-10 pt-5 bt-10">
+    <div className="w-full bg-white-100 relative pt-5 bt-10">
     <div className='pb-10'>
       <Newsletter />
     </div>
@@ -87,7 +86,7 @@ function Footer() {
 
         <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
           <div className="flex flex-col items-center mb-10 w-full">
-            <h4 className="text-dark mb-5 text-lg font-semibold w-full px-[35%]">Resources</h4>
+            <h4 className="text-dark mb-5 text-lg font-semibold w-full px-[35%]">Menu</h4>
             <ul>
               <li>
                 <a
